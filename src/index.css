@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&display=swap');
+
 @layer base {
-  
+
+}
+
+:root {
+  --background: #0a192f;
+  --text-primary: #fff;
+  --text-secondary: #4E80EE;
+  --accent: #0C38DD;
+  --border: #fff;
+  --nav-bg: #071325;
+  --nav-bb: #0f274a;
+}
+
+[data-theme='1990'] {
+  --background: #0a192f;
+  --text-primary: #fff;
+  --text-secondary: #4E80EE;
+  --accent: #0C38DD;
+  --border: #fff;
+  --nav-bg: #071325;
+  --nav-bb: #0f274a;
+  --common-font: 'Press Start 2P', cursive;
+}
+
+[data-theme='1993'] {
+  --background: #0a192f;
+  --text-primary: #fff;
+  --text-secondary: #4E80EE;
+  --accent: #0C38DD;
+  --border: #fff;
+  --nav-bg: #071325;
+  --nav-bb: #0f274a;
+  --common-font: 'VT323', monospace;
+}
+
+[data-theme='1995'] {
+  --background: #0a192f;
+  --text-primary: #fff;
+  --text-secondary: #4E80EE;
+  --accent: #0C38DD;
+  --border: #fff;
+  --nav-bg: #071325;
+  --nav-bb: #0f274a;
+  --common-font: 'EB Garamond', serif;
 }
