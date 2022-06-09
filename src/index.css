@@ -6,7 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&display=swap');
 
 @layer base {
-
+  li {
+    @apply px-4;
+    @apply cursor-pointer
+  }
 }
 
 :root {
@@ -27,6 +30,11 @@
   --border: #000000;
   --common-font: 'Press Start 2P', cursive;
   --global-padding: 8px;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
 }
 
 body {
