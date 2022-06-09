@@ -10,44 +10,64 @@
 }
 
 :root {
-  --background: #0a192f;
-  --text-primary: #fff;
-  --text-secondary: #4E80EE;
+  --background: #ebebeb;
+  --text-primary: rgb(0, 0, 0);
+  --text-secondary: #000b23;
   --accent: #0C38DD;
-  --border: #fff;
-  --nav-bg: #071325;
-  --nav-bb: #0f274a;
+  --border: #e6e6e6;
+  --common-font: 'Roboto', sans-serif;
+  --global-padding: 80px;
 }
 
 [data-theme='1990'] {
-  --background: #0a192f;
-  --text-primary: #fff;
-  --text-secondary: #4E80EE;
-  --accent: #0C38DD;
-  --border: #fff;
-  --nav-bg: #071325;
-  --nav-bb: #0f274a;
+  --background: #000000;
+  --text-primary: #3DFF1E;
+  --text-secondary: #86ff74;
+  --accent: #3DFF1E;
+  --border: #000000;
   --common-font: 'Press Start 2P', cursive;
+  --global-padding: 8px;
 }
 
-[data-theme='1993'] {
-  --background: #0a192f;
-  --text-primary: #fff;
-  --text-secondary: #4E80EE;
-  --accent: #0C38DD;
-  --border: #fff;
-  --nav-bg: #071325;
-  --nav-bb: #0f274a;
-  --common-font: 'VT323', monospace;
+body {
+  background: var(--background);
+  font-family: var(--common-font);
 }
 
-[data-theme='1995'] {
-  --background: #0a192f;
-  --text-primary: #fff;
-  --text-secondary: #4E80EE;
-  --accent: #0C38DD;
-  --border: #fff;
-  --nav-bg: #071325;
-  --nav-bb: #0f274a;
-  --common-font: 'EB Garamond', serif;
+.content {
+  padding: var(--global-padding);
+}
+
+.slidernav {
+}
+
+p {
+  color: var(--text-primary);
+}
+
+h1 {
+  color: var(--text-primary);
+  font-weight:bold;
+  font-size: 3rem;
+}
+
+h2 {
+  color: var(--text-primary);
+  font-weight:bold;
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+h4 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+h5 {
+  color: var(--text-primary);
+  font-size: 1rem;
 }

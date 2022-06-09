@@ -55,7 +55,7 @@ export default function DiscreteSliderMarks() {
         // value: new Date("2013-06-17").getTime(),
 
         aria-label="Custom marks"
-        defaultValue={0}
+        defaultValue={2022}
         getAriaValueText={valuetext}
         min={1990}
         step={1}
