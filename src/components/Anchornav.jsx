@@ -19,6 +19,11 @@ const Anchornav = () => {
           </Link>
         </li>
         <li>
+          <Link to='1995' smooth={true} duration={500}>
+            1995
+          </Link>
+        </li>
+        <li>
           <Link to='2000' smooth={true} duration={500}>
             2000
           </Link>
