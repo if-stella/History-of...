@@ -2,9 +2,9 @@ import React from 'react'
 import Button from '@mui/material/Button';
 
 
-const Year2022 = () => {
+const Currentyear = () => {
   return (
-    <div name='2022' className='content'>
+    <div name='currentyear' className='content'>
       <h1 className='mainh'>I'm an H1! It's the year</h1>
       <h2 className='mainh'>I'm an H2! It's the year</h2>
       <h3 className='mainh'>I'm an H3! It's the year</h3>
@@ -16,4 +16,4 @@ const Year2022 = () => {
   )
 }
 
-export default Year2022
+export default Currentyear
