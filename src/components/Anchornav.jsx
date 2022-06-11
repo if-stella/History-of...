@@ -9,31 +9,36 @@ const Anchornav = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <BsFillMoonStarsFill />
 
       {/* menu */}
       <ul className='hidden sm:flex'>
         <li>
-          <Link to='1990' smooth={true} duration={500}>
-            1990
-          </Link>
+          1990
         </li>
         <li>
-          <Link to='1995' smooth={true} duration={500}>
-            1995
-          </Link>
+          1991
         </li>
         <li>
-          <Link to='2000' smooth={true} duration={500}>
-            2000
-          </Link>
+          1992
         </li>
         <li>
-          <Link to='2022' smooth={true} duration={500}>
-            2022
-          </Link>
+          1993
+        </li>
+        <li>
+          1994
+        </li>
+        <li>
+          1995
+        </li>
+        <li>
+          2000
+        </li>
+        <li>
+          2022
         </li>
       </ul>
+
+      <BsFillMoonStarsFill />
 
       {/* Hamburger */}
       <div onClick={handleClick} className='sm:hidden z-10'>
