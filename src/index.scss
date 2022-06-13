@@ -1,6 +1,16 @@
 @import "src/themes.scss";
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  li {
+    @apply px-4;
+    @apply cursor-pointer
+  }
+}
 
 main {
   transition: font-size 0.25s ease-in, color 0.25s ease-in, background-color 0.25s ease-in;

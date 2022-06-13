@@ -9,12 +9,15 @@ const Anchornav = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='menu fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='menu w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
 
       {/* menu */}
       <ul className='hidden sm:flex'>
         <li>
           1990
+        </li>
+        <li>
+          2000
         </li>
         <li>
           2000
