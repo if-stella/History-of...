@@ -19,9 +19,6 @@ const Anchornav = () => {
         <li>
           2000
         </li>
-        <li>
-          2022
-        </li>
       </ul>
 
       <BsFillMoonStarsFill />
