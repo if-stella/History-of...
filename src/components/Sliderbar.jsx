@@ -1,5 +1,4 @@
 import React from 'react'
-import Slider from "./Slider";
 import Themetoggle from "./Themetoggle";
 
 
@@ -8,11 +7,10 @@ import {RiStarSmileFill} from 'react-icons/ri';
 
 const Sliderbar = () => {
   return (
-    <div className='slidernav fixed w-full h-[80px] bottom-0 flex justify-between items-center px-4 bg-slate-100 text-gray-600'>
+    <div className='slidernav'>
     <BsFillMoonStarsFill />
-    <Slider />
     <Themetoggle />
-    <RiStarSmileFill />
+    <BsFillMoonStarsFill />
     </div>
   )
 }

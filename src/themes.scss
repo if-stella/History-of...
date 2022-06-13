@@ -12,54 +12,43 @@
 }
 
 :root {
-  --background: #9e2d2d;
+  --background: #e6f8ff;
   --text-primary: rgb(0, 0, 0);
   --size: 1rem;
 }
 
 [data-theme-background="1990"] {
   --background: #000;
-  --background-image: none;
   --color: rgb(0, 117, 45);
   --text-primary: #3DFF1E;
   --text-secondary: #86ff74;
   --accent: #3DFF1E;
   --common-font: 'Press Start 2P', cursive;
   --year: ' ' '1990!';
-  --h1-size: 4rem;
-  --h2-size: 3rem;
-  --h3-size: 2rem;
-  --h4-size: 1.5rem;
 }
 
 [data-theme-background="1991"] {
   --background: #ffffff;
-  --background-image: none;
   --color: #000;
   --text-primary:  #000;
   --text-secondary:  #000;
   --accent:  #000;
   --common-font: 'EB Garamond', serif;
   --year: ' ' '1991!';
-  --h1-size: 4rem;
-  --h2-size: 3rem;
-  --h3-size: 2rem;
-  --h4-size: 1.5rem;
+  --h1-size: 1.5rem;
 }
 
 [data-theme-background="1992"] {
   --background: #E5E5E5;
-  --background-image: none;
   --color: #000;
   --text-primary:  #000;
   --text-secondary:  #000;
   --accent:  #000;
   --common-font: 'VT323', monospace;
   --year: ' ' '1992!';
-  --h1-size: 4rem;
-  --h2-size: 3rem;
-  --h3-size: 2rem;
-  --h4-size: 1.5rem;
+  --h1-size: 1.5rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.5rem;
 }
 
 [data-theme-background="2020"] {

@@ -1,5 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
+import Anchornav from "./components/Anchornav";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -16,11 +17,14 @@ const App = () => {
   };
 
   return (
-    <main
+    <div>
+      <Anchornav />
+      <main
       data-theme-color={color}
       data-theme-background={background}
       className="background"
     >
+
       <div className="wrapper flow">
         <h1>
           H1! It's the year <span className="varyear"></span>
@@ -62,11 +66,13 @@ const App = () => {
               value="2020"
               label="2020"
             />
-            <BackgroundInput backgroundColor="#15202b" color="#fff" value="dim" label="Dim" />
+            {/* <BackgroundInput backgroundColor="#15202b" color="#fff" value="dim" label="Dim" /> */}
           </div>
         </form>
       </div>
     </main>
+    </div>
+
   );
 };
 
