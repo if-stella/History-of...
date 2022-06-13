@@ -1,4 +1,6 @@
 @import "src/themes.scss";
+@tailwind components;
+@tailwind utilities;
 
 main {
   transition: font-size 0.25s ease-in, color 0.25s ease-in, background-color 0.25s ease-in;
@@ -42,9 +44,12 @@ h4 {
 .background {
   background-color: var(--background);
   background-image: var(--background-image);
-  backdrop-filter: var(--background-filter);
 }
 
 .varyear::after {
   content: var(--year);
+}
+
+.menu ul{
+ list-style: none;
 }
