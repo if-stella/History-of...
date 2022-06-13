@@ -4,18 +4,47 @@ main {
   transition: font-size 0.25s ease-in, color 0.25s ease-in, background-color 0.25s ease-in;
 }
 
-.size {
-  font-size: var(--size);
+p {
+  color: var(--text-primary);
+  font-family: var(--common-font);
+  font-size: var(--font-size);
+  margin: 0 auto;
 }
 
-.color-primary {
-  color: var(--color-primary);
+h1 {
+  color: var(--text-primary);
+  font-family: var(--common-font);
+  font-size: var(--h1-size);
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--text-primary);
+  font-family: var(--common-font);
+  font-size: var(--h2-size);
+  margin: 0 auto;
+}
+
+h3 {
+  color: var(--text-primary);
+  font-family: var(--common-font);
+  font-size: var(--h3-size);
+  margin: 0 auto;
+}
+
+h4 {
+  color: var(--text-primary);
+  font-family: var(--common-font);
+  font-size: var(--h4-size);
+  margin: 0 auto;
 }
 
 .background {
   background-color: var(--background);
+  background-image: var(--background-image);
+  backdrop-filter: var(--background-filter);
 }
 
-.color {
-  color: var(--color);
+.varyear::after {
+  content: var(--year);
 }

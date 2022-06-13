@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&display=swap');
+
 :root {
   --background: #ebebeb;
   --text-primary: rgb(0, 0, 0);
@@ -9,36 +11,71 @@
   --year-hint: ' ' '2022.';
 }
 
-[data-theme='1990'] {
-  --background: #000000;
+:root {
+  --background: #9e2d2d;
+  --text-primary: rgb(0, 0, 0);
+  --size: 1rem;
+}
+
+[data-theme-background="1990"] {
+  --background: #000;
+  --background-image: none;
+  --color: rgb(0, 117, 45);
   --text-primary: #3DFF1E;
   --text-secondary: #86ff74;
   --accent: #3DFF1E;
-  --border: #000000;
   --common-font: 'Press Start 2P', cursive;
-  --global-padding: 8px;
-  --year-hint: ' ' '1990.';
+  --year: ' ' '1990!';
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
 }
 
-:root {
-  --size: 1rem;
-  --color-primary: #1da1f2;
-  --background: #fff;
+[data-theme-background="1991"] {
+  --background: #ffffff;
+  --background-image: none;
   --color: #000;
+  --text-primary:  #000;
+  --text-secondary:  #000;
+  --accent:  #000;
+  --common-font: 'EB Garamond', serif;
+  --year: ' ' '1991!';
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
 }
 
-[data-theme-size="xs"] { --size: 0.8rem }
-[data-theme-size="sm"] { --size: 0.9rem }
-[data-theme-size="md"] { --size: 1.0rem }
-[data-theme-size="lg"] { --size: 1.1rem }
-[data-theme-size="xl"] { --size: 1.2rem }
+[data-theme-background="1992"] {
+  --background: #E5E5E5;
+  --background-image: none;
+  --color: #000;
+  --text-primary:  #000;
+  --text-secondary:  #000;
+  --accent:  #000;
+  --common-font: 'VT323', monospace;
+  --year: ' ' '1992!';
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
+}
 
-[data-theme-color="yellow"] { --color-primary: #ffad1f; }
-[data-theme-color="red"] { --color-primary: #e0255e; }
-[data-theme-color="purple"] { --color-primary: #794bc3; }
-[data-theme-color="orange"] { --color-primary: #f45e22; }
-[data-theme-color="green"] { --color-primary: #17bf63; }
+[data-theme-background="2020"] {
+  --background: #ffffff;
+  --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
+  --background-filter: blur(243.638px);
+  --color: #000;
+  --text-primary:  #000;
+  --text-secondary:  #000;
+  --accent:  #000;
+  --common-font: 'Space Grotesk', sans-serif;
+  --year: ' ' '2020!';
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
+}
 
-[data-theme-background="1990"] { --background: #000; --color: rgb(0, 248, 95); --color-primary: #0a8541;  --size: 0.8rem }
-[data-theme-background="dim"] { --background: #15202b; --color: #fff; }
 [data-theme-background="dark"] { --background: #000; --color: #d9d9d9; }
