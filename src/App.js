@@ -1,6 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
-import Anchornav from "./components/Anchornav";
+import Anchornav from "./components/Anchornav/Anchornav";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -9,7 +9,7 @@ const App = () => {
     background: "light",
   });
 
-  const { size, background, color } = theme;
+  const { background, color } = theme;
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -24,7 +24,6 @@ const App = () => {
       data-theme-background={background}
       className="background"
     >
-
       <div className="wrapper flow">
         <h1>
           H1! It's the year <span className="varyear"></span>
