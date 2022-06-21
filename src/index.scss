@@ -7,7 +7,7 @@
 
 @layer base {
   li {
-    @apply px-4;
+    @apply pr-4;
     @apply cursor-pointer
   }
 }
@@ -58,8 +58,4 @@ h4 {
 
 .varyear::after {
   content: var(--year);
-}
-
-.menu ul{
- list-style: none;
 }
