@@ -13,7 +13,7 @@ input {
 .wrapper {
   padding: 2rem;
   height:100vh;
-  margin-top:64px;
+  margin-top:72px;
 }
 
 .flow > * + * {
@@ -21,17 +21,15 @@ input {
 }
 
 .theme-background {
-  display: flex;
-  justify-content: space-between;
 
   & > * {
     width: 100%;
-    margin: 5px;
+    margin: 0.25rem;
   }
 }
 
 .theme-background-input {
-  height: 4em;
+  height: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
