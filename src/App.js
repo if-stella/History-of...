@@ -18,7 +18,6 @@ const App = () => {
 
   return (
     <div>
-      <Anchornav />
       <main
       data-theme-color={color}
       data-theme-background={background}
@@ -38,8 +37,9 @@ const App = () => {
           H4! It's the year <span className="varyear"></span>
         </h4>
         <p>I'm just a small paragraph, to check if everything is working properly...</p>
-        <form onChange={onChange}>
-          <div className="theme-background">
+      </div>
+      <form onChange={onChange}>
+          <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
             <BackgroundInput
               backgroundColor="#fff"
               color="#000"
@@ -62,13 +62,18 @@ const App = () => {
             <BackgroundInput
               backgroundColor="#fff"
               color="#000"
+              value="2014"
+              label="2014"
+            />
+            <BackgroundInput
+              backgroundColor="#fff"
+              color="#000"
               value="2020"
               label="2020"
             />
             {/* <BackgroundInput backgroundColor="#15202b" color="#fff" value="dim" label="Dim" /> */}
           </div>
         </form>
-      </div>
     </main>
     </div>
 

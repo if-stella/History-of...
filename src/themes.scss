@@ -51,10 +51,23 @@
   --h3-size: 1.5rem;
 }
 
+[data-theme-background="2014"] {
+  --background: #ffffff;
+  --color: #000;
+  --text-primary:  #000;
+  --text-secondary:  #000;
+  --accent:  #000;
+  --common-font: 'Roboto', sans-serif;
+  --year: ' ' '2014!';
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
+}
+
 [data-theme-background="2020"] {
   --background: #ffffff;
   --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
-  --background-filter: blur(243.638px);
   --color: #000;
   --text-primary:  #000;
   --text-secondary:  #000;
