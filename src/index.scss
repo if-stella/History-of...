@@ -38,10 +38,11 @@ h2 {
 }
 
 h3 {
-  color: var(--text-primary);
+  color: var(--accent);
   font-family: var(--common-font);
   font-size: var(--h3-size);
   margin: 0 auto;
+  text-decoration: var(--h3-deco);
 }
 
 h4 {
@@ -58,4 +59,21 @@ h4 {
 
 .varyear::after {
   content: var(--year);
+}
+
+.content-box {
+  display: var(--cnt-behaviour);
+  flex-direction:  var(--cnt-flx-dir);
+  background: var(--cnt-back);
+  gap: var(--cnt-gap);
+}
+
+.content-box span:nth-of-type(1){
+  width: var(--cnt-first-w);
+  background: var(--cnt-first-c);
+}
+
+.content-box span:nth-of-type(2){
+  background: var(--cnt-second-c);
+  margin-left: var(--cnt-second-ml);
 }

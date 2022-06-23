@@ -25,18 +25,26 @@ const App = () => {
     >
       <div className="wrapper flow">
         <h1>
-          H1! It's the year <span className="varyear"></span>
+          Stella's Portfolio
         </h1>
         <h2>
-          H2! It's the year <span className="varyear"></span>
+          EST <span className="varyear"></span>
         </h2>
-        <h3>
-          H3! It's the year <span className="varyear"></span>
-        </h3>
-        <h4>
-          H4! It's the year <span className="varyear"></span>
-        </h4>
-        <p>I'm just a small paragraph, to check if everything is working properly...</p>
+        <p>
+          It's the year <span className="varyear"></span>. My name is My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).
+        </p>
+        <div className="content-box">
+          <span><h3>Content I</h3></span>
+          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+        </div>
+        <div className="content-box">
+          <span><h3>Content II</h3></span>
+          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+        </div>
+        <div className="content-box">
+          <span><h3>Content III</h3></span>
+          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+        </div>
       </div>
       <form onChange={onChange}>
           <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
@@ -71,7 +79,6 @@ const App = () => {
               value="2020"
               label="2020"
             />
-            {/* <BackgroundInput backgroundColor="#15202b" color="#fff" value="dim" label="Dim" /> */}
           </div>
         </form>
     </main>
@@ -95,7 +102,6 @@ const BackgroundInput = ({ backgroundColor, color, value, label, defaultChecked 
         id={value}
         name="background"
         value={value}
-        defaultChecked={defaultChecked}
       />
       <b>{label}</b>
     </span>
