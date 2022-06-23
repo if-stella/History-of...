@@ -8,7 +8,6 @@
   --border: #e6e6e6;
   --common-font: 'Roboto', sans-serif;
   --global-padding: 80px;
-  --year-hint: ' ' '2022.';
 }
 
 :root {
@@ -24,18 +23,25 @@
   --text-secondary: #86ff74;
   --accent: #3DFF1E;
   --common-font: 'Press Start 2P', cursive;
-  --year: ' ' '1990!';
+  --year: ' ' '1990';
+  --cnt-behaviour: flex;
+  --cnt-gap: 16px;
+  --cnt-flx-dir: row;
+  --cnt-first-w: 240px;
 }
 
 [data-theme-background="1991"] {
   --background: #ffffff;
-  --color: #000;
   --text-primary:  #000;
-  --text-secondary:  #000;
-  --accent:  #000;
+  --accent:  #0000EF;
   --common-font: 'EB Garamond', serif;
-  --year: ' ' '1991!';
+  --year: ' ' '1991';
   --h1-size: 1.5rem;
+  --h3-deco: underline;
+  --cnt-behaviour: flex;
+  --cnt-gap: 0px;
+  --cnt-flx-dir: column;
+  --cnt-second-ml: 24px;
 }
 
 [data-theme-background="1992"] {
@@ -45,7 +51,7 @@
   --text-secondary:  #000;
   --accent:  #000;
   --common-font: 'VT323', monospace;
-  --year: ' ' '1992!';
+  --year: ' ' '1992';
   --h1-size: 1.5rem;
   --h2-size: 1.5rem;
   --h3-size: 1.5rem;
@@ -58,7 +64,7 @@
   --text-secondary:  #000;
   --accent:  #000;
   --common-font: 'Roboto', sans-serif;
-  --year: ' ' '2014!';
+  --year: ' ' '2014';
   --h1-size: 4rem;
   --h2-size: 3rem;
   --h3-size: 2rem;
