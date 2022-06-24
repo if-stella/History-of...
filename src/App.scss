@@ -11,13 +11,23 @@ input {
 }
 
 .wrapper {
-  padding: 2rem;
   height:100vh;
   margin-top:72px;
+  background:greenyellow;
 }
 
-.flow > * + * {
+.wrapper > * + * {
   margin-top: 0.5em;
+  padding: var(--global-padding);
+}
+
+.main-content {
+  background:red;
+  padding: 2rem;
+}
+
+.main-content > * + * {
+  background:coral;
 }
 
 .theme-background {

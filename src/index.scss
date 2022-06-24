@@ -52,6 +52,11 @@ h4 {
   margin: 0 auto;
 }
 
+.p-small {
+  font-size: var(--p-small-size);
+  text-align: var(--p-small-align);
+}
+
 .background {
   background-color: var(--background);
   background-image: var(--background-image);
@@ -59,6 +64,19 @@ h4 {
 
 .varyear::after {
   content: var(--year);
+}
+
+.head-area {
+  display: var(--head-behaviour);
+  flex-direction:  var(--head-flx-dir);
+  background: var(--head-back);
+  gap: var(--head-gap);
+}
+
+.head-image {
+  background-image: var(--hImgSrc);
+  width: var(--hImgW);
+  height: var(--hImgH);
 }
 
 .content-box {

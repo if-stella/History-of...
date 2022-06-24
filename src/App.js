@@ -23,27 +23,40 @@ const App = () => {
       data-theme-background={background}
       className="background"
     >
-      <div className="wrapper flow">
-        <h1>
-          Stella's Portfolio
-        </h1>
-        <h2>
-          EST <span className="varyear"></span>
-        </h2>
-        <p>
-          It's the year <span className="varyear"></span>. My name is My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).
-        </p>
-        <div className="content-box">
-          <span><h3>Content I</h3></span>
-          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+      <div className="wrapper">
+        <div className="main-content">
+          <div className="head-area">
+            <div className="head-image">
+            </div>
+            <div className="headlines">
+              <h1>
+                Stella's Portfolio
+              </h1>
+              <h2>
+                EST <span className="varyear"></span>
+              </h2>
+            </div>
+          </div>
+          <p>
+            It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).
+          </p>
+          <div className="boxes">
+            <div className="content-box">
+              <span><h3>Content I</h3></span>
+              <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+            </div>
+            <div className="content-box">
+              <span><h3>Content II</h3></span>
+              <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+            </div>
+            <div className="content-box">
+              <span><h3>Content III</h3></span>
+              <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+            </div>
+          </div>
         </div>
-        <div className="content-box">
-          <span><h3>Content II</h3></span>
-          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
-        </div>
-        <div className="content-box">
-          <span><h3>Content III</h3></span>
-          <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
+        <div className="footer">
+          <p className="p-small">Made with Love by Stella Raab in <span className="varyear"></span></p>
         </div>
       </div>
       <form onChange={onChange}>
