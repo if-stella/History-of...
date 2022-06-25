@@ -56,7 +56,7 @@ const App = () => {
           </div>
         </div>
         <div className="footer">
-          <p className="p-small">Made with Love by Stella Raab in <span className="varyear"></span></p>
+          <p className="p-small">© Made with Love by Stella Raab in <span className="varyear"></span></p>
         </div>
       </div>
       <form onChange={onChange}>
