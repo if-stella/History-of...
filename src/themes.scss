@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&display=swap');
 
 :root {
-  --background: #ebebeb;
-  --text-primary: rgb(0, 0, 0);
-  --text-secondary: #000b23;
-  --accent: #0C38DD;
-  --border: #e6e6e6;
-  --common-font: 'Roboto', sans-serif;
-  --global-padding: 80px;
-}
-
-:root {
-  --background: #e6f8ff;
-  --text-primary: rgb(0, 0, 0);
-  --size: 1rem;
+  --background: teal;
+  --text-primary: yellow;
+  --text-secondary: orange;
+  --accent: red;
+  --common-font: 'Space Grotesk', sans-serif;
+  --global-padding: 3rem 6rem;
+  --global-mt: 1rem;
 }
 
 [data-theme-background="1990"] {
@@ -29,7 +23,8 @@
   --cnt-gap: 16px;
   --cnt-flx-dir: row;
   --cnt-first-w: 240px;
-  --global-padding: 16px;
+  --global-padding: 1rem;
+  --global-mt: 0.5rem;
 }
 
 [data-theme-background="1991"] {
@@ -45,7 +40,8 @@
   --cnt-gap: 0px;
   --cnt-flx-dir: column;
   --cnt-second-ml: 24px;
-  --global-padding: 32px;
+  --global-padding: 2rem;
+  --global-mt: 1rem;
 }
 
 [data-theme-background="1992"] {
@@ -63,7 +59,7 @@
   --hImgH: 84px;
   --head-behaviour: flex;
   --head-gap: 16px;
-  --global-padding: 40px;
+  --global-padding: 2rem;
 }
 
 [data-theme-background="2014"] {

@@ -12,22 +12,22 @@ input {
 
 .wrapper {
   height:100vh;
-  margin-top:72px;
-  background:greenyellow;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .wrapper > * + * {
-  margin-top: 0.5em;
   padding: var(--global-padding);
 }
 
 .main-content {
-  background:red;
-  padding: 2rem;
+  margin-top:72px;
+  padding: var(--global-padding);
 }
 
 .main-content > * + * {
-  background:coral;
+  margin-top: var(--global-mt);
 }
 
 .theme-background {
