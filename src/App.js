@@ -26,8 +26,7 @@ const App = () => {
       <div className="wrapper">
         <div className="main-content">
           <div className="head-area">
-            <div className="head-image">
-            </div>
+            <div className="head-image"></div>
             <div className="headlines">
               <h1>
                 Stella's Portfolio
@@ -56,7 +55,9 @@ const App = () => {
           </div>
         </div>
         <div className="footer">
+          <div className="footer-image"></div>
           <p className="p-small">© Made with Love by Stella Raab in <span className="varyear"></span></p>
+          <span className="p-small footer-links">Impress Contact Privacy</span>
         </div>
       </div>
       <form onChange={onChange}>
