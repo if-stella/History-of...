@@ -12,9 +12,8 @@
 
 [data-theme-background="1990"] {
   --background: #000;
-  --color: rgb(0, 117, 45);
   --text-primary: #3DFF1E;
-  --text-secondary: #86ff74;
+  --text-secondary:  #3DFF1E;
   --p-small-align: center;
   --accent: #3DFF1E;
   --common-font: 'Press Start 2P', cursive;
@@ -25,11 +24,13 @@
   --cnt-first-w: 240px;
   --global-padding: 1rem;
   --global-mt: 0.5rem;
+  --foot-li-show: none;
 }
 
 [data-theme-background="1991"] {
   --background: #ffffff;
   --text-primary:  #000;
+  --text-secondary:  #000;
   --accent:  #0000EF;
   --common-font: 'EB Garamond', serif;
   --year: ' ' '1991';
@@ -42,6 +43,7 @@
   --cnt-second-ml: 24px;
   --global-padding: 2rem;
   --global-mt: 1rem;
+  --foot-li-show: none;
 }
 
 [data-theme-background="1992"] {
@@ -60,20 +62,29 @@
   --head-behaviour: flex;
   --head-gap: 16px;
   --global-padding: 2rem;
+  --foot-li-show: none;
 }
 
 [data-theme-background="2014"] {
-  --background: #ffffff;
-  --color: #000;
+  --background: #fff;
   --text-primary:  #000;
-  --text-secondary:  #000;
+  --text-secondary:  #fff;
   --accent:  #000;
   --common-font: 'Roboto', sans-serif;
+  --global-padding: 1rem;
+  --global-mt: 0.5rem;
   --year: ' ' '2014';
+  --fImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-logo_au9wmq.png);
+  --fImgW: 84px;
+  --fImgH: 41px;
   --h1-size: 4rem;
   --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
+  --foot-behave: flex;
+  --foot-flx-just:space-between;
+  --foot-flx-align:center;
+  --foot-back:#444444;
 }
 
 [data-theme-background="2020"] {

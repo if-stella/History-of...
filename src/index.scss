@@ -55,6 +55,7 @@ h4 {
 .p-small {
   font-size: var(--p-small-size);
   text-align: var(--p-small-align);
+  color: var(--text-secondary);
 }
 
 .background {
@@ -94,4 +95,22 @@ h4 {
 .content-box span:nth-of-type(2){
   background: var(--cnt-second-c);
   margin-left: var(--cnt-second-ml);
+}
+
+.footer {
+  display: var(--foot-behave);
+  flex-direction:  var(--foot-flx-dir);
+  justify-content: var(--foot-flx-just);
+  align-items: var(--foot-flx-align);
+  background: var(--foot-back);
+}
+
+.footer-image {
+  background-image: var(--fImgSrc);
+  width: var(--fImgW);
+  height: var(--fImgH);
+}
+
+.footer-links {
+  display: var(--foot-li-show);
 }
