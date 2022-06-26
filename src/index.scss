@@ -27,6 +27,7 @@ h1 {
   color: var(--text-primary);
   font-family: var(--common-font);
   font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
   margin: 0 auto;
 }
 
@@ -41,6 +42,7 @@ h3 {
   color: var(--accent);
   font-family: var(--common-font);
   font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
   margin: 0 auto;
   text-decoration: var(--h3-deco);
 }
@@ -58,9 +60,22 @@ h4 {
   color: var(--text-secondary);
 }
 
+.default-content {
+  display: var(--default-display);
+}
+
+.styled-content {
+  display: var(--styled-display);
+}
+
+
 .background {
   background-color: var(--background);
   background-image: var(--background-image);
+}
+
+.intro {
+  padding:var(--intro-pad);
 }
 
 .varyear::after {
@@ -70,7 +85,6 @@ h4 {
 .head-area {
   display: var(--head-behaviour);
   flex-direction:  var(--head-flx-dir);
-  background: var(--head-back);
   gap: var(--head-gap);
 }
 
@@ -80,11 +94,60 @@ h4 {
   height: var(--hImgH);
 }
 
+.headlines {
+  padding: var(--head-pad);
+  background: var(--head-back);
+}
+
+.boxes {
+  display: var(--boxes--flx-beh);
+  flex-direction:  var(--boxes-flx-dir);
+  gap: var(--boxes-flex-gap);
+  justify-content: var(--boxes-flex-jus);
+  padding: var(--boxes-pad);
+}
+
+.content-box:nth-child(1) {
+  background: var(--conI-back);
+}
+
+.content-box:nth-child(2) {
+  background: var(--conII-back);
+}
+
+.content-box:nth-child(3) {
+  background: var(--conIII-back);
+}
+
 .content-box {
   display: var(--cnt-behaviour);
   flex-direction:  var(--cnt-flx-dir);
   background: var(--cnt-back);
   gap: var(--cnt-gap);
+  padding:var(--cnt-pad);
+  text-align: var(--cnt-txt-ali);
+  align-items:var(--cnt-ali-its);
+
+  p {
+    color: var(--text-secondary);
+  }
+}
+
+.cbox-image {
+  width: var(--cbi-W);
+  height: var(--cbi-H);
+}
+
+.cbi-I {
+  background-image: var(--cbi-I);
+}
+
+.cbi-II {
+  background-image: var(--cbi-II);
+}
+
+.cbi-III {
+  background-image: var(--cbi-III);
 }
 
 .content-box span:nth-of-type(1){
@@ -103,6 +166,7 @@ h4 {
   justify-content: var(--foot-flx-just);
   align-items: var(--foot-flx-align);
   background: var(--foot-back);
+  padding: var(--foot-pad);
 }
 
 .footer-image {

@@ -2,15 +2,20 @@
 
 :root {
   --background: teal;
-  --text-primary: yellow;
+  --text-primary: black;
   --text-secondary: orange;
   --accent: red;
+  --default-display:block;
   --common-font: 'Space Grotesk', sans-serif;
   --global-padding: 3rem 6rem;
   --global-mt: 1rem;
+  --styled-display: none;
+  --foot-li-show:none;
+  --cnt-behaviour:none;
 }
 
 [data-theme-background="1990"] {
+  --default-display:none;
   --background: #000;
   --text-primary: #3DFF1E;
   --text-secondary:  #3DFF1E;
@@ -19,15 +24,18 @@
   --common-font: 'Press Start 2P', cursive;
   --year: ' ' '1990';
   --cnt-behaviour: flex;
-  --cnt-gap: 16px;
+  --cnt-gap: 0px;
   --cnt-flx-dir: row;
-  --cnt-first-w: 240px;
+  --cnt-first-w: 260px;
   --global-padding: 1rem;
   --global-mt: 0.5rem;
   --foot-li-show: none;
+  --boxes--flx-beh:block;
+  --styled-display: block;
 }
 
 [data-theme-background="1991"] {
+  --default-display:none;
   --background: #ffffff;
   --text-primary:  #000;
   --text-secondary:  #000;
@@ -44,9 +52,11 @@
   --global-padding: 2rem;
   --global-mt: 1rem;
   --foot-li-show: none;
+  --styled-display: block;
 }
 
 [data-theme-background="1992"] {
+  --default-display:none;
   --background: #E5E5E5;
   --color: #000;
   --text-primary:  #000;
@@ -63,31 +73,63 @@
   --head-gap: 16px;
   --global-padding: 2rem;
   --foot-li-show: none;
+  --styled-display: block;
+  --cnt-behaviour:block;
 }
 
 [data-theme-background="2014"] {
+  --styled-display: block;
+  --default-display:none;
   --background: #fff;
   --text-primary:  #000;
   --text-secondary:  #fff;
-  --accent:  #000;
+  --accent:  #fff;
   --common-font: 'Roboto', sans-serif;
-  --global-padding: 1rem;
-  --global-mt: 0.5rem;
+  --global-padding: 0rem;
+  --global-mt: 1rem;
   --year: ' ' '2014';
   --fImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-logo_au9wmq.png);
   --fImgW: 84px;
   --fImgH: 41px;
   --h1-size: 4rem;
+  --h1-weight: bold;
   --h2-size: 3rem;
-  --h3-size: 2rem;
+  --h3-size: 1.5rem;
+  --h3-weight:bold;
   --h4-size: 1.5rem;
   --foot-behave: flex;
   --foot-flx-just:space-between;
   --foot-flx-align:center;
   --foot-back:#444444;
+  --boxes--flx-beh:flex;
+  --boxes-flx-dir: row;
+  --intro-pad: 1rem 4em;
+  --boxes-flex-jus: space-between;
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --cnt-gap:0.5em;
+  --cnt-ali-its:center;
+  --cnt-txt-ali:center;
+  --box-flx-ali: center;
+  --cnt-pad: 2em;
+  --conI-back:#FFCD40;
+  --conII-back:#FF0B3B;
+  --conIII-back:#2C0EAC;
+  --boxes-flex-gap: 2em;
+  --cbi-W: 100px;
+  --cbi-H: 100px;
+  --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-I_fflmi1.png);
+  --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-II_stcfu9.png);
+  --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-III_dimoao.png);
+  --foot-li-show:block;
+  --head-pad: 1rem 4em;
+  --head-back: #FFCD40;
+  --boxes-pad:0rem 4em;
+  --foot-pad: 0.5rem 4em;
 }
 
 [data-theme-background="2020"] {
+  --default-display:none;
   --background: #ffffff;
   --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
   --color: #000;
