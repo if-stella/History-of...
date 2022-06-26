@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&display=swap');
 
 :root {
-  --background: teal;
-  --text-primary: black;
-  --text-secondary: orange;
-  --accent: red;
+  --background: white;
+  --h1-color: gray;
+  --p-color: darkgrey;
   --default-display:block;
   --common-font: 'Space Grotesk', sans-serif;
   --global-padding: 3rem 6rem;
@@ -12,15 +11,23 @@
   --styled-display: none;
   --foot-li-show:none;
   --cnt-behaviour:none;
+  --h1-size:4rem;
+  --h1-weight:bold;
+  --h1-lheight: 4.5rem;
 }
 
 [data-theme-background="1990"] {
+  --h1-size:1rem;
+  --h1-lheight: 1rem;
+  --h1-color: #3DFF1E;
+  --h2-color: #3DFF1E;
+  --h3-color: #3DFF1E;
+  --p-color: #3DFF1E;
+  --ps-color: #3DFF1E;
+  --contxt-color: #3DFF1E;
   --default-display:none;
   --background: #000;
-  --text-primary: #3DFF1E;
-  --text-secondary:  #3DFF1E;
   --p-small-align: center;
-  --accent: #3DFF1E;
   --common-font: 'Press Start 2P', cursive;
   --year: ' ' '1990';
   --cnt-behaviour: flex;
@@ -36,13 +43,17 @@
 
 [data-theme-background="1991"] {
   --default-display:none;
+  --h1-color: #000;
+  --h2-color: #000;
+  --h3-color: #0000EF;
+  --p-color: #000;
+  --ps-color: #000;
+  --contxt-color: #000;
   --background: #ffffff;
-  --text-primary:  #000;
-  --text-secondary:  #000;
-  --accent:  #0000EF;
   --common-font: 'EB Garamond', serif;
   --year: ' ' '1991';
   --h1-size: 1.5rem;
+  --h1-lheight: 1.5rem;
   --h3-deco: underline;
   --p-small-align: center;
   --cnt-behaviour: flex;
@@ -58,13 +69,16 @@
 [data-theme-background="1992"] {
   --default-display:none;
   --background: #E5E5E5;
-  --color: #000;
-  --text-primary:  #000;
-  --text-secondary:  #000;
-  --accent:  #000;
+  --h1-color: #000;
+  --h2-color: #000;
+  --h3-color: #000;
+  --p-color: #000;
+  --ps-color: #000;
+  --contxt-color: #000;
   --common-font: 'VT323', monospace;
   --year: ' ' '1992';
   --h1-size: 1.5rem;
+  --h1-lheight: 1.5rem;
   --h3-deco: underline dashed 2px;
   --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656055005/History%20of%20webdesign/1992_header-img_gnenct.png);
   --hImgW: 63px;
@@ -77,13 +91,57 @@
   --cnt-behaviour:block;
 }
 
+[data-theme-background="1996"] {
+  --default-display:none;
+  --styled-display: block;
+  --background: #000;
+  --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656271968/History%20of%20webdesign/1996-bg-tile_s4erz5.png);
+  --background-repeat:repeat;
+  --h1-color: #fff;
+  --h2-color: #fff;
+  --h3-color: #000;
+  --p-color: #fff;
+  --ps-color: #fff;
+  --contxt-color: #000;
+  --common-font: 'EB Garamond', serif;
+  --year: ' ' '1996';
+  --h1-size: 4rem;
+  --h1-weight: bold;
+  --h1-lheight: 4rem;
+  --h2-size: 2rem;
+  --h2-weight: bold;
+  --h3-size: 1.5rem;
+  --h3-weight: bold;
+  --boxes--flx-beh:flex;
+  --boxes-flx-dir: row;
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --cbi-W: 40px;
+  --cbi-H: 40px;
+  --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-I_srhtpb.png);
+  --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-II_tciyhp.png);
+  --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-III_wghqbn.png);
+  --cnt-gap: 0.25em;
+  --boxes-flex-gap: 1em;
+  --conI-back:#FFF;
+  --conII-back:#FFF;
+  --conIII-back:#FFF;
+  --cnt-pad:1em;
+  --border-sunken-outer: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
+  --border-sunken-inner: inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+
 [data-theme-background="2014"] {
   --styled-display: block;
   --default-display:none;
   --background: #fff;
-  --text-primary:  #000;
-  --text-secondary:  #fff;
-  --accent:  #fff;
+  --h1-color: #fff;
+  --h2-color: #fff;
+  --h3-color: #fff;
+  --p-color: #000;
+  --ps-color: #fff;
+  --contxt-color: #fff;
   --common-font: 'Roboto', sans-serif;
   --global-padding: 0rem;
   --global-mt: 1rem;
@@ -91,9 +149,10 @@
   --fImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-logo_au9wmq.png);
   --fImgW: 84px;
   --fImgH: 41px;
-  --h1-size: 4rem;
+  --h1-size: 3rem;
   --h1-weight: bold;
-  --h2-size: 3rem;
+  --h1-lheight: 3rem;
+  --h2-size: 2rem;
   --h3-size: 1.5rem;
   --h3-weight:bold;
   --h4-size: 1.5rem;
@@ -122,26 +181,31 @@
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-II_stcfu9.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-III_dimoao.png);
   --foot-li-show:block;
-  --head-pad: 1rem 4em;
-  --head-back: #FFCD40;
-  --boxes-pad:0rem 4em;
-  --foot-pad: 0.5rem 4em;
+  --head-pad: 1rem 4rem;
+  --head-back: #2C0EAC;
+  --boxes-pad: 0rem 4rem;
+  --foot-pad: 0.5rem 4rem;
+  --p-small-size: 0.75rem;
 }
 
 [data-theme-background="2020"] {
   --default-display:none;
+  --styled-display: block;
   --background: #ffffff;
   --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
-  --color: #000;
-  --text-primary:  #000;
-  --text-secondary:  #000;
-  --accent:  #000;
+  --h1-color: #000;
+  --h2-color: rgb(53, 53, 53);
+  --h3-color: rgb(53, 53, 53);
+  --p-color: rgb(53, 53, 53);
+  --ps-color: rgb(53, 53, 53);
+  --contxt-color: rgb(53, 53, 53);
   --common-font: 'Space Grotesk', sans-serif;
-  --year: ' ' '2020!';
+  --year: ' ' '2020';
   --h1-size: 4rem;
   --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
+  --p-small-size: 0.75rem;
 }
 
 [data-theme-background="dark"] { --background: #000; --color: #d9d9d9; }

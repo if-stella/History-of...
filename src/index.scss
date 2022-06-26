@@ -17,29 +17,31 @@ main {
 }
 
 p {
-  color: var(--text-primary);
+  color: var(--p-color);
   font-family: var(--common-font);
   font-size: var(--font-size);
   margin: 0 auto;
 }
 
 h1 {
-  color: var(--text-primary);
+  color: var(--h1-color);
   font-family: var(--common-font);
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
+  line-height: var(--h1-lheight);
   margin: 0 auto;
 }
 
 h2 {
-  color: var(--text-primary);
+  color: var(--h2-color);
   font-family: var(--common-font);
   font-size: var(--h2-size);
   margin: 0 auto;
+  font-weight: var(--h2-weight);
 }
 
 h3 {
-  color: var(--accent);
+  color: var(--h3-color);
   font-family: var(--common-font);
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
@@ -48,7 +50,7 @@ h3 {
 }
 
 h4 {
-  color: var(--text-primary);
+  color: var(--h4-color);
   font-family: var(--common-font);
   font-size: var(--h4-size);
   margin: 0 auto;
@@ -57,7 +59,7 @@ h4 {
 .p-small {
   font-size: var(--p-small-size);
   text-align: var(--p-small-align);
-  color: var(--text-secondary);
+  color: var(--ps-color);
 }
 
 .default-content {
@@ -71,6 +73,7 @@ h4 {
 
 .background {
   background-color: var(--background);
+  background-repeat: var(--background-repeat);
   background-image: var(--background-image);
 }
 
@@ -105,6 +108,7 @@ h4 {
   gap: var(--boxes-flex-gap);
   justify-content: var(--boxes-flex-jus);
   padding: var(--boxes-pad);
+  background: var(--box-back);
 }
 
 .content-box:nth-child(1) {
@@ -122,14 +126,14 @@ h4 {
 .content-box {
   display: var(--cnt-behaviour);
   flex-direction:  var(--cnt-flx-dir);
-  background: var(--cnt-back);
   gap: var(--cnt-gap);
   padding:var(--cnt-pad);
   text-align: var(--cnt-txt-ali);
   align-items:var(--cnt-ali-its);
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
 
   p {
-    color: var(--text-secondary);
+    color: var(--contxt-color);
   }
 }
 
@@ -152,11 +156,9 @@ h4 {
 
 .content-box span:nth-of-type(1){
   width: var(--cnt-first-w);
-  background: var(--cnt-first-c);
 }
 
 .content-box span:nth-of-type(2){
-  background: var(--cnt-second-c);
   margin-left: var(--cnt-second-ml);
 }
 
