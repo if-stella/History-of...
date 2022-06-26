@@ -26,12 +26,12 @@ const App = () => {
       <div className="wrapper">
         <div className="main-content">
           <div className="default-content">
-            <h1>I'm the default text. I only get shown at the beginning!</h1>
-            <p>And I describe why it is like this.</p>
+            <h1>Hey there.</h1>
+            <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
           </div>
-          <div className="head-area styled-content">
+          <div className="head-area">
             <div className="head-image"></div>
-            <div className="headlines">
+            <div className="headlines styled-content">
               <h1>
                 Stella's Portfolio
               </h1>
@@ -87,6 +87,12 @@ const App = () => {
               color="#000"
               value="1992"
               label="1992"
+            />
+            <BackgroundInput
+              backgroundColor="#fff"
+              color="#000"
+              value="1996"
+              label="1996"
             />
             <BackgroundInput
               backgroundColor="#fff"
