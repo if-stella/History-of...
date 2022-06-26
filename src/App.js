@@ -25,7 +25,11 @@ const App = () => {
     >
       <div className="wrapper">
         <div className="main-content">
-          <div className="head-area">
+          <div className="default-content">
+            <h1>I'm the default text. I only get shown at the beginning!</h1>
+            <p>And I describe why it is like this.</p>
+          </div>
+          <div className="head-area styled-content">
             <div className="head-image"></div>
             <div className="headlines">
               <h1>
@@ -36,29 +40,32 @@ const App = () => {
               </h2>
             </div>
           </div>
-          <p>
-            It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).
-          </p>
+          <p className="styled-content intro">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
           <div className="boxes">
             <div className="content-box">
+              <div className="cbox-image cbi-I"></div>
               <span><h3>Content I</h3></span>
               <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
             </div>
             <div className="content-box">
+              <div className="cbox-image cbi-II"></div>
               <span><h3>Content II</h3></span>
               <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
             </div>
             <div className="content-box">
+              <div className="cbox-image cbi-III"></div>
               <span><h3>Content III</h3></span>
               <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="footer-image"></div>
-          <p className="p-small">© Made with Love by Stella Raab in <span className="varyear"></span></p>
-          <span className="p-small footer-links">Impress Contact Privacy</span>
-        </div>
+        <div>
+          <div className="footer">
+            <div className="footer-image"></div>
+            <p className="p-small styled-content">© Made with Love by Stella Raab in <span className="varyear"></span></p>
+            <span className="p-small footer-links">Impress Contact Privacy</span>
+          </div>
+          </div>
       </div>
       <form onChange={onChange}>
           <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
