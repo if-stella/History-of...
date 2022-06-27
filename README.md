@@ -1,4 +1,4 @@
-![History of Webdesign](https://res.cloudinary.com/dr24t0rw2/image/upload/v1656325710/preview_imbbbf.png)
+![History of Webdesign](https://res.cloudinary.com/dr24t0rw2/image/upload/v1656325795/Group_42_cfy11h.png)
 
 ### What am I?
 
