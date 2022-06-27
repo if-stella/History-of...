@@ -22,8 +22,12 @@ input {
 }
 
 .main-content {
-  margin-top:72px;
+  margin:var(--1992-margin);
+  margin-top:var(--main-margin-top);
   padding: var(--global-padding);
+  border:var(--1992-border);
+  background: var(--main-bg);
+  box-shadow: var(--main-border-sunk-out), var(--main-border-sunk-in);
 }
 
 .main-content > * + * {

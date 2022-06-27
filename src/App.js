@@ -58,14 +58,14 @@ const App = () => {
               <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
             </div>
           </div>
-        </div>
-        <div>
           <div className="footer">
             <div className="footer-image"></div>
-            <p className="p-small styled-content">© Made with Love by Stella Raab in <span className="varyear"></span></p>
-            <span className="p-small footer-links">Impress Contact Privacy</span>
+              <p className="p-small styled-content">© Made with Love by Stella Raab in <span className="varyear"></span></p>
+              <span className="p-small footer-links">Impress Contact Privacy</span>
+            </div>
           </div>
-          </div>
+        </div>
+      <div>
       </div>
       <form onChange={onChange}>
           <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">

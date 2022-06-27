@@ -6,7 +6,7 @@
   --p-color: darkgrey;
   --default-display:block;
   --common-font: 'Space Grotesk', sans-serif;
-  --global-padding: 3rem 6rem;
+  --global-padding: 1rem;
   --global-mt: 1rem;
   --styled-display: none;
   --foot-li-show:none;
@@ -14,6 +14,7 @@
   --h1-size:4rem;
   --h1-weight:bold;
   --h1-lheight: 4.5rem;
+  --main-margin-top:80px;
 }
 
 [data-theme-background="1990"] {
@@ -39,6 +40,7 @@
   --foot-li-show: none;
   --boxes--flx-beh:block;
   --styled-display: block;
+  --foot-pos-b: 1rem;
 }
 
 [data-theme-background="1991"] {
@@ -64,16 +66,21 @@
   --global-mt: 1rem;
   --foot-li-show: none;
   --styled-display: block;
+  --foot-pos-b: 2rem;
 }
 
 [data-theme-background="1992"] {
   --default-display:none;
-  --background: #E5E5E5;
+  --background: #CCC;
+  --main-bg: #E5E5E5;
   --h1-color: #000;
   --h2-color: #000;
   --h3-color: #000;
   --p-color: #000;
   --ps-color: #000;
+  --global-padding: 10px;
+  --main-margin-top:90px;
+  --1992-margin:10px;
   --contxt-color: #000;
   --common-font: 'VT323', monospace;
   --year: ' ' '1992';
@@ -85,10 +92,11 @@
   --hImgH: 84px;
   --head-behaviour: flex;
   --head-gap: 16px;
-  --global-padding: 2rem;
   --foot-li-show: none;
   --styled-display: block;
   --cnt-behaviour:block;
+  --main-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
+  --main-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
 
 [data-theme-background="1996"] {
@@ -105,30 +113,38 @@
   --contxt-color: #000;
   --common-font: 'EB Garamond', serif;
   --year: ' ' '1996';
-  --h1-size: 4rem;
+  --h1-size: 3.5rem;
   --h1-weight: bold;
-  --h1-lheight: 4rem;
-  --h2-size: 2rem;
+  --h1-lheight: 3.5rem;
+  --h2-size: 1.5rem;
   --h2-weight: bold;
-  --h3-size: 1.5rem;
+  --h3-size: 1.25rem;
   --h3-weight: bold;
+  --intro-mw: 60%;
+  --head-align: center;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cbi-W: 40px;
   --cbi-H: 40px;
+  --cbi-pos:absolute;
+  --cbi-pos-r:1rem;
+  --cbi-pos-t:0.5rem;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-I_srhtpb.png);
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-II_tciyhp.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656266630/History%20of%20webdesign/1996-content-III_wghqbn.png);
-  --cnt-gap: 0.25em;
-  --boxes-flex-gap: 1em;
+  --cnt-gap: 1em;
+  --boxes-flex-gap: 2em;
   --conI-back:#FFF;
   --conII-back:#FFF;
   --conIII-back:#FFF;
   --cnt-pad:1em;
-  --border-sunken-outer: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
-  --border-sunken-inner: inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  --boxes-pad: 2rem 0rem;
+  --p-small-align: center;
+  --box-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
+  --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  --foot-pos-b: 0.5rem;
 }
 
 
@@ -139,12 +155,12 @@
   --h1-color: #fff;
   --h2-color: #fff;
   --h3-color: #fff;
-  --p-color: #000;
+  --p-color: #fff;
   --ps-color: #fff;
   --contxt-color: #fff;
   --common-font: 'Roboto', sans-serif;
   --global-padding: 0rem;
-  --global-mt: 1rem;
+  --global-mt: 0rem;
   --year: ' ' '2014';
   --fImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-logo_au9wmq.png);
   --fImgW: 84px;
@@ -162,7 +178,10 @@
   --foot-back:#444444;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
-  --intro-pad: 1rem 4em;
+  --head-pad: 2rem 4rem 0rem 4rem;
+  --head-back: #2C0EAC;
+  --intro-pad: 0rem 4rem 2rem 4rem;
+  --intro-back:#2C0EAC;
   --boxes-flex-jus: space-between;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
@@ -181,11 +200,11 @@
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-II_stcfu9.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-III_dimoao.png);
   --foot-li-show:block;
-  --head-pad: 1rem 4rem;
-  --head-back: #2C0EAC;
-  --boxes-pad: 0rem 4rem;
+  --boxes-pad: 2rem 4rem;
   --foot-pad: 0.5rem 4rem;
   --p-small-size: 0.75rem;
+  --foot-w:100%;
+  --foot-pos-b: 0rem;
 }
 
 [data-theme-background="2020"] {
@@ -206,6 +225,8 @@
   --h3-size: 2rem;
   --h4-size: 1.5rem;
   --p-small-size: 0.75rem;
+  --foot-pos-b: 1rem;
+  --foot-pos-r: 1rem;
 }
 
 [data-theme-background="dark"] { --background: #000; --color: #d9d9d9; }
