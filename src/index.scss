@@ -79,6 +79,9 @@ h4 {
 
 .intro {
   padding:var(--intro-pad);
+  max-width: var(--intro-mw);
+  width: var(--intro-w);
+  background: var(--intro-back);
 }
 
 .varyear::after {
@@ -100,6 +103,7 @@ h4 {
 .headlines {
   padding: var(--head-pad);
   background: var(--head-back);
+  text-align: var(--head-align);
 }
 
 .boxes {
@@ -130,7 +134,8 @@ h4 {
   padding:var(--cnt-pad);
   text-align: var(--cnt-txt-ali);
   align-items:var(--cnt-ali-its);
-  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+  box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);
+  position:relative;
 
   p {
     color: var(--contxt-color);
@@ -140,6 +145,9 @@ h4 {
 .cbox-image {
   width: var(--cbi-W);
   height: var(--cbi-H);
+  position: var(--cbi-pos);
+  right: var(--cbi-pos-r);
+  top: var(--cbi-pos-t);
 }
 
 .cbi-I {
@@ -169,6 +177,10 @@ h4 {
   align-items: var(--foot-flx-align);
   background: var(--foot-back);
   padding: var(--foot-pad);
+  position: absolute;
+  bottom: var(--foot-pos-b);
+  right: var(--foot-pos-r);
+  width:var(--foot-w);
 }
 
 .footer-image {
