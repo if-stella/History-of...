@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&family=Playfair&display=swap');
 
 :root {
   --background: white;
@@ -7,7 +7,7 @@
   --default-display:block;
   --common-font: 'Space Grotesk', sans-serif;
   --global-padding: 1rem;
-  --global-mt: 1rem;
+  --global-mt: 0rem;
   --styled-display: none;
   --foot-li-show:none;
   --cnt-behaviour:none;
@@ -32,6 +32,7 @@
   --background: #000;
   --p-small-align: center;
   --common-font: 'Press Start 2P', cursive;
+  --extra-font: 'Press Start 2P', cursive;
   --year: ' ' '1990';
   --cnt-behaviour: flex;
   --cnt-gap: 0px;
@@ -55,6 +56,7 @@
   --contxt-color: #000;
   --background: #ffffff;
   --common-font: 'EB Garamond', serif;
+  --extra-font: 'EB Garamond', serif;
   --year: ' ' '1991';
   --h1-size: 1.5rem;
   --h1-lheight: 1.5rem;
@@ -81,9 +83,9 @@
   --p-color: #000;
   --ps-color: #000;
   --li-color:#000;
-  --inbar-show:block;
+  --inbar-show:flex;
   --inbar-padding:2px 10px;
-  --inbar-back:linear-gradient(90deg,navy,#1084d0);
+  --inbar-back:linear-gradient(90deg,#000080,#1084d0);
   --nav-show:block;
   --navbar-padding:5px;
   --nav-li-gap:2px;
@@ -99,6 +101,7 @@
   --global-mt: 0rem;
   --contxt-color: #000;
   --common-font: 'VT323', monospace;
+  --extra-font: 'VT323', monospace;
   --year: ' ' '1992';
   --h1-size: 1.5rem;
   --h1-lheight: 1.5rem;
@@ -116,6 +119,16 @@
   --cnt-behaviour:block;
   --main-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --main-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  --foot-inset:-1px -1px #dfdfdf, inset 1px 1px grey;
+  --foot-pad:5px;
+  --foot-pos-b:10px;
+  --foot-pos-r:10px;
+  --iBar-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656425616/History%20of%20webdesign/starbrush-white_on1axp.png);
+  --iBar-img-w:20px;
+  --iBar-img-h:20px;
+  --inbar-gap:5px;
+  --inbar-ali:center;
+  --inbar-mb:0px;
 }
 
 [data-theme-background="1996"] {
@@ -131,6 +144,7 @@
   --ps-color: #fff;
   --contxt-color: #000;
   --common-font: 'EB Garamond', serif;
+  --extra-font: 'EB Garamond', serif;
   --year: ' ' '1996';
   --h1-size: 3.5rem;
   --h1-weight: bold;
@@ -139,7 +153,7 @@
   --h2-weight: bold;
   --h3-size: 1.25rem;
   --h3-weight: bold;
-  --intro-mw: 60%;
+  --intro-mw: 65%;
   --head-align: center;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
@@ -158,12 +172,66 @@
   --conI-back:#FFF;
   --conII-back:#FFF;
   --conIII-back:#FFF;
+  --cnt-pos:relative;
   --cnt-pad:1em;
-  --boxes-pad: 2rem 0rem;
+  --boxes-pad: 2rem 12rem;
   --p-small-align: center;
   --box-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
   --foot-pos-b: 0.5rem;
+}
+
+[data-theme-background="2001"] {
+  --background: white;
+  --background-image: linear-gradient(180deg, #FFFFFF 25.56%, #F9FFFF 107.18%);
+  --global-mt: 0rem;
+  --default-display:none;
+  --styled-display: block;
+  --global-padding: 2rem 5rem;
+  --year: ' ' '2001';
+  --common-font: Helvetica Neue, Arial, sans-serif;
+  --extra-font: 'Playfair Display', serif;
+  --h1-color: #000;
+  --h1-size: 4.5rem;
+  --h2-color: #000;
+  --h2-size: 2rem;
+  --h3-color: #000;
+  --h3-size: 1.5rem;
+  --h3-weight: bold;
+  --p-color: #000;
+  --ps-color: #000;
+  --p-small-size: 0.75rem;
+  --contxt-color: #000;
+  --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428135/History%20of%20webdesign/moomoon_vnnryd.png);
+  --hImgW: 300px;
+  --hImgH: 300px;
+  --head-behaviour: flex;
+  --head-gap: 40px;
+  --head-ali:center;
+  --intro-pad:1em 0em;
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --cnt-gap:0.25em;
+  --cnt-ali-its:left;
+  --cnt-txt-ali:left;
+  --cnt-pad: 1rem 1rem 1rem 124px;
+  --cnt-bor: 1px solid lightgrey;
+  --conI-back:#FFF;
+  --conII-back:#FFF;
+  --conIII-back:#FFF;
+  --cnt-bor-rad: 5px;
+  --cbi-W: 92px;
+  --cbi-H: 92px;
+  --cbi-pos: absolute;
+  --cbi-pos-l:1rem;
+  --cbi-pos-t: 1.5rem;
+  --cnt-pos:relative;
+  --boxes--flx-beh:flex;
+  --boxes-flex-gap: 1em;
+  --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428306/History%20of%20webdesign/Mask_group_bcs935.png);
+  --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-1_le57k7.png);
+  --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-2_jmp2mc.png);
+  --foot-pos-b: 1rem;
 }
 
 
@@ -178,6 +246,7 @@
   --ps-color: #fff;
   --contxt-color: #fff;
   --common-font: 'Roboto', sans-serif;
+  --extra-font: 'Roboto', sans-serif;
   --global-padding: 0rem;
   --global-mt: 0rem;
   --year: ' ' '2014';
@@ -197,7 +266,7 @@
   --foot-back:#444444;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
-  --head-pad: 2rem 4rem 0rem 4rem;
+  --head-pad: 2rem 4rem 2rem 4rem;
   --head-back: #2C0EAC;
   --intro-pad: 0rem 4rem 2rem 4rem;
   --intro-back:#2C0EAC;
@@ -238,6 +307,7 @@
   --ps-color: rgb(53, 53, 53);
   --contxt-color: rgb(53, 53, 53);
   --common-font: 'Space Grotesk', sans-serif;
+  --extra-font: 'Space Grotesk', sans-serif;
   --year: ' ' '2020';
   --h1-size: 4rem;
   --h2-size: 3rem;
