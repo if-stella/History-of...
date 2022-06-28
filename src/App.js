@@ -26,7 +26,8 @@ const App = () => {
       <div className="wrapper">
         <div className="main-content">
         <div className="interface-bar">
-          I'm an interface!
+          <div className="ibar-image"></div>
+          I'm an in-your-face-interface!
         </div>
         <div className="navbar">
             <li>
@@ -103,6 +104,12 @@ const App = () => {
               color="#000"
               value="1996"
               label="1996"
+            />
+            <BackgroundInput
+              backgroundColor="#fff"
+              color="#000"
+              value="2001"
+              label="2001"
             />
             <BackgroundInput
               backgroundColor="#fff"
