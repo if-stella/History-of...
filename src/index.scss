@@ -92,6 +92,7 @@ h4 {
   display: var(--head-behaviour);
   flex-direction:  var(--head-flx-dir);
   gap: var(--head-gap);
+  padding: var(--head-pad);
 }
 
 .head-image {
@@ -191,4 +192,36 @@ h4 {
 
 .footer-links {
   display: var(--foot-li-show);
+}
+
+.navbar {
+display:var(--nav-show);
+padding:var(--navbar-padding);
+box-shadow:var(--main-border-sunk-out),var(--main-border-sunk-in);
+
+  li {
+    list-style: var(--nav-li-style);
+    display:var(--nav-li-display);
+    flex-direction:var(--nav-li-dir);
+    padding:var(--nav-li-pad);
+    gap:var(--nav-li-gap);
+    color:var(--li-color);
+  }
+
+  ul {
+    background:var(--nav-ul-back);
+    padding:var(--nav-ul-pad);
+    font-family:var(--common-font);
+    box-shadow:var(--main-border-sunk-out),var(--main-border-sunk-in);
+  }
+}
+
+.interface-bar {
+  background: var(--inbar-back);
+  color: var(--main-bg);
+  display:var(--inbar-show);
+  margin-bottom:0px;
+  font-family:var(--common-font);
+  padding:var(--inbar-padding);
+  box-shadow:var(--main-border-sunk-out),var(--main-border-sunk-in);
 }
