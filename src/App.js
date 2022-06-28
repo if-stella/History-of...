@@ -25,6 +25,16 @@ const App = () => {
     >
       <div className="wrapper">
         <div className="main-content">
+        <div className="interface-bar">
+          I'm an interface!
+        </div>
+        <div className="navbar">
+            <li>
+              <ul>Anchor</ul>
+              <ul>Button</ul>
+              <ul>Something</ul>
+            </li>
+        </div>
           <div className="default-content">
             <h1>Hey there.</h1>
             <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
