@@ -107,10 +107,13 @@ h4 {
   width: var(--hImgW);
   height: var(--hImgH);
   flex-shrink: var(--hImgFlexS);
+  border-radius:var(--hImg-borrad);
+  box-shadow: var(--hImg-shadow);
+  z-index:var(--hImg-z);
 }
 
 .headlines {
-  padding: var(--head-pad);
+  padding: var(--headlines-pad);
   background: var(--head-back);
   text-align: var(--head-align);
 }
@@ -142,6 +145,7 @@ h4 {
   box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);
   position:var(--cnt-pos);
   background:var(--cnt-back);
+  z-index:var(--cnt-z);
 
   p {
     color: var(--contxt-color);
@@ -167,6 +171,8 @@ h4 {
   right: var(--cbi-pos-r);
   left: var(--cbi-pos-l);
   top: var(--cbi-pos-t);
+  box-shadow: var(--cbi-shadow);
+  border-radius: var(--cbi-borrad);
 }
 
 .cbi-I {
@@ -199,6 +205,7 @@ h4 {
   position: absolute;
   bottom: var(--foot-pos-b);
   right: var(--foot-pos-r);
+  left: var(--foot-pos-l);
   width:var(--foot-w);
   box-shadow: var(--foot-inset);
   text-align:var(--foot-txt-align);

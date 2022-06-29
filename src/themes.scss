@@ -122,7 +122,7 @@
   --hImgH: 84px;
   --head-behaviour: flex;
   --head-area-pad:10px;
-  --head-pad:10px 0px ;
+  --headlines-pad:10px 0px;
   --intro-pad:0px 10px 0px 10px;
   --cnt-pad:0px 10px 10px 10px;
   --head-gap: 16px;
@@ -199,11 +199,12 @@
 
 [data-theme-background="2001"] {
   --background: white;
-  --background-image: linear-gradient(180deg, #FFFFFF 25.56%, #F9FFFF 107.18%);
+  --background-image: linear-gradient(180deg, #FFFFFF 25.56%, #e5eeee 107.18%);
   --global-mt: 0rem;
+  --main-margin-top:90px;
   --default-display:none;
   --styled-display: block;
-  --global-padding: 1rem 5rem;
+  --global-padding: 0rem;
   --year: ' ' '2001';
   --common-font: Helvetica Neue, Arial, sans-serif;
   --extra-font: 'Playfair Display', serif;
@@ -218,13 +219,14 @@
   --ps-color: #000;
   --p-small-size: 0.75rem;
   --contxt-color: #000;
+  --hImg-shadow: 5px 20px 100px rgba(0, 0, 0, 0.25);
+  --hImg-borrad:100%;
+  --hImg-z:5;
   --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428135/History%20of%20webdesign/moomoon_vnnryd.png);
   --hImgW: 300px;
   --hImgH: 300px;
   --hImgFlexS:0;
   --nav-show:flex;
-  --nav-li-gap:0px;
-  --nav-li-pad:0px;
   --nav-li-style:none;
   --nav-li-display:flex;
   --nav-li-dir:row;
@@ -246,9 +248,11 @@
   --head-ali:center;
   --headp-show:block;
   --p-margin:0;
+  --head-area-pad: 2rem 5rem 0rem 5rem;
   --headp-mt: 0.5em;
   --headp-w:75%;
   --intro-show:none;
+  --cnt-z:10;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cnt-gap:0.25em;
@@ -262,17 +266,20 @@
   --cnt-bor-rad: 5px;
   --cbi-W: 92px;
   --cbi-H: 92px;
+  --cbi-shadow: 3px 6px 15px rgba(0, 0, 0, 0.25);
+  --cbi-borrad:100%;
   --cbi-pos: absolute;
   --cbi-pos-l:1rem;
   --cbi-pos-t: 1.5rem;
   --cnt-pos:relative;
-  --boxes-pad: 2em 0em;
+  --boxes-pad: 2em 5em;
   --boxes--flx-beh:flex;
   --boxes-flex-gap: 1em;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428306/History%20of%20webdesign/Mask_group_bcs935.png);
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-1_le57k7.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-2_jmp2mc.png);
   --foot-pos-b: 1rem;
+  --foot-pos-l: 5rem;
 }
 
 
@@ -307,7 +314,7 @@
   --foot-back:#444444;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
-  --head-pad: 2rem 4rem 2rem 4rem;
+  --headlines-pad: 2rem 4rem 2rem 4rem;
   --head-back: #2C0EAC;
   --headp-mt: 0.5em;
   --headp-w:75%;
