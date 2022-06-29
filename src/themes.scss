@@ -14,9 +14,12 @@
   --h1-size:4rem;
   --h1-weight:bold;
   --h1-lheight: 4.5rem;
+  --p-margin: 0 auto;
   --main-margin-top:80px;
   --nav-show:none;
   --inbar-show:none;
+  --headp-show:none;
+  --intro-show:none;
 }
 
 [data-theme-background="1990"] {
@@ -34,6 +37,7 @@
   --common-font: 'Press Start 2P', cursive;
   --extra-font: 'Press Start 2P', cursive;
   --year: ' ' '1990';
+  --intro-show:block;
   --cnt-behaviour: flex;
   --cnt-gap: 0px;
   --cnt-flx-dir: row;
@@ -61,13 +65,14 @@
   --h1-size: 1.5rem;
   --h1-lheight: 1.5rem;
   --h3-deco: underline;
+  --intro-show:block;
   --p-small-align: center;
   --cnt-behaviour: flex;
   --cnt-gap: 0px;
   --cnt-flx-dir: column;
   --cnt-second-ml: 24px;
   --global-padding: 2rem;
-  --global-mt: 1rem;
+  --global-mt: 0.5rem;
   --foot-li-show: none;
   --styled-display: block;
   --foot-pos-b: 2rem;
@@ -99,6 +104,7 @@
   --main-margin-top:85px;
   --1992-margin:10px;
   --global-mt: 0rem;
+  --intro-show:block;
   --contxt-color: #000;
   --common-font: 'VT323', monospace;
   --extra-font: 'VT323', monospace;
@@ -110,7 +116,8 @@
   --hImgW: 63px;
   --hImgH: 84px;
   --head-behaviour: flex;
-  --head-pad:10px 10px 0px 10px;
+  --head-area-pad:10px;
+  --head-pad:10px 0px ;
   --intro-pad:0px 10px 0px 10px;
   --cnt-pad:0px 10px 10px 10px;
   --head-gap: 16px;
@@ -121,8 +128,9 @@
   --main-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
   --foot-inset:-1px -1px #dfdfdf, inset 1px 1px grey;
   --foot-pad:5px;
-  --foot-pos-b:10px;
-  --foot-pos-r:10px;
+  --foot-pos-b:0px;
+  --foot-pos-r:0px;
+  --foot-w:100%;
   --iBar-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656425616/History%20of%20webdesign/starbrush-white_on1axp.png);
   --iBar-img-w:20px;
   --iBar-img-h:20px;
@@ -133,6 +141,7 @@
 
 [data-theme-background="1996"] {
   --default-display:none;
+  --global-padding: 2rem 15rem;
   --styled-display: block;
   --background: #000;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656271968/History%20of%20webdesign/1996-bg-tile_s4erz5.png);
@@ -153,8 +162,9 @@
   --h2-weight: bold;
   --h3-size: 1.25rem;
   --h3-weight: bold;
-  --intro-mw: 65%;
   --head-align: center;
+  --intro-show:block;
+  --boxes-pad:2em 0em;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
   --cnt-behaviour:flex;
@@ -174,11 +184,11 @@
   --conIII-back:#FFF;
   --cnt-pos:relative;
   --cnt-pad:1em;
-  --boxes-pad: 2rem 12rem;
   --p-small-align: center;
   --box-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  --foot-pos-b: 0.5rem;
+  --foot-pos-b: 1.5rem;
+  --foot-txt-align:center;
 }
 
 [data-theme-background="2001"] {
@@ -205,10 +215,15 @@
   --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428135/History%20of%20webdesign/moomoon_vnnryd.png);
   --hImgW: 300px;
   --hImgH: 300px;
+  --hImgFlexS:0;
   --head-behaviour: flex;
   --head-gap: 40px;
   --head-ali:center;
-  --intro-pad:1em 0em;
+  --headp-show:block;
+  --p-margin:0;
+  --headp-mt: 0.5em;
+  --headp-w:75%;
+  --intro-show:none;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cnt-gap:0.25em;
@@ -226,6 +241,7 @@
   --cbi-pos-l:1rem;
   --cbi-pos-t: 1.5rem;
   --cnt-pos:relative;
+  --boxes-pad: 2em 0em;
   --boxes--flx-beh:flex;
   --boxes-flex-gap: 1em;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428306/History%20of%20webdesign/Mask_group_bcs935.png);
@@ -268,8 +284,11 @@
   --boxes-flx-dir: row;
   --head-pad: 2rem 4rem 2rem 4rem;
   --head-back: #2C0EAC;
-  --intro-pad: 0rem 4rem 2rem 4rem;
-  --intro-back:#2C0EAC;
+  --headp-mt: 0.5em;
+  --headp-w:75%;
+  --headp-show:block;
+  --p-margin:0;
+  --intro-show:none;
   --boxes-flex-jus: space-between;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
@@ -299,6 +318,7 @@
   --default-display:none;
   --styled-display: block;
   --background: #ffffff;
+  --intro-show:block;
   --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
   --h1-color: #000;
   --h2-color: rgb(53, 53, 53);
