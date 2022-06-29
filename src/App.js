@@ -115,12 +115,6 @@ const App = () => {
               value="2014"
               label="2014"
             />
-            <BackgroundInput
-              backgroundColor="#fff"
-              color="#000"
-              value="2020"
-              label="2020"
-            />
           </div>
         </form>
     </main>
