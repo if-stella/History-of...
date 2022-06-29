@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&family=Playfair&display=swap');
 
 :root {
-  --background: white;
-  --h1-color: gray;
-  --p-color: darkgrey;
-  --default-display:block;
+  --background: #021a2f;
+  --h1-color: white;
+  --p-color: #ffffffec;
+  --p-size:1rem;
+  --default-display:flex;
   --common-font: 'Space Grotesk', sans-serif;
+  --extra-font: 'Space Grotesk', sans-serif;
   --global-padding: 1rem;
   --global-mt: 0rem;
-  --styled-display: none;
-  --foot-li-show:none;
-  --cnt-behaviour:none;
   --h1-size:4rem;
   --h1-weight:bold;
   --h1-lheight: 4.5rem;
   --p-margin: 0 auto;
   --main-margin-top:80px;
+  --styled-display: none;
+  --foot-li-show:none;
+  --cnt-behaviour:none;
   --nav-show:none;
   --inbar-show:none;
   --headp-show:none;
@@ -26,6 +28,7 @@
   --h1-size:1rem;
   --h1-lheight: 1rem;
   --h1-color: #3DFF1E;
+  --h2-size: 1rem;
   --h2-color: #3DFF1E;
   --h3-color: #3DFF1E;
   --p-color: #3DFF1E;
@@ -54,6 +57,7 @@
   --default-display:none;
   --h1-color: #000;
   --h2-color: #000;
+  --h2-size: 1rem;
   --h3-color: #0000EF;
   --p-color: #000;
   --ps-color: #000;
@@ -83,6 +87,7 @@
   --background: #CCC;
   --main-bg: #E5E5E5;
   --h1-color: #000;
+  --h2-size: 1rem;
   --h2-color: #000;
   --h3-color: #000;
   --p-color: #000;
@@ -155,6 +160,7 @@
   --common-font: 'EB Garamond', serif;
   --extra-font: 'EB Garamond', serif;
   --year: ' ' '1996';
+  --intro-p:1.5rem;
   --h1-size: 3.5rem;
   --h1-weight: bold;
   --h1-lheight: 3.5rem;
