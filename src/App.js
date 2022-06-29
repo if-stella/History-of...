@@ -1,6 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
-import Anchornav from "./components/Anchornav/Anchornav";
+import Loading from "./components/Loading/Loading";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -39,6 +39,7 @@ const App = () => {
           <div className="default-content">
             <h1>Hey there.</h1>
             <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
+            <Loading />
           </div>
           <div className="head-area">
             <div className="head-image"></div>
@@ -124,12 +125,10 @@ const App = () => {
         </form>
     </main>
     </div>
-
   );
 };
 
 export default App;
-
 
 const BackgroundInput = ({ backgroundColor, color, value, label, defaultChecked }) => (
   <label
