@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Play:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&display=swap');
 
 :root {
   --background: #021a2f;
+  --wrap-flex-dir:column;
   --h1-color: white;
   --p-color: #ffffffec;
   --p-size:1rem;
@@ -172,6 +173,7 @@
   --intro-show:block;
   --boxes-pad:2em 0em;
   --boxes--flx-beh:flex;
+  --boxes-flex-jus: space-between;
   --boxes-flx-dir: row;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
@@ -195,6 +197,94 @@
   --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
   --foot-pos-b: 1.5rem;
   --foot-txt-align:center;
+}
+
+[data-theme-background="1998"] {
+  --default-display:none;
+  --head-behaviour:flex;
+  --background: #0000FF;
+  --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656579625/History%20of%20webdesign/Bildschirmfoto_2022-06-09_um_22.35.21_h5wjmd.png);
+  --hImgW: 640px;
+  --hImgH: 508px;
+  --hImg-rep: no-repeat;
+  --hImg-cov: cover;
+  --global-padding: 0.5rem;
+}
+
+[data-theme-background="2000"] {
+  --default-display:none;
+  --styled-display: block;
+  --global-padding: 1em;
+  --year: ' ' '2000';
+  --h1-size:4.5rem;
+  --h1-weight:bold;
+  --h1-color: #fff;
+  --h1-lheight: 4.5rem;
+  --h1-shad:-2px -2px 4px rgba(193, 255, 255, 0.5), 2px 2px 4px rgba(0, 38, 61, 0.5);
+  --h2-size: 2.5rem;
+  --h2-color: rgba(255, 255, 255, 0.9);
+  --h2-shad:-2px -2px 4px rgba(193, 255, 255, 0.5), 2px 2px 4px rgba(0, 38, 61, 0.5);
+  --h3-size:1.5rem;
+  --h3-weight:bold;
+  --h3-color: #fff;
+  --p-color: #fff;
+  --ps-color: #fff;
+  --background-image:radial-gradient(47.33% 93.59% at 52.67% 50%, #FFFFFF 0%, #5A5A5A 85.71%, #404040 100%);
+  --background: darkgrey;
+  --common-font: 'Play', sans-serif;
+  --extra-font: 'Play', sans-serif;
+  --nav-show:block;
+  --nav-ul-w:100%;
+  --nav-li-style:none;
+  --nav-li-display:flex;
+  --nav-li-dir:row;
+  --li-color:white;
+  --nav-ul-back-im: grey;
+  --nav-ul-back-im:radial-gradient(99.93% 32561.74% at 0% 50%, rgba(51, 51, 51, 0.1) 0%, #333333 50.52%, rgba(51, 51, 51, 0.1) 100%);
+  --nav-ul-pad:15px 40px;
+  --nav-ul-t-ali:center;
+  --nav-ul-txt-deco: uppercase;
+  --nav-ul-txt-size:14px;
+  --nav-ul-txt-lh:14px;
+  --nav-ul-txt-letspa:5px;
+  --nav-ul-txt-shad: -2px -2px 4px rgba(193, 255, 255, 0.5), 2px 2px 4px rgba(0, 38, 61, 0.5);
+  --border:2px solid;
+  --gradient-outl-slice:1;
+  --gradient-outl-border-w:2px;
+  --gradient-outl-img-src: linear-gradient(146.22deg, #FFFFFF -3.57%, rgba(255, 255, 255, 0) 56.96%, #FFFFFF 106.07%);
+  --iWrap-back:black;
+  --iWrap-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656579373/History%20of%20webdesign/a8A3mw_rwzexu.jpg);
+  --iWrap-cov:cover;
+  --iWrap-w:100%;
+  --iWrap-h:100%;
+  --iWrap-pad:1em;
+  --iWrap-flex-grow:1;
+  --inner-wrap-flex:flex;
+  --inner-wrap-flex-dir:row;
+  --inner-wrap-flex-ali:stretch;
+  --inner-wrap-just:space-between;
+  --headp-show:block;
+  --headp-w:75%;
+  --p-margin:0;
+  --head-align:left;
+  --head-behaviour:flex;
+  --head-flx-dir:column;
+  --contxt-color:rgba(255, 255, 255, 0.9);
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --boxes--flx-grow:2;
+  --box-back:black;
+  --boxes--flx-beh:flex;
+  --boxes-flx-dir:column;
+  --boxes-flex-gap: 1em;
+  --box-back-img-cov:cover;
+  --box-back-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656579379/History%20of%20webdesign/depositphotos_95481734-stock-illustration-vector-abstract-futuristic-circuit-board_ckkhm4.webp);
+  --boxes-pad:1rem;
+  --conI-back:rgba(0, 0, 0, 0.75);
+  --conII-back:rgba(0, 0, 0, 0.75);
+  --conIII-back:rgba(0, 0, 0, 0.75);
+  --foot-pos-b: 1rem;
+  --cnt-pad:0.5em;
 }
 
 [data-theme-background="2001"] {
@@ -241,8 +331,8 @@
   --nav-flex-ali:center;
   --nav-bb:1px solid lightgrey;
   --nav-mb:1em;
-  --nav-borrad-t-l:16px;
-  --nav-borrad-t-r:16px;
+  --nav-borrad-t-l:5px;
+  --nav-borrad-t-r:5px;
   --head-behaviour: flex;
   --head-gap: 40px;
   --head-ali:center;
@@ -275,6 +365,7 @@
   --boxes-pad: 2em 5em;
   --boxes--flx-beh:flex;
   --boxes-flex-gap: 1em;
+  --boxes-flex-jus: space-between;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428306/History%20of%20webdesign/Mask_group_bcs935.png);
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-1_le57k7.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-2_jmp2mc.png);
