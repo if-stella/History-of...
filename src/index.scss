@@ -283,6 +283,7 @@ margin-bottom: var(--nav-mb);
     box-shadow:var(--main-border-sunk-out),var(--main-border-sunk-in);
     text-align:var(--nav-ul-t-ali);
     border: var(--nav-ul-bor);
+    border-style: var(--nav-ul-style);
     border-top-left-radius: var(--nav-borrad-t-l);
     border-top-right-radius: var(--nav-borrad-t-r);
     text-shadow:var(--nav-ul-txt-shad);
