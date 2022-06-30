@@ -13,7 +13,7 @@ input {
 .wrapper {
   height:100vh;
   display:flex;
-  flex-direction:column;
+  flex-direction:var(--wrap-flex-dir);
   justify-content:space-between;
 }
 
