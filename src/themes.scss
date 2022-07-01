@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Play:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Play:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&family=Rakkas&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
   --background: #021a2f;
   --wrap-flex-dir:column;
+  --wrap-h:100vh;
   --h1-color: white;
   --p-color: #ffffffec;
   --p-size:1rem;
@@ -229,6 +230,7 @@
   --h3-color: #fff;
   --p-color: #fff;
   --ps-color: #fff;
+  --p-small-size:0.5rem;
   --background-image:radial-gradient(47.33% 93.59% at 52.67% 50%, #FFFFFF 0%, #5A5A5A 85.71%, #404040 100%);
   --background: darkgrey;
   --common-font: 'Play', sans-serif;
@@ -284,7 +286,8 @@
   --conII-back:rgba(0, 0, 0, 0.75);
   --conIII-back:rgba(0, 0, 0, 0.75);
   --foot-pos-b: 1rem;
-  --cnt-pad:0.5em;
+  --cnt-pad:1em;
+  --cnt-w:311px;
 }
 
 [data-theme-background="2001"] {
@@ -326,11 +329,11 @@
   --nav-ul-w:160px;
   --nav-ul-t-ali:center;
   --nav-ul-bor:1px solid lightgrey;
-  --nav-ul-style:outset;
+  --nav-ul-style:inset;
   --nav-w:100%;
   --nav-flex-jus:center;
   --nav-flex-ali:center;
-  --nav-bb:1px solid #818280;
+  --nav-bb:1px solid lightgrey;
   --nav-mb:1em;
   --nav-borrad-t-l:5px;
   --nav-borrad-t-r:5px;
@@ -436,6 +439,84 @@
   --p-small-size: 0.75rem;
   --foot-w:100%;
   --foot-pos-b: 0rem;
+}
+
+[data-theme-background="2017"] {
+  --default-display:none;
+  --styled-display: block;
+  --intro-show:block;
+  --intro-rotate:rotate(-90deg);
+  --intro-w:30%;
+  --intro-pos:absolute;
+  --inner-wrap-pos:relative;
+  --intro-pos-b:-2rem;
+  --intro-pos-r:0em;
+  --global-padding: 80px;
+  --year: ' ' '2017';
+  --background: #EDEDED;
+  --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-grainybg-tile_lzzg5q.png);
+  --background-repeat:repeat;
+  --common-font: 'Roboto', sans-serif;
+  --extra-font: 'Rakkas', cursive;
+  --h1-size:6rem;
+  --h1-lheight: 6rem;
+  --h1-color: #1D0202;
+  --h2-size: 6rem;
+  --h2-color: #1d0202d6;
+  --h3-size:1.5rem;
+  --h3-color: #1D0202;
+  --p-color: #1d0202d6;
+  --ps-color: #1D0202;
+  --foot-pos-b: 0.5rem;
+}
+
+[data-theme-background="2019"] {
+  --default-display:none;
+  --styled-display: block;
+  --intro-show:block;
+  --global-padding: 2em 4em;
+  --year: ' ' '2019';
+  --background: #ffffff;
+  --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672532/History%20of%20webdesign/2019-hd-bg_myneq3.jpg);
+  --background-img-cov:cover;
+  --h1-size:5rem;
+  --h1-lheight: 5rem;
+  --h1-color: #3B4F7D;
+  --h2-size: 3rem;
+  --h2-color: #3b4f7d9b;
+  --h3-size:2rem;
+  --h3-color: #3B4F7D;
+  --p-size:1.25em;
+  --p-color: #3b4f7d9b;
+  --p-small-size:0.75rem;
+  --ps-color: #3b4f7d7e;
+  --contxt-color:#3b4f7d9b;
+  --contxt-fontsize:1em;
+  --boxes-pad:4em 0em;
+  --boxes--flx-beh:flex;
+  --boxes-flx-dir:row;
+  --cnt-behaviour: flex;
+  --boxes-flex-gap:2em;
+  --cnt-gap: 0.5em;
+  --cnt-flx-dir: column;
+  --cnt-pad:2.5em;
+  --cnt-txt-ali:center;
+  --cnt-bor-rad:30px;
+  --cbi-W: 135px;
+  --cbi-H: 135px;
+  --cbi-I:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656675052/History%20of%20webdesign/creative-idea_wyw4b6.png);
+  --cbi-II:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656675052/History%20of%20webdesign/business-goal_crjybe.png);
+  --cbi-III:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656675052/History%20of%20webdesign/setting_cforuw.png);
+  --cnt-pos:relative;
+  --cbi-pos:absolute;
+  --cbi-pos-l:-3em;
+  --cbi-pos-t:-2em;
+  --conI-back: linear-gradient(94.96deg, rgba(231, 238, 255, 0.5) 6.5%, rgba(224, 234, 255, 0.5) 96%);
+  --conII-back: linear-gradient(94.96deg, rgba(231, 238, 255, 0.5) 6.5%, rgba(224, 234, 255, 0.5) 96%);
+  --conIII-back: linear-gradient(94.96deg, rgba(231, 238, 255, 0.5) 6.5%, rgba(224, 234, 255, 0.5) 96%);
+  --box-s-neo-dark: 10px 10px 20px #C2CCEB;
+  --box-s-neo-light: 10px -10px 16px rgba(234, 239, 255, 0.25);
+  --foot-pos-b: 1rem;
 }
 
 [data-theme-background="2020"] {
