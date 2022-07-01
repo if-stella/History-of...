@@ -157,6 +157,9 @@ h4 {
   gap: var(--cnt-gap);
   padding:var(--cnt-pad);
   border:var(--cnt-bor);
+  border-image-slice: var(--gradient-outl-slice);
+  border-width: var(--gradient-outl-border-w);
+  border-image-source: var(--gradient-outl-img-src);
   border-radius:var(--cnt-bor-rad);
   text-align: var(--cnt-txt-ali);
   align-items:var(--cnt-ali-its);

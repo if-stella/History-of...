@@ -52,7 +52,7 @@ const App = () => {
             </div>
             <p className="styled-content intro">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
             <div className="boxes">
-              <div className="content-box">
+              <div className="content-box white-grad">
                 <div className="cbox-image cbi-I"></div>
                 <span><h3>Content I</h3></span>
                 <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
