@@ -41,9 +41,14 @@ const App = () => {
             <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
             <Loading />
           </div>
+          <div className="bg"></div>
           <div className="inner-wrap">
             <div className="head-area">
-              <div className="head-image"></div>
+              <div className="head-images">
+                <div className="head-image"></div>
+                <div className="head-image-II"></div>
+                <div className="head-image-III"></div>
+              </div>
               <div className="headlines styled-content">
                 <h1>Stella's Portfolio</h1>
                 <h2>EST <span className="varyear"></span></h2>
@@ -51,6 +56,8 @@ const App = () => {
               </div>
             </div>
             <p className="styled-content intro">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
+            <div className="intro-2017"><p>It's the year 2017. My name is Stella Raab, and I’m a passionate Graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself)</p>
+           </div>
             <div className="boxes">
               <div className="content-box white-grad">
                 <div className="cbox-image cbi-I"></div>

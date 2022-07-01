@@ -24,6 +24,8 @@
   --inbar-show:none;
   --headp-show:none;
   --intro-show:none;
+  --2017-intro-show:none;
+  --blur-show:none;
 }
 
 [data-theme-background="1990"] {
@@ -444,17 +446,13 @@
 [data-theme-background="2017"] {
   --default-display:none;
   --styled-display: block;
-  --intro-show:block;
-  --intro-rotate:rotate(-90deg);
-  --intro-w:30%;
-  --intro-pos:absolute;
+  --intro-show:none;
+  --wrap-overflow:hidden;
+  --blur-show:block;
   --inner-wrap-pos:relative;
-  --intro-pos-b:-2rem;
-  --intro-pos-r:0em;
-  --global-padding: 80px;
+  --global-padding: 2rem;
   --year: ' ' '2017';
   --background: #EDEDED;
-  --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-grainybg-tile_lzzg5q.png);
   --background-repeat:repeat;
   --common-font: 'Roboto', sans-serif;
   --extra-font: 'Rakkas', cursive;
@@ -467,6 +465,35 @@
   --h3-color: #1D0202;
   --p-color: #1d0202d6;
   --ps-color: #1D0202;
+  --head-images-pos:relative;
+  --head-images-l:39em;
+  --head-images-b:6em;
+  --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-bigcircles_sii42s.png);
+  --hImg-blend:hard-light;
+  --hImgW: 599px;
+  --hImgH: 699px;
+  --hImgFlexS:0;
+  --hImg-pos:absolute;
+  --hImg2Src:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-small-ball-1_anog56.png);
+  --hImg2W: 144px;
+  --hImg2H: 154px;
+  --hImg2-blend:hard-light;
+  --hImg2-pos:absolute;
+  --hImg2-t:2em;
+  --hImg2-l:1em;
+  --hImg3Src:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-small-ball-2_jugk1o.png);
+  --hImg3W: 169px;
+  --hImg3H: 163px;
+  --hImg3-blend:hard-light;
+  --hImg3-pos:absolute;
+  --hImg3-l:35em;
+  --hImg3-t:35em;
+  --inner-wrap-pos:relative;
+  --2017-intro-pos:absolute;
+  --2017-intro-show:flex;
+  --2017-intro-w:30%;
+  --2017-intro-pos-t:16rem;
+  --2017-intro-pos-l:4rem;
   --foot-pos-b: 0.5rem;
 }
 

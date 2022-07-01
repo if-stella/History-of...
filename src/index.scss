@@ -92,11 +92,17 @@ h4 {
   width: var(--intro-w);
   background: var(--intro-back);
   display: var(--intro-show);
-  transform: var(--intro-rotate);
-  position: var(--intro-pos);
-  right: var(--intro-pos-r);
-  bottom: var(--intro-pos-b);
-  left: var(--intro-pos-l);
+}
+
+.intro-2017 {
+  display: var(--2017-intro-show);
+  position: var(--2017-intro-pos);
+  width:var(--2017-intro-w);
+  transform: var(--2017-intro-rot);
+  bottom: var(--2017-intro-pos-b);
+  left: var(--2017-intro-pos-l);
+  right: var(--2017-intro-pos-r);
+  top: var(--2017-intro-pos-t);
 }
 
 .varyear::after {
@@ -111,6 +117,14 @@ h4 {
   padding: var(--head-area-pad);
 }
 
+.head-images {
+  position: var(--head-images-pos);
+  left: var(--head-images-l);
+  top: var(--head-images-t);
+  right: var(--head-images-r);
+  bottom: var(--head-images-b);
+}
+
 .head-image {
   background-image: var(--hImgSrc);
   width: var(--hImgW);
@@ -121,6 +135,34 @@ h4 {
   z-index:var(--hImg-z);
   background-repeat:var(--hImg-rep);
   background-size: var(--hImg-cov);
+  mix-blend-mode: var(--hImg-blend);
+  position: var(--hImg-pos);
+}
+
+.head-image-II {
+  background-image: var(--hImg2Src);
+  width: var(--hImg2W);
+  height: var(--hImg2H);
+  border-radius:var(--hImg2-borrad);
+  box-shadow: var(--hImg2-shadow);
+  z-index:var(--hImg2-z);
+  mix-blend-mode: var(--hImg2-blend);
+  position: var(--hImg2-pos);
+  top: var(--hImg2-t);
+  left: var(--hImg2-l);
+}
+
+.head-image-III {
+  background-image: var(--hImg3Src);
+  width: var(--hImg3W);
+  height: var(--hImg3H);
+  border-radius:var(--hImg3-borrad);
+  box-shadow: var(--hImg3-shadow);
+  z-index:var(--hImg3-z);
+  mix-blend-mode: var(--hImg3-blend);
+  position: var(--hImg3-pos);
+  top: var(--hImg3-t);
+  left: var(--hImg3-l);
 }
 
 .headlines {
@@ -320,4 +362,34 @@ margin-bottom: var(--nav-mb);
     width: var(--iBar-img-w);
     height: var(--iBar-img-h);
   }
+}
+
+.bg {
+  display: var(--blur-show);
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 1.5s steps(1) infinite;
+  opacity: .2;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
 }
