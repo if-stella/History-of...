@@ -11,7 +11,7 @@ input {
 }
 
 .wrapper {
-  height:100vh;
+  height:var(--wrap-h);
   display:flex;
   flex-direction:var(--wrap-flex-dir);
   justify-content:space-between;

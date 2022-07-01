@@ -83,6 +83,7 @@ h4 {
   background: var(--background);
   background-repeat: var(--background-repeat);
   background-image: var(--background-image);
+  background-size: var(--background-img-cov);
 }
 
 .intro {
@@ -91,6 +92,11 @@ h4 {
   width: var(--intro-w);
   background: var(--intro-back);
   display: var(--intro-show);
+  transform: var(--intro-rotate);
+  position: var(--intro-pos);
+  right: var(--intro-pos-r);
+  bottom: var(--intro-pos-b);
+  left: var(--intro-pos-l);
 }
 
 .varyear::after {
@@ -155,12 +161,15 @@ h4 {
   text-align: var(--cnt-txt-ali);
   align-items:var(--cnt-ali-its);
   box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);
+  box-shadow: var(--box-s-neo-dark), var(--box-s-neo-light);
   position:var(--cnt-pos);
   background:var(--cnt-back);
   z-index:var(--cnt-z);
+  width:var(--cnt-w);
 
   p {
     color: var(--contxt-color);
+    font-size:var(--contxt-fontsize);
   }
 }
 
@@ -249,6 +258,7 @@ h4 {
   border-image-slice: var(--gradient-outl-slice);
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);
+  position:var(--inner-wrap-pos);
 }
 
 .navbar {
