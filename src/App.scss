@@ -15,6 +15,7 @@ input {
   display:flex;
   flex-direction:var(--wrap-flex-dir);
   justify-content:space-between;
+  overflow:var(--wrap-overflow);
 }
 
 .wrapper > * + * {
