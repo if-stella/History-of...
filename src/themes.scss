@@ -27,6 +27,7 @@
   --intro-show:none;
   --2017-intro-show:none;
   --blur-show:none;
+  --circle-show:none;
   --head-bg-show:none;
 }
 
@@ -460,10 +461,11 @@
   --h1-color: #1D0202;
   --h2-size: 6rem;
   --h2-color: #1d0202d6;
-  --h3-size:1.5rem;
-  --h3-color: #1D0202;
-  --p-color: #1d0202d6;
+  --p-color: #1d0202;
+  --p-small-size:0.75rem;
   --ps-color: #1D0202;
+  --p-small-transform: uppercase;
+  --p-small-ls:2px;
   --head-images-pos:relative;
   --head-images-l:44em;
   --head-images-b:4em;
@@ -488,11 +490,12 @@
   --hImg3-l:35em;
   --hImg3-t:35em;
   --inner-wrap-pos:relative;
-  --2017-intro-pos:absolute;
-  --2017-intro-show:flex;
+  --2017-intro-pos:relative;
+  --2017-intro-show:block;
   --2017-intro-w:30%;
-  --2017-intro-pos-t:16rem;
-  --2017-intro-pos-l:4rem;
+  --2017-intro-pos-t:4rem;
+  --2017-intro-pos-l:50rem;
+  --circle-show:block;
   --foot-pos-b: 1rem;
 }
 
@@ -523,27 +526,31 @@
   --hImgH: 200px;
   --hImg-borrad:100%;
   --hImgFlexS:0;
-  --hImg-z:10;
+  --hImg-z:5;
+  --hImg-pos:relative;
   --head-bg-show:block;
   --head-bg-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656760946/History%20of%20webdesign/wave_fzfoyv.png);
+  --head-bg-blur: blur(2px);
   --head-bg-pos:absolute;
   --head-bg-l:0em;
-  --head-bg-t:-6em;
+  --head-bg-t:-1em;
   --head-bg-cov:cover;
   --head-bg-w:100%;
   --head-bg-h:615px;
-  --head-bg-z:-1;
+  --head-bg-z:0;
   --head-behaviour: flex;
   --head-gap: 80px;
   --head-ali:center;
-  --headlines-z: 10;
+  --headlines-pos:relative;
+  --headlines-z: 5;
   --p-margin:0;
   --head-area-pad:2em 4em;
   --headp-show:block;
   --headp-max-w:660px;
-  --head-bg-blur: blur(12px);
   --contxt-color:#3b4f7d9b;
   --contxt-fontsize:1em;
+  --boxes-pos:relative;
+  --boxes-z:20;
   --boxes-pad:2em 4em;
   --boxes--flx-beh:flex;
   --boxes-flx-dir:row;
@@ -589,8 +596,6 @@
   --foot-pad:1.5em 2em;
   --foot-back: linear-gradient(180deg, rgba(194, 204, 235, 0) 0%, #A8B2D1 174.03%);
   --foot-back-filt: blur(5px);
-
-backdrop-filter: blur(10px);
 }
 
 [data-theme-background="2020"] {

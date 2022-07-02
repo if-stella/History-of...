@@ -63,6 +63,8 @@ h4 {
   font-size: var(--p-small-size);
   text-align: var(--p-small-align);
   color: var(--ps-color);
+  text-transform:var(--p-small-transform);
+  letter-spacing: var(--p-small-ls);
 }
 
 .default-content {
@@ -183,6 +185,7 @@ h4 {
   background: var(--head-back);
   text-align: var(--head-align);
   z-index: var(--headlines-z);
+  position:var(--headlines-pos);
 }
 
 .headp {
@@ -206,6 +209,7 @@ h4 {
   border-image-slice: var(--gradient-outl-slice);
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);
+  position: var(--boxes-pos);
   z-index: var(--boxes-z);
 }
 
@@ -415,4 +419,61 @@ margin-bottom: var(--nav-mb);
     80% { transform: translate(-15%,0) }
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
+}
+
+#circle-1 { position: relative; display: var(--circle-show); }
+#circle-1-cont { position: absolute; top:14em; left:3em; width:130px; text-align:center; font-family: var(--common-font); font-size: 14px; z-index:5;}
+#circle-1 text { font-family: var(--extra-font); font-size: 18px; letter-spacing: 1.6px; font-weight: bold; }
+#circle-1 svg { position: absolute; top:-1em; left:-9em; height:1; background-repeat:no-repeat; background-position-x: center; background-position-y: center; mix-blend-mode:hard-light; background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656792452/History%20of%20webdesign/txt-ball-1_kqtuxs.png);
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 7s;
+     -moz-animation-duration: 7s;
+       -o-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#circle-2 { position: relative; display: var(--circle-show); }
+#circle-2-cont { position: absolute; top:6.9em; left:20em; width:130px; text-align:center; font-family: var(--common-font); font-size: 14px; z-index:5;}
+#circle-2 text { font-family: var(--extra-font); font-size: 18px; letter-spacing: 1.6px; font-weight: bold; }
+#circle-2 svg { position: absolute; top:-7em; left:6em; height:1; background-repeat:no-repeat; background-position-x: 54%; background-position-y: 54%; mix-blend-mode:hard-light; background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656793074/History%20of%20webdesign/txt-ball-2_u5w4en.png);
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+       -o-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(-360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(-360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
 }

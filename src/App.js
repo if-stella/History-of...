@@ -57,6 +57,36 @@ const App = () => {
               </div>
             </div>
             <p className="styled-content intro">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
+            <div id="circle-1">
+              <div id="circle-1-cont">I'm just a small paragraph, to check if everything is working properly...</div>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xmlSpace="preserve">
+                <defs>
+                <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                </defs>
+                <circle cx="150" cy="150" r="50" fill="none"/>
+                <g>
+                  <use xlinkHref="#circlePath" fill="none"/>
+                  <text fill="var(--p-color)">
+                  <textPath xlinkHref="#circlePath">Content Content Content Content Content</textPath>
+                  </text>
+                </g>
+              </svg>
+            </div>
+            <div id="circle-2">
+              <div id="circle-2-cont">I'm just a small paragraph, to check if everything is working properly...</div>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xmlSpace="preserve">
+                <defs>
+                <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                </defs>
+                <circle cx="150" cy="150" r="50" fill="none"/>
+                <g>
+                  <use xlinkHref="#circlePath" fill="none"/>
+                  <text fill="var(--p-color)">
+                  <textPath xlinkHref="#circlePath">Content Content Content Content Content</textPath>
+                  </text>
+                </g>
+              </svg>
+            </div>
             <div className="intro-2017"><p>It's the year 2017. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself)</p>
            </div>
             <div className="boxes">
