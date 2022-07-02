@@ -19,6 +19,7 @@
   --main-margin-top:80px;
   --styled-display: none;
   --foot-li-show:none;
+  --foot-pos:absolute;
   --cnt-behaviour:none;
   --nav-show:none;
   --inbar-show:none;
@@ -26,6 +27,7 @@
   --intro-show:none;
   --2017-intro-show:none;
   --blur-show:none;
+  --head-bg-show:none;
 }
 
 [data-theme-background="1990"] {
@@ -51,7 +53,6 @@
   --cnt-first-w: 260px;
   --global-padding: 1rem;
   --global-mt: 0.5rem;
-  --foot-li-show: none;
   --boxes--flx-beh:block;
   --styled-display: block;
   --foot-pos-b: 1rem;
@@ -81,7 +82,6 @@
   --cnt-second-ml: 24px;
   --global-padding: 2rem;
   --global-mt: 0.5rem;
-  --foot-li-show: none;
   --styled-display: block;
   --foot-pos-b: 2rem;
 }
@@ -130,7 +130,6 @@
   --intro-pad:0px 10px 0px 10px;
   --cnt-pad:0px 10px 10px 10px;
   --head-gap: 16px;
-  --foot-li-show: none;
   --styled-display: block;
   --cnt-behaviour:block;
   --main-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
@@ -466,8 +465,8 @@
   --p-color: #1d0202d6;
   --ps-color: #1D0202;
   --head-images-pos:relative;
-  --head-images-l:39em;
-  --head-images-b:6em;
+  --head-images-l:44em;
+  --head-images-b:4em;
   --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-bigcircles_sii42s.png);
   --hImg-blend:hard-light;
   --hImgW: 599px;
@@ -494,13 +493,14 @@
   --2017-intro-w:30%;
   --2017-intro-pos-t:16rem;
   --2017-intro-pos-l:4rem;
-  --foot-pos-b: 0.5rem;
+  --foot-pos-b: 1rem;
 }
 
 [data-theme-background="2019"] {
+  --global-padding: 0rem;
   --default-display:none;
   --styled-display: block;
-  --global-padding: 2em 4em;
+  --wrap-overflow:hidden;
   --year: ' ' '2019';
   --background: #ffffff;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672532/History%20of%20webdesign/2019-hd-bg_myneq3.jpg);
@@ -510,9 +510,10 @@
   --h1-color: #3B4F7D;
   --h2-size: 3rem;
   --h2-color: #3b4f7d9b;
-  --h3-size:2rem;
+  --h3-size:1.5rem;
+  --h3-weight:bold;
   --h3-color: #3B4F7D;
-  --p-size:1.2em;
+  --p-size:1.1em;
   --p-color: #3b4f7d9b;
   --p-small-size:0.75rem;
   --ps-color: #3b4f7d7e;
@@ -522,13 +523,28 @@
   --hImgH: 200px;
   --hImg-borrad:100%;
   --hImgFlexS:0;
+  --hImg-z:10;
+  --head-bg-show:block;
+  --head-bg-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656760946/History%20of%20webdesign/wave_fzfoyv.png);
+  --head-bg-pos:absolute;
+  --head-bg-l:0em;
+  --head-bg-t:-6em;
+  --head-bg-cov:cover;
+  --head-bg-w:100%;
+  --head-bg-h:615px;
+  --head-bg-z:-1;
   --head-behaviour: flex;
   --head-gap: 80px;
   --head-ali:center;
+  --headlines-z: 10;
+  --p-margin:0;
+  --head-area-pad:2em 4em;
   --headp-show:block;
+  --headp-max-w:660px;
+  --head-bg-blur: blur(12px);
   --contxt-color:#3b4f7d9b;
   --contxt-fontsize:1em;
-  --boxes-pad:4em 0em;
+  --boxes-pad:2em 4em;
   --boxes--flx-beh:flex;
   --boxes-flx-dir:row;
   --cnt-behaviour: flex;
@@ -556,7 +572,25 @@
   linear-gradient(108.44deg, rgba(255, 255, 255, 0.79) 1.93%, rgba(255, 255, 255, 0) 24.73%, rgba(255, 255, 255, 0.17) 82.82%, rgba(255, 255, 255, 0.83) 104.46%) border-box;
   --box-s-neo-dark: 10px 10px 20px #C2CCEB;
   --box-s-neo-light: 10px -10px 16px rgba(234, 239, 255, 0.25);
-  --foot-pos-b: 1rem;
+  --foot-behave:flex;
+  --foot-flx-dir:row;
+  --fImgSrc:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656764287/History%20of%20webdesign/hand_ivl7zp.png);
+  --fImgW:140px;
+  --fImgH:80px;
+  --fImg-pos:fixed;
+  --fImg-r:0em;
+  --fImg-b:3em;
+  --foot-pos:absolute;
+  --foot-pos-b:0em;
+  --foot-flx-just:space-between;
+  --foot-li-show:block;
+  --foot-flx-align:center;
+  --foot-w:100%;
+  --foot-pad:1.5em 2em;
+  --foot-back: linear-gradient(180deg, rgba(194, 204, 235, 0) 0%, #A8B2D1 174.03%);
+  --foot-back-filt: blur(5px);
+
+backdrop-filter: blur(10px);
 }
 
 [data-theme-background="2020"] {
