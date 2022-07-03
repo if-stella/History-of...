@@ -421,10 +421,36 @@ margin-bottom: var(--nav-mb);
     100% { transform: translate(5%,0) }
 }
 
-#circle-1 { position: relative; display: var(--circle-show); }
-#circle-1-cont { position: absolute; top:14em; left:3em; width:130px; text-align:center; font-family: var(--common-font); font-size: 14px; z-index:5;}
-#circle-1 text { font-family: var(--extra-font); font-size: 18px; letter-spacing: 1.6px; font-weight: bold; }
-#circle-1 svg { position: absolute; top:-1em; left:-9em; height:1; background-repeat:no-repeat; background-position-x: center; background-position-y: center; mix-blend-mode:hard-light; background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656792452/History%20of%20webdesign/txt-ball-1_kqtuxs.png);
+#circle-1 {
+  position: relative;
+  display: var(--circle-show); }
+#circle-1-cont {
+  position: absolute;
+  top:8.5em;
+  left:-0.5em;
+  width:230px;
+  height:230px;
+  font-family: var(--common-font);
+  font-size: 14px;
+  z-index:5;
+  mix-blend-mode:hard-light;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-1_roimag.png);
+  line-height: 230px;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding:49px; }}
+#circle-1 text {
+  font-family: var(--extra-font);
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  font-weight: bold; }
+#circle-1 svg { position: absolute; top:-1em; left:-9em; height:1;
   -webkit-animation-name: rotate;
      -moz-animation-name: rotate;
        -o-animation-name: rotate;
@@ -443,10 +469,39 @@ margin-bottom: var(--nav-mb);
           animation-timing-function: linear;
 }
 
-#circle-2 { position: relative; display: var(--circle-show); }
-#circle-2-cont { position: absolute; top:6.9em; left:20em; width:130px; text-align:center; font-family: var(--common-font); font-size: 14px; z-index:5;}
-#circle-2 text { font-family: var(--extra-font); font-size: 18px; letter-spacing: 1.6px; font-weight: bold; }
-#circle-2 svg { position: absolute; top:-7em; left:6em; height:1; background-repeat:no-repeat; background-position-x: 54%; background-position-y: 54%; mix-blend-mode:hard-light; background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656793074/History%20of%20webdesign/txt-ball-2_u5w4en.png);
+#circle-2 {
+  position: relative;
+  display: var(--circle-show); }
+#circle-2-cont {
+  position: absolute;
+  top:1.5em;
+  left:16.5em;
+  width:230px;
+  height:230px;
+  font-family: var(--common-font);
+  font-size: 14px;
+  z-index:5;
+  mix-blend-mode:hard-light;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-2_mfro0p.png);
+  line-height: 230px;
+  text-align: center;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding:49px; }}
+#circle-2 text {
+  font-family: var(--extra-font);
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  font-weight: bold; }
+#circle-2 svg {
+  position: absolute;
+  top:-7em;
+  left:6em;
+  height:1;
   -webkit-animation-name: rotate;
      -moz-animation-name: rotate;
        -o-animation-name: rotate;
@@ -455,6 +510,57 @@ margin-bottom: var(--nav-mb);
      -moz-animation-duration: 9s;
        -o-animation-duration: 9s;
           animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#circle-3 {
+  position: relative;
+  display: var(--circle-show); }
+#circle-3-cont {
+  position: absolute;
+  top:10.5em;
+  left:32.5em;
+  width:230px;
+  height:230px;
+  font-family: var(--common-font);
+  font-size: 14px;
+  z-index:5;
+  mix-blend-mode:hard-light;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-3_yuua92.png);
+  line-height: 230px;
+  text-align: center;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding:49px; }}
+#circle-3 text {
+  font-family: var(--extra-font);
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  font-weight: bold; }
+#circle-3 svg {
+  position: absolute;
+  top:1em;
+  left:20em;
+  height:1;
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
      -moz-animation-iteration-count: infinite;
        -o-animation-iteration-count: infinite;
