@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Play:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&family=Rakkas&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Play:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&family=Rakkas&family=Syne:wght@400;500;600;700;800&family=Water+Brush&display=swap');
 
 :root {
   --background: #021a2f;
@@ -150,7 +150,7 @@
 
 [data-theme-background="1996"] {
   --default-display:none;
-  --global-padding: 2rem 15rem;
+  --global-padding:0rem;
   --styled-display: block;
   --background: #000;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656271968/History%20of%20webdesign/1996-bg-tile_s4erz5.png);
@@ -172,9 +172,14 @@
   --h2-weight: bold;
   --h3-size: 1.25rem;
   --h3-weight: bold;
+  --head-behaviour:flex;
   --head-align: center;
+  --head-jus:center;
+  --head-area-pad:2rem 8rem;
   --intro-show:block;
-  --boxes-pad:2em 0em;
+  --intro-pad:0rem 8rem;
+  --intro-t-ali:center;
+  --boxes-pad:2em 8em;
   --boxes--flx-beh:flex;
   --boxes-flex-jus: space-between;
   --boxes-flx-dir: row;
@@ -199,7 +204,8 @@
   --box-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
   --foot-pos-b: 1.5rem;
-  --foot-txt-align:center;
+  --foot-w:100%;
+  --foot-behave:flex;
 }
 
 [data-theme-background="1998"] {
@@ -377,6 +383,61 @@
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-2_jmp2mc.png);
   --foot-pos-b: 1rem;
   --foot-pos-l: 5rem;
+}
+
+[data-theme-background="2006"] {
+  --default-display:none;
+  --styled-display: block;
+  --background: #fff;
+  --main-height:100%;
+  --common-font: Helvetica Neue, Arial, sans-serif;
+  --extra-font: 'Water Brush', cursive;
+  --global-padding: 0rem;
+  --h1-color: #F20CA0;
+  --h1-size: 3.5rem;
+  --h1-lheight: 3.5rem;
+  --h2-color: #fff;
+  --h2-size: 1.75rem;
+  --h3-color: #FFF;
+  --h3-size: 1.5rem;
+  --h3-weight: bold;
+  --p-color: #fff;
+  --p-fw:bold;
+  --p-size:18px;
+  --background: #000;
+  --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656942584/History%20of%20webdesign/2006-emo-bg_dsx5rh.jpg);
+  --background-img-cov:cover;
+  --contxt-color: #fff;
+  --contxt-fw: normal;
+  --ps-color: #fff;
+  --p-small-size: 0.75rem;
+  --p-small-fw:normal;
+  --year: ' ' '2006';
+  --intro-show:block;
+  --boxes--flx-beh:flex;
+  --boxes--flx-dir:row;
+  --boxes-flex-jus: space-between;
+  --boxes-flex-gap:2em;
+  --boxes-pad:2em 0em;
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --cnt-bor-rad:24px;
+  --cnt-img-contain: contain;
+  --cnt-pad: 2em;
+  --cnt-bor: 2px solid white;
+  --conI-back:#F20CA0;
+  --conII-back:#F20CA0;
+  --conIII-back:#F20CA0;
+  --iWrap-img: linear-gradient(90deg, rgba(0, 0, 0, 0.6) -1.82%, rgba(61, 61, 61, 0.4) 50.68%, rgba(0, 0, 0, 0.6) 100%);
+  --inner-wrap-flex:flex;
+  --inner-wrap-flex-dir:column;
+  --iWrap-pad:64px 40px 24px 40px;
+  --iWrap-mar: 0rem 8rem;
+  --iWrap-filter: blur(5px);
+  --iWrap-h:100%;
+  --foot-pos-b: 1rem;
+  --foot-w:100%;
+  --foot-behave:flex;
 }
 
 

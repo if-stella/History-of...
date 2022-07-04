@@ -26,6 +26,7 @@ input {
   margin-top:var(--main-margin-top);
   padding: var(--global-padding);
   border:var(--1992-border);
+  height: var(--main-height);
   background: var(--main-bg);
   box-shadow: var(--main-border-sunk-out), var(--main-border-sunk-in);
 }
@@ -42,16 +43,17 @@ input {
   }
 }
 
-.theme-background-input {
+.year-input {
   height: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
   border-radius: 4px;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   cursor: pointer;
 
   & input {
-    margin-right: 20px;
+    margin-right: 8px;
   }
 }
