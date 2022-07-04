@@ -20,6 +20,7 @@ p {
   color: var(--p-color);
   font-family: var(--common-font);
   font-size: var(--p-size);
+  font-weight: var(--p-fw);
   margin: var(--p-margin);
   text-shadow:var(--p-shad);
 }
@@ -65,6 +66,7 @@ h4 {
   color: var(--ps-color);
   text-transform:var(--p-small-transform);
   letter-spacing: var(--p-small-ls);
+  font-weight: var(--p-small-fw);
 }
 
 .default-content {
@@ -94,6 +96,7 @@ h4 {
   width: var(--intro-w);
   background: var(--intro-back);
   display: var(--intro-show);
+  text-align: var(--intro-t-ali);
 }
 
 .intro-2017 {
@@ -117,6 +120,7 @@ h4 {
   gap: var(--head-gap);
   align-items:var(--head-ali);
   padding: var(--head-area-pad);
+  justify-content: var(--head-jus)
 }
 
 .head-bg-image {
@@ -234,7 +238,8 @@ h4 {
 
   p {
     color: var(--contxt-color);
-    font-size:var(--contxt-fontsize);
+    font-size:var(--contxt-fs);
+    font-weight:var(--contxt-fw);
   }
 }
 
@@ -320,6 +325,7 @@ h4 {
   width: var(--iWrap-w);
   height: var(--iWrap-h);
   background-size: var(--iWrap-cov);
+  backdrop-filter: var(--iWrap-filter);
   display:var(--inner-wrap-flex);
   align-items:(--inner-wrap-flex-ali);
   justify-content:var(--inner-wrap-just);
@@ -331,6 +337,7 @@ h4 {
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);
   position:var(--inner-wrap-pos);
+  margin: var(--iWrap-mar);
 }
 
 .navbar {

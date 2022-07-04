@@ -105,7 +105,7 @@ const App = () => {
             <div className="intro-2017"><p>It's the year 2017. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself)</p>
            </div>
             <div className="boxes">
-              <div className="content-box white-grad">
+              <div className="content-box">
                 <div className="cbox-image cbi-I"></div>
                 <span><h3>Content I</h3></span>
                 <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
@@ -133,66 +133,72 @@ const App = () => {
       </div>
       <form onChange={onChange}>
           <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="1990"
-              label="1990"
+              label="90"
               defaultChecked
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="1991"
-              label="1991"
+              label="91"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="1992"
-              label="1992"
+              label="92"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="1996"
-              label="1996"
+              label="96"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="1998"
-              label="1998"
+              label="98"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="2000"
-              label="2000"
+              label="00"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="2001"
-              label="2001"
+              label="01"
             />
-            <BackgroundInput
+            <YearSwitch
+              backgroundColor="#fff"
+              color="#000"
+              value="2006"
+              label="06"
+            />
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="2014"
-              label="2014"
+              label="14"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="2017"
-              label="2017"
+              label="17"
             />
-            <BackgroundInput
+            <YearSwitch
               backgroundColor="#fff"
               color="#000"
               value="2019"
-              label="2019"
+              label="19"
             />
           </div>
         </form>
@@ -203,9 +209,9 @@ const App = () => {
 
 export default App;
 
-const BackgroundInput = ({ backgroundColor, color, value, label, defaultChecked }) => (
+const YearSwitch = ({ backgroundColor, color, value, label }) => (
   <label
-    className="theme-background-input"
+    className="year-input"
     style={{ backgroundColor, color, border: `1px solid ${color}` }}
     htmlFor={value}
   >
