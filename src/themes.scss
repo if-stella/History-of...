@@ -29,6 +29,7 @@
   --blur-show:none;
   --circle-show:none;
   --head-bg-show:none;
+  --player-display:none;
 }
 
 [data-theme-background="1990"] {
@@ -435,6 +436,7 @@
   --iWrap-mar: 0rem 8rem;
   --iWrap-filter: blur(5px);
   --iWrap-h:100%;
+  --player-display:flex;
   --foot-pos-b: 1rem;
   --foot-w:100%;
   --foot-behave:flex;
