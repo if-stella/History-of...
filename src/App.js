@@ -1,6 +1,7 @@
 import "./App.scss";
 import { useState } from "react";
 import Loading from "./components/Loading/Loading";
+import MusicPlayer from "./components/Musicplayer/MusicPlayer";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -25,6 +26,7 @@ const App = () => {
     >
       <div className="wrapper">
         <div className="main-content">
+          <MusicPlayer />
           <div className="interface-bar">
             <div className="ibar-image"></div>
             I'm an in-your-face-interface!
