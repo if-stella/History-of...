@@ -9,185 +9,100 @@ import './Musicplayer.scss'
 const Player = () => {
   const tracks = [
     {
-      name: "Mekan Sahibi",
-      artist: "Norm Ender",
-      cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",
-      source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
-      url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
+      name: "I'm not okay",
+      artist: "my chemical romance",
+      cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657099275/History%20of%20webdesign/download_vtrpia.jpg",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970624/History%20of%20webdesign/Panteros666_-_Baby_F-16_Indecorum_Remix_m8j6j4.mp3",
       favorited: false
     },
     {
-      name: "Butterflies",
-      artist: "Sia",
-      cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/4.jpg",
-      source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/4.mp3",
-      url: "https://www.youtube.com/watch?v=kYgGwWYOd9Y",
+      name: "I write sins not tragedies.",
+      artist: "PANIC! AT THE DISCO",
+      cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657099275/History%20of%20webdesign/ab67616d0000b2730a8881b0d247346c3c447bf3_kctem9.jpg",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970627/History%20of%20webdesign/Britney_Spears_-_Baby_One_More_Time_Indecorum_Remix_bmyuw8.mp3",
       favorited: true
+    },
+    {
+      name: "Beating heart baby",
+      artist: "Head automatica",
+      cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657102290/History%20of%20webdesign/500x500_rtt76w.jpg",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970624/History%20of%20webdesign/Panteros666_-_Baby_F-16_Indecorum_Remix_m8j6j4.mp3",
+      favorited: false
     }]
 
     const player = new Audio(tracks[0].source)
     player.setAttribute('preload', 'metadata')
-
     const userOptions = React.createContext({
-    shuffle: false,
-    repeat: false,
+      shuffle: false,
+      repeat: false,
     })
 
     function Options(props){
-      let options = React.useContext(userOptions)
-      let [shuffl, setShuffle] = React.useState(options.shuffle)
-      let [repet, setRepeat] = React.useState(options.repeat)
       let [fav, setFav] = React.useState(tracks[props.idx].favorited)
 
       React.useEffect(() => setFav(tracks[props.idx].favorited))
 
-      function shuffle(){
-        options.shuffle = !options.shuffle
-        options.repeat = false
-        setShuffle(!shuffl)
-        setRepeat(false)
-      }
+    function favorite(){
+      tracks[props.idx].favorited = !tracks[props.idx].favorited
+      setFav(tracks[props.idx].favorited)
+    }
 
-      function repeat(){
-        options.repeat = !options.repeat
-        options.shuffle = false
-        setShuffle(false)
-        setRepeat(!repet)
-      }
-
-      function favorite(){
-        tracks[props.idx].favorited = !tracks[props.idx].favorited
-        setFav(tracks[props.idx].favorited)
-      }
-
-      return(
-        <div className="options">
-          {
-            shuffl &&
-            <button onClick={shuffle} className="opt" style={{color: '#b70478'}}>
-              <ImShuffle/>
-            </button>
+    return(
+      <div className="options">
+        {
+          fav &&
+        <button onClick={favorite}  className="opt" style={{color: '#b70478'}}>
+          <BsSuitHeartFill/>
+        </button>
             ||
-            <button onClick={shuffle} className="opt" >
-              <ImShuffle/>
-            </button>
+          <button onClick={favorite}  className="opt" >
+          <BsSuitHeart/>
+        </button>
           }
+      </div>
+    );
+  }
 
-          {
-            fav &&
-          <button onClick={favorite}  className="opt" style={{color: '#b70478'}}>
-            <BsSuitHeartFill/>
-          </button>
-              ||
-            <button onClick={favorite}  className="opt" >
-            <BsSuitHeart/>
-          </button>
-
-            }
-          {
-            repet &&
-          <button onClick={repeat} className="opt" style={{color: '#b70478'}}>
-            <BiRepeat/>
-          </button>
-            }
-        </div>
-      );
-    }
-
-    function Control(props){
-      return(
-        <div className="controls">
-          <button className="controlButton"
-            onClick={
-              x => props.setIdx(props.idx-1 < 0 ? 8 : props.idx-1)
-            }>
-            <BsSkipBackwardFill />
-          </button>
-          {
-            props.playState === true ?
-              <button
-                className="centerButton"
-                onClick={x => props.setPlayState(false)}>
-                <ImPause2 />
-              </button> :
-              <button
-                className="centerButton"
-                onClick={x => props.setPlayState(true)}>
-                <GrPlayFill />
-              </button>
-          }
+function Control(props){
+  return(
+    <div className="controls">
+      <button className="controlButton"
+        onClick={
+          x => props.setIdx(props.idx-1 < 0 ? 2 : props.idx-1)
+        }>
+        <BsSkipBackwardFill />
+      </button>
+      {
+        props.playState === true ?
           <button
-            className="controlButton"
-            onClick={x => props.setIdx((props.idx+1)%9)}>
-            <BsFillSkipForwardFill />
+            className="centerButton"
+            onClick={x => props.setPlayState(false)}>
+            <ImPause2 />
+          </button> :
+          <button
+            className="centerButton defaultplay"
+            onClick={x => props.setPlayState(true)}>
+            <GrPlayFill />
           </button>
-        </div>
-      );
-    }
-
-    function Progress(props){
-      let [currLength, setCurrLength] = React.useState(0)
-      let [length, setLength] = React.useState(0)
-      let options = React.useContext(userOptions)
-      const progressBar = document.querySelector('.progressBar')
-
-      function updateProgress(e){
-        let offset = e.target.getBoundingClientRect().left
-        let newOffSet = e.clientX
-        let newWidth = newOffSet - offset
-        progressBar.style.width = newWidth+"px"
-        let secPerPx = length / 280
-        player.currentTime = secPerPx * newWidth
       }
-
-      setInterval(() => {
-        setLength(Math.ceil(player.duration))
-        setCurrLength(Math.ceil(player.currentTime))
-        let secPerPx = Math.ceil(player.duration) / 280
-        let newWidth = player.currentTime / secPerPx
-        document.querySelector('.progressBar').style.width = newWidth+"px"
-        if(player.currentTime === player.duration){
-          if(options.shuffle === true){
-            props.setIdx((parseInt(Math.random()*1000))%9)
-          }
-          else if(options.repeat === true){
-            player.play()
-          }
-          else{
-            props.setIdx((props.idx+1)%9)
-          }
-        }
-      }, 1000);
-
-      function formatTime(s){
-        return Number.isNaN(s) ? '0:00' : (s-(s%=60))/60+(9<s?':':':0')+s
-      }
-
-      return(
-        <div className="progress">
-          <div className="currentTime">
-            <p>{formatTime(currLength)}</p>
-          </div>
-          <div
-          className="progressCenter"
-          onClick={(e) => updateProgress(e)}>
-            <div className="progressBar">
-            </div>
-          </div>
-          <div className="songLength">
-            <p>{formatTime(length)}</p>
-          </div>
-        </div>
-      );
-    }
+      <button
+        className="controlButton"
+        onClick={x => props.setIdx((props.idx+1)%3)}>
+        <BsFillSkipForwardFill />
+      </button>
+    </div>
+  );
+}
 
     function Avatar(props){
       return(
-        <>
+        <div className="songInfo">
           <img src={tracks[props.idx].cover} className="avatar"/>
+          <div className="songTexts">
           <h4 className="name">{tracks[props.idx].artist}</h4>
-          <h1 className="title">{tracks[props.idx].name}</h1>
-        </>
+          <h3 className="title">{tracks[props.idx].name}</h3>
+          </div>
+        </div>
       );
     }
 
@@ -215,19 +130,15 @@ const Player = () => {
       return(
         <div className="playerContainer">
           <Avatar idx={idx}/>
-          <Progress
-            setIdx={setIdx}
-            idx={idx}
-          />
           <Control
             setIdx={setIdx}
             idx={idx}
             playState={playState}
             setPlayState={setPlayState}/>
-          <Options
+          {/* <Options
             setIdx={setIdx}
             idx={idx}
-          />
+          /> */}
         </div>
       );
     }
