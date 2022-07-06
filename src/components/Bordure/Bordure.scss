@@ -1,0 +1,74 @@
+.bordure {
+  display:var(--bordure-display);
+  flex-direction:column;
+  width:100%;
+  padding:0.5em 0em 2em 0em;
+  position:relative;
+  text-align: center;
+}
+
+.line-1 {
+  height:4px;
+  background-color:#FF5CC5;
+}
+
+.white-line {
+  height:1px;
+  background-color:#FFEEF2;
+}
+
+.line-2 {
+  height:16px;
+  background-image: linear-gradient(180deg, #FB5BC2 0%, #F20CA0 100%);
+}
+
+.line-3 {
+  height:32px;
+  background-image: linear-gradient(180deg, #FF45BD 0%, #FDDDF2 52.08%, #FF45BD 100%);
+}
+
+.line-4 {
+  height:16px;
+  background-image: linear-gradient(180deg, #F20CA0 0%, #CC0083 100%);
+}
+
+.line-5 {
+  height:4px;
+  background-color:#F20CA0;
+}
+
+.logo {
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657142349/History%20of%20webdesign/logo_fkqhmp.png);
+  position:absolute;
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:80px;
+  height:80px;
+  top:6px;
+  left: 2em;
+  border-radius:100%;
+  box-shadow: 2px 4px 100px rgba(0, 0, 0, 0.75);
+  z-index:10;
+}
+
+.tails {
+  display: var(--tails-display);
+  position:relative;
+  top:1.5em;
+}
+
+.tail-left {
+  position:absolute;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657143609/History%20of%20webdesign/Mask_group_l7ladn.png);
+  width:98.5px;
+  height:82px;
+  left:2em;
+}
+
+.tail-right {
+  position:absolute;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657143609/History%20of%20webdesign/Mask_group-1_wussmh.png);
+  width:98.5px;
+  height:82px;
+  right:2em;
+}

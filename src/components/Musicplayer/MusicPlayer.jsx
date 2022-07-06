@@ -1,8 +1,6 @@
 import React from 'react'
-import {ImPause2, ImShuffle} from 'react-icons/im';
-import {GrPlayFill} from 'react-icons/gr';
+import {ImPause2, ImPlay3} from 'react-icons/im';
 import {BsSkipBackwardFill, BsFillSkipForwardFill, BsSuitHeart, BsSuitHeartFill} from 'react-icons/bs'
-import {BiRepeat} from 'react-icons/bi';
 import './Musicplayer.scss'
 
 
@@ -80,9 +78,9 @@ function Control(props){
             <ImPause2 />
           </button> :
           <button
-            className="centerButton defaultplay"
+            className="centerButton"
             onClick={x => props.setPlayState(true)}>
-            <GrPlayFill />
+            <ImPlay3 />
           </button>
       }
       <button
