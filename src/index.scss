@@ -227,6 +227,7 @@ h4 {
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);
   border-radius:var(--cnt-bor-rad);
+  border-style: var(--cnt-bor-style);
   text-align: var(--cnt-txt-ali);
   align-items:var(--cnt-ali-its);
   box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);

@@ -2,6 +2,8 @@ import "./App.scss";
 import { useState } from "react";
 import Loading from "./components/Loading/Loading";
 import MusicPlayer from "./components/Musicplayer/MusicPlayer";
+import Bordure from "./components/Bordure/Bordure";
+import Tails from "./components/Bordure/Tails";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -44,7 +46,9 @@ const App = () => {
             <Loading />
           </div>
           <div className="bg"></div>
+          <Tails />
           <div className="inner-wrap">
+          <Bordure />
             <div className="head-area">
               <div className="head-images">
                 <div className="head-image"></div>
