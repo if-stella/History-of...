@@ -1,0 +1,18 @@
+.interface-bar {
+  background-image: var(--main-back-img);
+  background: var(--inbar-back);
+  color: var(--main-bg);
+  display:var(--inbar-show);
+  margin-bottom:var(--inbar-mb);
+  font-family:var(--common-font);
+  padding:var(--inbar-padding);
+  box-shadow:var(--main-border-sunk-out),var(--main-border-sunk-in);
+  align-items:var(--inbar-ali);
+  gap:var(--inbar-gap);
+
+  .ibar-image {
+    background-image: var(--iBar-img);
+    width: var(--iBar-img-w);
+    height: var(--iBar-img-h);
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  display: var(--foot-behave);
+  flex-direction:  var(--foot-flx-dir);
+  justify-content: var(--foot-flx-just);
+  align-items: var(--foot-flx-align);
+  background: var(--foot-back);
+  padding: var(--foot-pad);
+  position: var(--foot-pos);
+  bottom: var(--foot-pos-b);
+  right: var(--foot-pos-r);
+  left: var(--foot-pos-l);
+  width:var(--foot-w);
+  height:var(--foot-h);
+  box-shadow: var(--foot-inset);
+  text-align:var(--foot-txt-align);
+  overflow:var(--foot-overflow);
+  backdrop-filter:var(--foot-back-filt);
+}
+
+.footer-image {
+  background-image: var(--fImgSrc);
+  width: var(--fImgW);
+  height: var(--fImgH);
+  position: var(--fImg-pos);
+  left:var(--fImg-l);
+  right:var(--fImg-r);
+  bottom: var(--fImg-b);
+}
+
+.footer-links {
+  display: var(--foot-li-show);
+}

@@ -4,8 +4,12 @@ import Loading from "./components/Loading/Loading";
 import MusicPlayer from "./components/Musicplayer/MusicPlayer";
 import Bordure from "./components/Bordure/Bordure";
 import Tails from "./components/Bordure/Tails";
-import Stars from "./Stars/Stars";
+import Stars from "./components/Stars/Stars";
 import Circles from "./components/Circles/Circles";
+import Interfacebar from "./components/Interfacebar/Interfacebar";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Guestcounter from "./components/Guestcounter/Guestcounter";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -31,17 +35,8 @@ const App = () => {
       <div className="wrapper">
         <div className="main-content">
           <MusicPlayer />
-          <div className="interface-bar">
-            <div className="ibar-image"></div>
-            I'm an in-your-face-interface!
-          </div>
-          <div className="navbar">
-              <li>
-                <ul>Anchor</ul>
-                <ul>Button</ul>
-                <ul>Something</ul>
-              </li>
-          </div>
+          <Interfacebar />
+          <Navbar />
           <div className="default-content">
             <h1>Hey there.</h1>
             <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
@@ -87,12 +82,8 @@ const App = () => {
             </div>
             <Stars />
           </div>
-
-          <div className="footer">
-            <div className="footer-image"></div>
-              <p className="p-small styled-content">© Made with love by Stella Raab in <span className="varyear"></span></p>
-              <span className="p-small footer-links">Impress Contact Privacy</span>
-          </div>
+          <Guestcounter />
+          <Footer />
         </div>
       </div>
       <div>
