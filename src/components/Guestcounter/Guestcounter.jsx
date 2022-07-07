@@ -6,7 +6,7 @@ const Guestcounter = () => {
   return (
     <div className="guestCounter">
       <span>
-      <CountUp start={0} end={1337} duration={9} prefix="You are visitor number " suffix="!!!"/>
+      <CountUp end={1337} duration={9} prefix="You are visitor number " suffix="!!!"/>
       </span>
     </div>
   )
