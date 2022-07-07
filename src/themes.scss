@@ -32,6 +32,7 @@
   --player-display:none;
   --bordure-display:none;
   --tails-display:none;
+  --guestCount-display:none;
   --stars-show:none;
 }
 
@@ -160,6 +161,7 @@
   --background: #000;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656271968/History%20of%20webdesign/1996-bg-tile_s4erz5.png);
   --background-repeat:repeat;
+  --wrap-overflow:hidden;
   --h1-color: #fff;
   --h2-color: #fff;
   --h3-color: #000;
@@ -210,6 +212,7 @@
   --p-small-align: center;
   --box-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --box-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  --guestCount-display:block;
   --foot-pos-b: 1.5rem;
   --foot-w:100%;
   --foot-behave:flex;

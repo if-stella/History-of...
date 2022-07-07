@@ -1,0 +1,13 @@
+.guestCounter {
+  position: absolute;
+  display:flex;
+  flex-direction:row;
+  bottom:var(--foot-pos-b);
+  left:1.5rem;
+  display: var(--guestCount-display);
+
+  span {
+    color: var(--p-color);
+    font-family: var(--common-font);
+  }
+}
