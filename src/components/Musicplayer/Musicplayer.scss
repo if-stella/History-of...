@@ -46,7 +46,7 @@
   align-items:center;
   background:rgba(0, 0, 0, 0.513);
   background-image: linear-gradient(90deg, #000000 -7.14%, rgba(0, 0, 0, 0) 100%);
-  border-radius:5px 0px 0px 5px;
+  border-radius:5px;
   border: 2px solid #F20CA0;
 }
 
@@ -62,7 +62,8 @@
 	right: auto;
 	width: 80px;
 	height:80px;
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 3px 0px 0px 3px;
+  border-right:2px solid #F20CA0;
 }
 
 .name{
@@ -100,11 +101,18 @@
 	font-size: 20px;
 	transition: box-shadow 0.4s;
   color: #F20CA0;
+  border: 2px solid #F20CA0;
+  background:black;
 }
 
 .controlButton:hover{
-  color:#F76DC6;
+  color:#c70984;
 }
+
+.controlButton:focus{
+  border: 2px solid #F20CA0;
+}
+
 
 .centerButton{
 	border: none;
@@ -120,12 +128,16 @@
 	border: 2px solid #F20CA0;
 	color: #F20CA0;
 	transition: box-shadow 0.5s;
+  background:black;
 }
 
 .centerButton:hover{
-  color:#F76DC6;
-  background: rgba(0, 0, 0, 0.753);
+  color:#c70984;
 }
+
+.centerButton:focus {
+  border: 2px solid #F20CA0;
+ }
 
 .options{
 	display: flex;
@@ -152,5 +164,5 @@
 
 .opt:hover{
 	cursor:pointer;
-	color: #b70478;
+	color: #c70984;
 }

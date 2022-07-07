@@ -32,6 +32,7 @@
   --player-display:none;
   --bordure-display:none;
   --tails-display:none;
+  --stars-show:none;
 }
 
 [data-theme-background="1990"] {
@@ -152,6 +153,7 @@
 }
 
 [data-theme-background="1996"] {
+  --stars-show:block;
   --default-display:none;
   --global-padding:0rem;
   --styled-display: block;
@@ -186,6 +188,8 @@
   --boxes--flx-beh:flex;
   --boxes-flex-jus: space-between;
   --boxes-flx-dir: row;
+  --boxes-pos:relative;
+  --boxes-z:20;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cbi-W: 40px;

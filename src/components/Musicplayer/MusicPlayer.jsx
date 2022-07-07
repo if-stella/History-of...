@@ -7,24 +7,31 @@ import './Musicplayer.scss'
 const Player = () => {
   const tracks = [
     {
-      name: "I'm not okay",
+      name: "Helena",
       artist: "my chemical romance",
       cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657099275/History%20of%20webdesign/download_vtrpia.jpg",
-      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970624/History%20of%20webdesign/Panteros666_-_Baby_F-16_Indecorum_Remix_m8j6j4.mp3",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1657185339/History%20of%20webdesign/MCR-Helena-short_fjp6pt.mp3",
       favorited: false
+    },
+    {
+      name: "Right here in my arms",
+      artist: "HIM",
+      cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657183515/History%20of%20webdesign/61B_L1FItOL_hjq5m0.jpg",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1657185340/History%20of%20webdesign/HIM_-_short_llreyv.mp3",
+      favorited: true
     },
     {
       name: "I write sins not tragedies.",
       artist: "PANIC! AT THE DISCO",
       cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657099275/History%20of%20webdesign/ab67616d0000b2730a8881b0d247346c3c447bf3_kctem9.jpg",
-      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970627/History%20of%20webdesign/Britney_Spears_-_Baby_One_More_Time_Indecorum_Remix_bmyuw8.mp3",
-      favorited: true
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1657185340/History%20of%20webdesign/Panic_short_ty5mpp.mp3",
+      favorited: false
     },
     {
       name: "Beating heart baby",
       artist: "Head automatica",
       cover: "https://res.cloudinary.com/dr24t0rw2/image/upload/v1657102290/History%20of%20webdesign/500x500_rtt76w.jpg",
-      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1656970624/History%20of%20webdesign/Panteros666_-_Baby_F-16_Indecorum_Remix_m8j6j4.mp3",
+      source: "https://res.cloudinary.com/dr24t0rw2/video/upload/v1657185339/History%20of%20webdesign/Beating_heart_short_aorp9e.mp3",
       favorited: false
     }]
 
@@ -66,7 +73,7 @@ function Control(props){
     <div className="controls">
       <button className="controlButton"
         onClick={
-          x => props.setIdx(props.idx-1 < 0 ? 2 : props.idx-1)
+          x => props.setIdx(props.idx-1 < 0 ? 3 : props.idx-1)
         }>
         <BsSkipBackwardFill />
       </button>
@@ -85,7 +92,7 @@ function Control(props){
       }
       <button
         className="controlButton"
-        onClick={x => props.setIdx((props.idx+1)%3)}>
+        onClick={x => props.setIdx((props.idx+1)%4)}>
         <BsFillSkipForwardFill />
       </button>
     </div>
