@@ -42,6 +42,7 @@ h2 {
   margin: 0 auto;
   font-weight: var(--h2-weight);
   text-shadow:var(--h2-shad);
+  letter-spacing: var(--h2-ls);
 }
 
 h3 {
@@ -88,6 +89,9 @@ h4 {
   background-repeat: var(--background-repeat);
   background-image: var(--background-image);
   background-size: var(--background-img-cov);
+  position: var(--background-pos);
+  z-index: var(--background-z);
+  top:var(--background-t);
 }
 
 .intro {
@@ -306,6 +310,7 @@ h4 {
   border-image-source: var(--gradient-outl-img-src);
   position:var(--inner-wrap-pos);
   margin: var(--iWrap-mar);
+  z-index: var(--iWrap-z);
 }
 
 .bg {
