@@ -10,6 +10,7 @@ import Interfacebar from "./components/Interfacebar/Interfacebar";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Guestcounter from "./components/Guestcounter/Guestcounter";
+import Macbook2010 from "./components/2010-interface/Macbook2010";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -82,6 +83,7 @@ const App = () => {
             </div>
             <Stars />
           </div>
+          <Macbook2010 />
           <Guestcounter />
           <Footer />
         </div>
@@ -138,6 +140,12 @@ const App = () => {
               color="#000"
               value="2006"
               label="06"
+            />
+            <YearSwitch
+              backgroundColor="#fff"
+              color="#000"
+              value="2010"
+              label="10"
             />
             <YearSwitch
               backgroundColor="#fff"

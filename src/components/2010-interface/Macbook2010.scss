@@ -1,0 +1,39 @@
+.sceumorphic-elements {
+  display:var(--2010-display);
+}
+
+.macbook {
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657313564/History%20of%20webdesign/compi_juvqe4.png);
+  background-size: cover;
+  position:fixed;
+  width: 1102px;
+  height: 676px;
+  top:6em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.polaroid {
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657276307/History%20of%20webdesign/Polakamera_ykr92y.png);
+  background-size:cover;
+  width: 400px;
+  height: 367px;
+  position:fixed;
+  z-index:20;
+  bottom:-2.4em;
+  left:0em;
+}
+
+@media screen and (max-width: 1050) {
+  .macbook {
+    width: 950px;
+    height: 583px;
+  }
+}
+
+
+@media screen and (max-width: 756px) {
+  .polaroid {
+    display:none;
+  }
+}
