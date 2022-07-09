@@ -52,6 +52,7 @@
   --p-small-align: center;
   --common-font: 'Press Start 2P', cursive;
   --extra-font: 'Press Start 2P', cursive;
+  --contxt-ff: 'Press Start 2P', cursive;
   --year: ' ' '1990';
   --intro-show:block;
   --cnt-behaviour: flex;
@@ -77,6 +78,7 @@
   --background: #ffffff;
   --common-font: 'EB Garamond', serif;
   --extra-font: 'EB Garamond', serif;
+  --contxt-ff: 'EB Garamond', serif;
   --year: ' ' '1991';
   --h1-size: 1.5rem;
   --h1-lheight: 1.5rem;
@@ -124,6 +126,7 @@
   --contxt-color: #000;
   --common-font: 'VT323', monospace;
   --extra-font: 'VT323', monospace;
+  --contxt-ff: 'VT323', monospace;
   --year: ' ' '1992';
   --h1-size: 1.5rem;
   --h1-lheight: 1.5rem;
@@ -171,6 +174,7 @@
   --contxt-color: #000;
   --common-font: 'EB Garamond', serif;
   --extra-font: 'EB Garamond', serif;
+  --contxt-ff: 'EB Garamond', serif;
   --year: ' ' '1996';
   --intro-p:1.5rem;
   --h1-size: 3.5rem;
@@ -254,6 +258,7 @@
   --background: darkgrey;
   --common-font: 'Orbitron', sans-serif;
   --extra-font: 'Orbitron', sans-serif;
+  --contxt-ff: 'Orbitron', sans-serif;
   --nav-show:block;
   --nav-ul-w:100%;
   --nav-li-style:none;
@@ -320,6 +325,7 @@
   --year: ' ' '2001';
   --common-font: Helvetica Neue, Arial, sans-serif;
   --extra-font: 'Playfair Display', serif;
+  --contxt-ff: Helvetica Neue, Arial, sans-serif;
   --h1-color: #000;
   --h1-size: 4.5rem;
   --h2-color: #000;
@@ -403,6 +409,7 @@
   --main-height:100%;
   --common-font: Helvetica Neue, Arial, sans-serif;
   --extra-font: 'Water Brush', cursive;
+  --contxt-ff: Helvetica Neue, Arial, sans-serif;
   --global-padding: 0rem;
   --h1-color: #F20CA0;
   --h1-size: 3.5rem;
@@ -555,6 +562,7 @@
   --contxt-color: #fff;
   --common-font: 'Roboto', sans-serif;
   --extra-font: 'Roboto', sans-serif;
+  --contxt-ff: 'Roboto', sans-serif;
   --global-padding: 0rem;
   --global-mt: 0rem;
   --year: ' ' '2014';
@@ -619,6 +627,7 @@
   --background-repeat:repeat;
   --common-font: 'Roboto', sans-serif;
   --extra-font: 'Rakkas', cursive;
+  --contxt-ff: 'Roboto', sans-serif;
   --h1-size:6rem;
   --h1-lheight: 6rem;
   --h1-color: #1D0202;
@@ -671,6 +680,9 @@
   --background: #ffffff;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672532/History%20of%20webdesign/2019-hd-bg_myneq3.jpg);
   --background-img-cov:cover;
+  --common-font: 'Space Grotesk', sans-serif;
+  --extra-font: 'Space Grotesk', sans-serif;
+  --contxt-ff: 'Space Grotesk', sans-serif;
   --h1-size:5rem;
   --h1-lheight: 5rem;
   --h1-color: #3B4F7D;
@@ -759,30 +771,6 @@
   --foot-pad:1.5em 2em;
   --foot-back: linear-gradient(180deg, rgba(194, 204, 235, 0) 0%, #A8B2D1 174.03%);
   --foot-back-filt: blur(5px);
-}
-
-[data-theme-background="2020"] {
-  --default-display:none;
-  --styled-display: block;
-  --background: #ffffff;
-  --intro-show:block;
-  --background-image: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
-  --h1-color: #000;
-  --h2-color: rgb(53, 53, 53);
-  --h3-color: rgb(53, 53, 53);
-  --p-color: rgb(53, 53, 53);
-  --ps-color: rgb(53, 53, 53);
-  --contxt-color: rgb(53, 53, 53);
-  --common-font: 'Space Grotesk', sans-serif;
-  --extra-font: 'Space Grotesk', sans-serif;
-  --year: ' ' '2020';
-  --h1-size: 4rem;
-  --h2-size: 3rem;
-  --h3-size: 2rem;
-  --h4-size: 1.5rem;
-  --p-small-size: 0.75rem;
-  --foot-pos-b: 1rem;
-  --foot-pos-r: 1rem;
 }
 
 [data-theme-background="dark"] { --background: #000; --color: #d9d9d9; }
