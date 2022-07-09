@@ -1,5 +1,5 @@
 import React from 'react'
-import './Macbook2010.scss'
+import './2010-styles.scss'
 
 const Macbook2010 = () => {
   return (
