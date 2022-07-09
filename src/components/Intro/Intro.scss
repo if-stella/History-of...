@@ -1,0 +1,19 @@
+.intro {
+  padding:var(--intro-pad);
+  max-width: var(--intro-mw);
+  width: var(--intro-w);
+  background: var(--intro-back);
+  display: var(--intro-show);
+  text-align: var(--intro-t-ali);
+}
+
+.intro-2017 {
+  display: var(--2017-intro-show);
+  position: var(--2017-intro-pos);
+  width:var(--2017-intro-w);
+  transform: var(--2017-intro-rot);
+  bottom: var(--2017-intro-pos-b);
+  left: var(--2017-intro-pos-l);
+  right: var(--2017-intro-pos-r);
+  top: var(--2017-intro-pos-t);
+}

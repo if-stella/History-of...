@@ -24,16 +24,29 @@
   left:0em;
 }
 
-@media screen and (max-width: 1050) {
+@media screen and (max-width: 1000px) {
   .macbook {
-    width: 950px;
-    height: 583px;
+    width: 756px;
+    height: 461px;
+  }
+
+  .polaroid {
+    width: 314px;
+    height: 288px;
+    top:19em;
   }
 }
 
 
 @media screen and (max-width: 756px) {
   .polaroid {
-    display:none;
+    width: 192px;
+    height: 176px;
+    top:15.5em;
+  }
+
+  .macbook {
+    width: 500px;
+    height: 305px;
   }
 }

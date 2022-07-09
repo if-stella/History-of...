@@ -1,0 +1,85 @@
+.head-area {
+  display: var(--head-behaviour);
+  flex-direction:  var(--head-flx-dir);
+  gap: var(--head-gap);
+  align-items:var(--head-ali);
+  padding: var(--head-area-pad);
+  justify-content: var(--head-jus)
+}
+
+.head-images {
+  position: var(--head-images-pos);
+  left: var(--head-images-l);
+  top: var(--head-images-t);
+  right: var(--head-images-r);
+  bottom: var(--head-images-b);
+}
+
+.head-image {
+  background-image: var(--hImgSrc);
+  width: var(--hImgW);
+  height: var(--hImgH);
+  flex-shrink: var(--hImgFlexS);
+  border-radius:var(--hImg-borrad);
+  box-shadow: var(--hImg-shadow);
+  z-index:var(--hImg-z);
+  background-repeat:var(--hImg-rep);
+  background-size: var(--hImg-cov);
+  mix-blend-mode: var(--hImg-blend);
+  position: var(--hImg-pos);
+}
+
+.head-image-II {
+  background-image: var(--hImg2Src);
+  width: var(--hImg2W);
+  height: var(--hImg2H);
+  border-radius:var(--hImg2-borrad);
+  box-shadow: var(--hImg2-shadow);
+  z-index:var(--hImg2-z);
+  mix-blend-mode: var(--hImg2-blend);
+  position: var(--hImg2-pos);
+  top: var(--hImg2-t);
+  left: var(--hImg2-l);
+}
+
+.head-image-III {
+  background-image: var(--hImg3Src);
+  width: var(--hImg3W);
+  height: var(--hImg3H);
+  border-radius:var(--hImg3-borrad);
+  box-shadow: var(--hImg3-shadow);
+  z-index:var(--hImg3-z);
+  mix-blend-mode: var(--hImg3-blend);
+  position: var(--hImg3-pos);
+  top: var(--hImg3-t);
+  left: var(--hImg3-l);
+}
+
+.head-bg-image {
+  background-image: var(--head-bg-img);
+  background-size: var(--head-bg-cov);
+  width: var(--head-bg-w);
+  height: var(--head-bg-h);
+  position: var(--head-bg-pos);
+  left: var(--head-bg-l);
+  top: var(--head-bg-t);
+  display: var(--head-bg-show);
+  z-index: var(--head-bg-z);
+  filter:var(--head-bg-blur);
+}
+
+
+.headlines {
+  padding: var(--headlines-pad);
+  background: var(--head-back);
+  text-align: var(--head-align);
+  z-index: var(--headlines-z);
+  position:var(--headlines-pos);
+}
+
+.headp {
+  display: var(--headp-show);
+  margin-top:var(--headp-mt);
+  width:var(--headp-w);
+  max-width: var(--headp-max-w);
+}

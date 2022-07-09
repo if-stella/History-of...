@@ -1,0 +1,87 @@
+.boxes {
+  display: var(--boxes--flx-beh);
+  flex-direction:  var(--boxes-flx-dir);
+  flex-grow:var(--boxes--flx-grow);
+  gap: var(--boxes-flex-gap);
+  justify-content: var(--boxes-flex-jus);
+  padding: var(--boxes-pad);
+  background: var(--box-back);
+  background-image: var(--box-back-img);
+  background-size: var(--box-back-img-cov);
+  border: var(--border);
+  border-image-slice: var(--gradient-outl-slice);
+  border-width: var(--gradient-outl-border-w);
+  border-image-source: var(--gradient-outl-img-src);
+  position: var(--boxes-pos);
+  z-index: var(--boxes-z);
+}
+
+.content-box {
+  display: var(--cnt-behaviour);
+  flex-direction:  var(--cnt-flx-dir);
+  gap: var(--cnt-gap);
+  padding:var(--cnt-pad);
+  border:var(--cnt-bor);
+  border-image-slice: var(--gradient-outl-slice);
+  border-width: var(--gradient-outl-border-w);
+  border-image-source: var(--gradient-outl-img-src);
+  border-radius:var(--cnt-bor-rad);
+  border-style: var(--cnt-bor-style);
+  text-align: var(--cnt-txt-ali);
+  align-items:var(--cnt-ali-its);
+  box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);
+  box-shadow: var(--box-s-neo-dark), var(--box-s-neo-light);
+  position:var(--cnt-pos);
+  background:var(--cnt-back);
+  z-index:var(--cnt-z);
+  width:var(--cnt-w);
+
+  p {
+    color: var(--contxt-color);
+    font-size:var(--contxt-fs);
+    font-weight:var(--contxt-fw);
+  }
+}
+
+.content-box:nth-child(1) {
+  background: var(--conI-back);
+}
+
+.content-box:nth-child(2) {
+  background: var(--conII-back);
+}
+
+.content-box:nth-child(3) {
+  background: var(--conIII-back);
+}
+
+.cbox-image {
+  width: var(--cbi-W);
+  height: var(--cbi-H);
+  position: var(--cbi-pos);
+  right: var(--cbi-pos-r);
+  left: var(--cbi-pos-l);
+  top: var(--cbi-pos-t);
+  box-shadow: var(--cbi-shadow);
+  border-radius: var(--cbi-borrad);
+}
+
+.cbi-I {
+  background-image: var(--cbi-I);
+}
+
+.cbi-II {
+  background-image: var(--cbi-II);
+}
+
+.cbi-III {
+  background-image: var(--cbi-III);
+}
+
+.content-box span:nth-of-type(1){
+  width: var(--cnt-first-w);
+}
+
+.content-box span:nth-of-type(2){
+  margin-left: var(--cnt-second-ml);
+}
