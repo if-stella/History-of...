@@ -2,15 +2,19 @@ import "./App.scss";
 import { useState } from "react";
 import Loading from "./components/Loading/Loading";
 import MusicPlayer from "./components/Musicplayer/MusicPlayer";
-import Bordure from "./components/Bordure/Bordure";
-import Tails from "./components/Bordure/Tails";
+import Bordure from "./components/2006-Bordure/Bordure";
+import Tails from "./components/2006-Bordure/Tails";
 import Stars from "./components/Stars/Stars";
-import Circles from "./components/Circles/Circles";
+import Circles from "./components/2017-Circles/Circles";
 import Interfacebar from "./components/Interfacebar/Interfacebar";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Guestcounter from "./components/Guestcounter/Guestcounter";
 import Macbook2010 from "./components/2010-interface/Macbook2010";
+import Intro from "./components/Intro/Intro";
+import Grainbg from "./components/2017-Grain-bg/Grainbg";
+import Head from "./components/Head/Head";
+import Boxes from "./components/Boxes/Boxes";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -43,52 +47,20 @@ const App = () => {
             <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
             <Loading />
           </div>
-          <div className="bg"></div>
+          <Grainbg />
           <Tails />
           <div className="inner-wrap">
-          <Bordure />
-            <div className="head-area">
-              <div className="head-images">
-                <div className="head-image"></div>
-                <div className="head-image-II"></div>
-                <div className="head-image-III"></div>
-              </div>
-              <div className="head-bg-image"></div>
-              <div className="headlines styled-content">
-                <h1>Stella's Portfolio</h1>
-                <h2>EST <span className="varyear"></span></h2>
-                <p className="headp">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
-              </div>
-            </div>
-            <p className="styled-content intro">It's the year <span className="varyear"></span>. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself).</p>
+            <Bordure />
+            <Head />
             <Circles />
-            <div className="intro-2017"><p>It's the year 2017. My name is Stella Raab, and I’m a passionate graphic-designer, based in Berlin, Germany. I draw and eat things. As often as possible I love to go to the gym, to throw around heavy things (including myself)</p>
-           </div>
-            <div className="boxes">
-              <div className="content-box">
-                <div className="cbox-image cbi-I"></div>
-                <span><h3>Content I</h3></span>
-                <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
-              </div>
-              <div className="content-box">
-                <div className="cbox-image cbi-II"></div>
-                <span><h3>Content II</h3></span>
-                <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
-              </div>
-              <div className="content-box">
-                <div className="cbox-image cbi-III"></div>
-                <span><h3>Content III</h3></span>
-                <span><p>I'm just a small paragraph, to check if everything is working properly...</p></span>
-              </div>
-            </div>
+            <Intro />
+            <Boxes />
             <Stars />
           </div>
           <Macbook2010 />
           <Guestcounter />
           <Footer />
         </div>
-      </div>
-      <div>
       </div>
       <form onChange={onChange}>
           <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
@@ -166,7 +138,7 @@ const App = () => {
               label="19"
             />
           </div>
-        </form>
+      </form>
     </main>
     </div>
   );

@@ -503,6 +503,37 @@
   --conIII-back:lightgrey;
   --cnt-pad:1em;
   --foot-behave:none;
+
+  @media screen and (max-width: 1000px) {
+    --iWrap-w:500px;
+    --iWrap-h:310px;
+    --iWrap-pad:1rem;
+    --main-margin-top:139px;
+    --h1-size:2.5em;
+    --h1-lheight: 2.5rem;
+    --h2-size:1.5em;
+    --h3-size:1.25em;
+    --p-size:0.8em;
+    --boxes-flex-gap:1em;
+    --boxes-pad:1em 0em;
+    --cnt-pad:0.5em;
+    --contxt-fs:0.75em;
+  }
+
+  @media screen and (max-width: 756px) {
+    --iWrap-w:331px;
+    --iWrap-h:208px;
+    --main-margin-top:123px;
+    --iWrap-pad:0.75rem;
+    --h1-size:1.5em;
+    --h1-lheight: 1.5rem;
+    --h2-size:1em;
+    --h3-size:0.75em;
+    --p-size:0.6em;
+    --contxt-fs:0.4em;
+    --boxes-pad:0.5em 0em;
+    --boxes-flex-gap:0.5em;
+  }
 }
 
 
@@ -674,7 +705,7 @@
   --headp-show:block;
   --headp-max-w:660px;
   --contxt-color:#3b4f7d9b;
-  --contxt-fontsize:1em;
+  --contxt-fs:1em;
   --boxes-pos:relative;
   --boxes-z:20;
   --boxes-pad:2em 4em;
