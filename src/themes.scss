@@ -464,22 +464,24 @@
   --main-margin-top:153px;
   --common-font: 'Open Sans', sans-serif;
   --extra-font: 'Mansalva', cursive;
-  --h1-color: #3b1a03;
+  --h1-color: rgba(2, 20, 67, 0.75);
   --h1-lheight: 3rem;
   --h1-size:3em;
-  --h2-color: #fff;
+  --h2-color: rgba(2, 20, 67, 0.75);
   --h2-size:2em;
   --h2-weight:300;
   --h2-ls:4px;
   --h3-size:1.25em;
-  --h3-color: #5a2804;
+  --h3-color: rgba(2, 20, 67, 0.75);
   --p-color: #fff;
   --ps-color: #000;
   --p-small-size:0.8em;
   --p-small-fw:300;
   --p-small-ls:2px;
-  --contxt-color: #000;
-  --background: white;
+  --contxt-color: rgb(2, 20, 67);
+  --background:blue;
+  --background-image: linear-gradient(180deg, #020024 0%, #090979 28.69%, #8AEBFF 108.64%);
+  --background-h:480px;
   --2010-display:block;
   --iWrap-img: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657274411/History%20of%20webdesign/josephine-bredehoft-KsAo8ouBn8A-unsplash_zc4ehp.jpg);
   --iWrap-cov:cover;
@@ -488,7 +490,7 @@
   --inner-wrap-flex:flex;
   --inner-wrap-flex-dir:column;
   --iWrap-pos:relative;
-  --iWrap-z: 5;
+  --iWrap-z: 26;
   --iWrap-mar:0em auto;
   --iWrap-pad:2rem;
   --intro-show:block;
@@ -498,9 +500,11 @@
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cnt-txt-ali:center;
-  --conI-back:lightgrey;
-  --conII-back:lightgrey;
-  --conIII-back:lightgrey;
+  --contxt-ff:'Mansalva', cursive;
+  --cntbox-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  --conI-back: linear-gradient(180deg, #FFFECF 0%, #EEEDAC 100%);
+  --conII-back: linear-gradient(180deg, #FFFECF 0%, #EEEDAC 100%);
+  --conIII-back: linear-gradient(180deg, #FFFECF 0%, #EEEDAC 100%);
   --cnt-pad:1em;
   --foot-behave:none;
 
@@ -518,6 +522,7 @@
     --boxes-pad:1em 0em;
     --cnt-pad:0.5em;
     --contxt-fs:0.75em;
+    --background-h:400px;
   }
 
   @media screen and (max-width: 756px) {
@@ -533,6 +538,7 @@
     --contxt-fs:0.4em;
     --boxes-pad:0.5em 0em;
     --boxes-flex-gap:0.5em;
+    --background-h:300px;
   }
 }
 

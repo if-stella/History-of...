@@ -31,6 +31,7 @@
   align-items:var(--cnt-ali-its);
   box-shadow: var(--box-border-sunk-out), var(--box-border-sunk-in);
   box-shadow: var(--box-s-neo-dark), var(--box-s-neo-light);
+  box-shadow: var(--cntbox-shadow);
   position:var(--cnt-pos);
   background:var(--cnt-back);
   z-index:var(--cnt-z);
@@ -40,6 +41,7 @@
     color: var(--contxt-color);
     font-size:var(--contxt-fs);
     font-weight:var(--contxt-fw);
+    font-family:var(--contxt-ff);
   }
 }
 

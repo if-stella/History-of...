@@ -92,6 +92,7 @@ h4 {
   position: var(--background-pos);
   z-index: var(--background-z);
   top:var(--background-t);
+  height:var(--background-h);
 }
 
 .varyear::after {
