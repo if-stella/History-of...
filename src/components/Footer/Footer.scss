@@ -9,12 +9,14 @@
   bottom: var(--foot-pos-b);
   right: var(--foot-pos-r);
   left: var(--foot-pos-l);
+  top: var(--foot-pos-t);
   width:var(--foot-w);
   height:var(--foot-h);
   box-shadow: var(--foot-inset);
   text-align:var(--foot-txt-align);
   overflow:var(--foot-overflow);
   backdrop-filter:var(--foot-back-filt);
+  transform: var(--foot-transform);
 }
 
 .footer-image {
