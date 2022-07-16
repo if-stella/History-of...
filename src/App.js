@@ -18,12 +18,19 @@ import Boxes from "./components/Boxes/Boxes";
 
 const App = () => {
   const [theme, setTheme] = useState({
-    size: "md",
-    color: "blue",
-    background: "light",
+    year: "default",
   });
 
-  const { background, color } = theme;
+  const { year, modus } = theme;
+
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (event) => {
+    setChecked(!checked);
+    console.log('The checkbox was toggled');
+    const { name, value } = event.target;
+    setTheme((prevState) => ({ ...prevState, [name]: value }));
+  };
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -33,8 +40,8 @@ const App = () => {
   return (
     <div>
       <main
-      data-theme-color={color}
-      data-theme-background={background}
+      data-theme-modus={modus}
+      data-theme-year={year}
       className="background"
     >
       <div className="wrapper">
@@ -139,6 +146,15 @@ const App = () => {
             />
           </div>
       </form>
+      <form onChange={handleChange}>
+      <DarkMode
+              backgroundColor="#fff"
+              color="#000"
+              value="light"
+              label= {checked ? 'Dark' : 'Light'}
+              defaultChecked
+            />
+      </form>
     </main>
     </div>
   );
@@ -156,7 +172,25 @@ const YearSwitch = ({ backgroundColor, color, value, label }) => (
       <input
         type="radio"
         id={value}
-        name="background"
+        name="year"
+        value={value}
+      />
+      <b>{label}</b>
+    </span>
+  </label>
+);
+
+const DarkMode = ({ backgroundColor, color, value, label }) => (
+  <label
+    className="darktheme-2017"
+    style={{ backgroundColor, color }}
+    htmlFor={value}
+  >
+    <span>
+      <input
+        type="checkbox"
+        id={value}
+        name="modus"
         value={value}
       />
       <b>{label}</b>
