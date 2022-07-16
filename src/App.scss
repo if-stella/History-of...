@@ -57,3 +57,19 @@ input {
     margin-right: 8px;
   }
 }
+.darktheme-2017 {
+  position:absolute;
+  right:-10px;
+  top: 100px;
+  height: 3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 0 0.5rem;
+  width:100px;
+  display: var(--darktoggle);
+
+  & input {
+    margin-right: 8px;
+  }
+}
