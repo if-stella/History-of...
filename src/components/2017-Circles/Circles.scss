@@ -29,7 +29,6 @@
 
 .circle-cont {
   position: absolute;
-  color: var(--p-color);
   width:230px;
   height:230px;
   font-family: var(--common-font);
@@ -40,6 +39,7 @@
   background-repeat:no-repeat;
   line-height: 230px;
   text-align: center;
+  color:var(--p-color);
 
   span {
     display: inline-block;
@@ -50,11 +50,11 @@
 }
 
 #circle-1-cont {
-  top:8.25em; left:0.5em;
+  top:-9.25em; left:33.75em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-1_roimag.png);
 }
 
-#circle-1 svg { bottom:-30em; left:-8em;
+#circle-1 svg { top:-16.5em; left:21em;
   -webkit-animation-duration: 7s;
      -moz-animation-duration: 7s;
        -o-animation-duration: 7s;
@@ -62,13 +62,13 @@
 }
 
 #circle-2-cont {
-  bottom:-10em; left:28em;
+  bottom:-25.75em; left:46.25em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-2_mfro0p.png);
 }
 
 #circle-2 svg {
-  bottom:-17.25em;
-  left:16.25em;
+  bottom:-31em;
+  left:32em;
   -webkit-animation-duration: 9s;
      -moz-animation-duration: 9s;
        -o-animation-duration: 9s;
@@ -76,13 +76,13 @@
 }
 
 #circle-3-cont {
-  top:10em;
-  left:21em;
+  top:0em;
+  left:66.5em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-3_yuua92.png);
 }
 
 #circle-3 svg {
-  top:0.5em; left:10em;
+  top:-8.5em; left:50em;
   -webkit-animation-duration: 5s;
      -moz-animation-duration: 5s;
        -o-animation-duration: 5s;
