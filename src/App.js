@@ -16,6 +16,8 @@ import Grainbg from "./components/2017-Grain-bg/Grainbg";
 import Head from "./components/Head/Head";
 import Boxes from "./components/Boxes/Boxes";
 
+import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
+
 const App = () => {
   const [theme, setTheme] = useState({
     year: "default",
@@ -27,7 +29,6 @@ const App = () => {
 
   const handleChange = (event) => {
     setChecked(!checked);
-    console.log('The checkbox was toggled');
     const { name, value } = event.target;
     setTheme((prevState) => ({ ...prevState, [name]: value }));
   };
@@ -148,10 +149,10 @@ const App = () => {
       </form>
       <form onChange={handleChange}>
       <DarkMode
-              backgroundColor="#fff"
-              color="#000"
-              value="light"
-              label= {checked ? 'Dark' : 'Light'}
+              backgroundColor={checked ? '#ffffffcb' : '#1d0202c3'}
+              color={checked ? '#1D0202' : '#fff'}
+              value= {checked ? 'light' : 'dark'}
+              label= {checked ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
               defaultChecked
             />
       </form>

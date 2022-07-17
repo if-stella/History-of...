@@ -96,7 +96,7 @@
   --foot-pos-b: 2rem;
 }
 
-[data-theme-background="1992"] {
+[data-theme-year="1992"] {
   --default-display:none;
   --background: #CCC;
   --main-bg: #E5E5E5;
@@ -647,7 +647,7 @@
   --h1-lheight: 6rem;
   --h1-color: #1D0202;
   --h2-size: 6rem;
-  --h2-color: #1d0202d6;
+  --h2-color: #1d0202c3;
   --p-color: #1d0202;
   --p-small-size:0.75rem;
   --ps-color: #1D0202;
@@ -789,10 +789,10 @@
   --foot-back-filt: blur(5px);
 }
 
-[data-theme-modus="light"]
+[data-theme-modus="dark"]
 { --background: #070606;
   --h1-color: #FFFFFF;
-  --h2-color: #FFFFFF;
+  --h2-color: #ffffffcb;
   --h3-color: #FFFFFF;
   --p-color: #FFFFFF;
   --ps-color: #FFFFFF;
