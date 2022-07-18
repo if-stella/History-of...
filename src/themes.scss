@@ -15,6 +15,7 @@
   --h1-size:4rem;
   --h1-weight:bold;
   --h1-lheight: 4.5rem;
+  --h2-lnum:lining-nums;
   --p-margin: 0 auto;
   --main-margin-top:80px;
   --styled-display: none;
@@ -36,6 +37,8 @@
   --stars-show:none;
   --2010-display:none;
   --darktoggle:none;
+  --respo-display:none;
+  --foot-behave:none;
 }
 
 [data-theme-year="1990"] {
@@ -60,11 +63,20 @@
   --cnt-gap: 0px;
   --cnt-flx-dir: row;
   --cnt-first-w: 260px;
-  --global-padding: 1rem;
   --global-mt: 0.5rem;
   --boxes--flx-beh:block;
   --styled-display: block;
   --foot-pos-b: 1rem;
+  --foot-txt-align:left;
+  --foot-behave:block;
+
+  @media screen and (max-width: 550px) {
+    --intro-show:none;
+    --boxes--flx-beh:none;
+    --styled-display: none;
+    --respo-h1-pb:12px;
+    --respo-display:flex;
+  }
 }
 
 [data-theme-year="1991"] {
@@ -94,6 +106,17 @@
   --global-mt: 0.5rem;
   --styled-display: block;
   --foot-pos-b: 2rem;
+  --foot-behave:block;
+
+  @media screen and (max-width: 550px) {
+    --intro-show:none;
+    --boxes--flx-beh:none;
+    --styled-display: none;
+    --respo-display:flex;
+    --respo-h1-pb:4px;
+    --foot-pos-b: 1.25rem;
+    --global-padding: 1.25rem;
+  }
 }
 
 [data-theme-year="1992"] {
@@ -146,16 +169,27 @@
   --main-border-sunk-out: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
   --main-border-sunk-in: inset -2px -2px grey, inset 2px 2px #dfdfdf;
   --foot-inset:-1px -1px #dfdfdf, inset 1px 1px grey;
-  --foot-pad:5px;
+  --foot-pad:8px 16px;
   --foot-pos-b:0px;
   --foot-pos-r:0px;
   --foot-w:100%;
+  --foot-behave:block;
   --iBar-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656425616/History%20of%20webdesign/starbrush-white_on1axp.png);
   --iBar-img-w:20px;
   --iBar-img-h:20px;
   --inbar-gap:5px;
   --inbar-ali:center;
   --inbar-mb:0px;
+
+  @media screen and (max-width: 550px) {
+    --intro-show:none;
+    --boxes--flx-beh:none;
+    --styled-display: none;
+    --head-behaviour: none;
+    --nav-show:none;
+    --respo-pad:16px;
+    --respo-display:flex;
+  }
 }
 
 [data-theme-year="1996"] {
@@ -222,6 +256,31 @@
   --foot-pos-b: 1.5rem;
   --foot-w:100%;
   --foot-behave:flex;
+
+  @media screen and (max-width: 1000px) {
+    --boxes-flex-gap: 1em;
+  }
+
+  @media screen and (max-width: 760px) {
+    --guestCount-display:none;
+    --boxes-flx-dir:column;
+    --head-area-pad:1rem 2rem;
+    --intro-pad:0rem 2rem;
+    --boxes-pad:1em 2em;
+  }
+
+  @media screen and (max-width: 550px) {
+    --intro-show:none;
+    --boxes--flx-beh:none;
+    --head-behaviour: none;
+    --guestCount-display:none;
+    --respo-pad:16px;
+    --foot-behave:block;
+    --respo-display:flex;
+    --foot-pos-b: 1rem;
+    --h1-size: 2rem;
+    --h1-lheight: 2rem;
+  }
 }
 
 [data-theme-year="1998"] {
@@ -234,6 +293,11 @@
   --hImg-rep: no-repeat;
   --hImg-cov: cover;
   --global-padding: 0.5rem;
+
+  @media screen and (max-width: 550px) {
+    --hImgW: 359px;
+    --hImgH: 285px;
+  }
 }
 
 [data-theme-year="2000"] {
@@ -311,8 +375,21 @@
   --conII-back:rgba(0, 0, 0, 0.75);
   --conIII-back:rgba(0, 0, 0, 0.75);
   --foot-pos-b: 1rem;
+  --foot-behave:block;
   --cnt-pad:1em;
   --cnt-w:311px;
+
+
+  @media screen and (max-width: 550px) {
+    --boxes--flx-beh:none;
+    --styled-display: none;
+    --nav-show:none;
+    --respo-display:flex;
+    --h1-size: 2.5rem;
+    --h1-lheight: 2.5rem;
+    --respo-h1-pb:12px;
+    --iWrap-h:75vh;
+  }
 }
 
 [data-theme-year="2001"] {
@@ -345,6 +422,7 @@
   --hImgW: 300px;
   --hImgH: 300px;
   --hImgFlexS:0;
+  --hImg-cov:cover;
   --nav-show:flex;
   --nav-li-style:none;
   --nav-li-display:flex;
@@ -360,7 +438,6 @@
   --nav-flex-jus:center;
   --nav-flex-ali:center;
   --nav-bb:1px solid lightgrey;
-  --nav-mb:1em;
   --nav-borrad-t-l:5px;
   --nav-borrad-t-r:5px;
   --head-behaviour: flex;
@@ -379,10 +456,11 @@
   --cnt-ali-its:left;
   --cnt-txt-ali:left;
   --cnt-pad: 1rem 1rem 1rem 124px;
-  --cnt-bor: 1px solid lightgrey;
   --conI-back:#FFF;
   --conII-back:#FFF;
   --conIII-back:#FFF;
+  --cnt-bor: 2px solid lightgrey;
+  //boxes border does not work?
   --cnt-bor-rad: 5px;
   --cbi-W: 92px;
   --cbi-H: 92px;
@@ -396,11 +474,49 @@
   --boxes--flx-beh:flex;
   --boxes-flex-gap: 1em;
   --boxes-flex-jus: space-between;
+  --cbi-cov:cover;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428306/History%20of%20webdesign/Mask_group_bcs935.png);
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-1_le57k7.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656428304/History%20of%20webdesign/Mask_group-2_jmp2mc.png);
   --foot-pos-b: 1rem;
   --foot-pos-l: 5rem;
+  --foot-behave:block;
+
+  @media screen and (max-width: 1000px) {
+  --head-area-pad: 2rem;
+  --boxes-pad: 0em 2em;
+  --foot-pos-l: 2rem;
+  --h1-size: 2.5rem;
+  --h1-lheight: 2.5rem;
+  --cnt-pad: 1rem 1rem 1rem 96px;
+  --hImgW: 200px;
+  --hImgH: 200px;
+  --h3-size: 1.25rem;
+  --head-gap: 24px;
+  --headp-w:100%;
+  --cbi-W: 64px;
+  --cbi-H: 64px;
+  }
+
+  @media screen and (max-width: 860px) {
+  --boxes-flx-dir:column;
+  --cbi-pos-t: 1rem;
+  --hImgW: 160px;
+  --hImgH: 160px;
+  }
+
+  @media screen and (max-width: 550px) {
+    --boxes--flx-beh:none;
+    --head-behaviour: none;
+    --nav-show:none;
+    --foot-pos-l: 1rem;
+    --respo-pad:1rem;
+    --respo-display:flex;
+    --h1-size: 2.5rem;
+    --h1-lheight: 2.5rem;
+    --main-margin-top:80px;
+    --respo-h1-pb:8px;
+  }
 }
 
 [data-theme-year="2006"] {
@@ -434,14 +550,14 @@
   --p-small-size: 0.75rem;
   --p-small-fw:normal;
   --year: ' ' '2006';
-  --head-area-pad:0em 2em;
+  --head-area-pad:0em 2em 0.5em 2em;
   --intro-show:block;
-  --intro-pad:0.5em 2em;
+  --intro-pad:0em 2em;
   --boxes--flx-beh:flex;
   --boxes--flx-dir:row;
   --boxes-flex-jus: space-between;
   --boxes-flex-gap:0.75em;
-  --boxes-pad:0.5em 2em;
+  --boxes-pad:1em 2em;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cnt-bor-rad:10px;
@@ -458,10 +574,57 @@
   --iWrap-mar: 0rem 8rem;
   --iWrap-filter: blur(5px);
   --iWrap-h:100%;
+  --tail-left-l:2em;
+  --tail-right-r:2em;
+  --bordure-pad:0.5em 0em 2em 0em;
+  --bordure-logo-w:80px;
+  --bordure-logo-h:80px;
+  --bordure-l1-h:4px;
+  --bordure-l2-h:16px;
+  --bordure-l3-h:32px;
+  --bordure-wl-h:1px;
+  --bordure-logo-top:6px;
   --player-display:flex;
   --foot-pos-b: 1rem;
   --foot-w:100%;
   --foot-behave:flex;
+
+  @media screen and (max-width: 800px) {
+    --iWrap-mar: 0rem 4rem;
+    --tail-left-l:0.5em;
+    --tail-right-r:0.5em;
+    --p-size:1em;
+    --contxt-fs:0.85em;
+    --boxes-pad:1em;
+    --intro-pad:1em;
+    --head-area-pad:0em 1em 0em 1em;
+  }
+
+  @media screen and (max-width: 550px) {
+    --intro-show:none;
+    --boxes--flx-beh:none;
+    --head-behaviour: none;
+    --respo-display:flex;
+    --h1-size: 2.5rem;
+    --h1-lheight: 2.5rem;
+    --respo-h1-pb:8px;
+    --iWrap-mar: 0rem 3rem;
+    --tail-left-l:-1em;
+    --tail-right-r:-1em;
+    --tail-left-scale:scale(0.5);
+    --tail-right-scale:scale(0.5);
+    --tail-left-t:-1.5em;
+    --tail-right-t:-1.5em;
+    --respo-pad:16px;
+    --bordure-pad:0.5em 0em;
+    --bordure-logo-w:48px;
+    --bordure-logo-h:48px;
+    --bordure-l1-h:2px;
+    --bordure-l2-h:8px;
+    --bordure-l3-h:16px;
+    --bordure-wl-h:0.5px;
+    --bordure-logo-top:2px;
+  }
 }
 
 [data-theme-year="2010"] {
@@ -685,6 +848,7 @@
   --circle-show:block;
   --foot-pos-b: 1rem;
   --darktoggle:flex;
+  --foot-behave:block;
 }
 
 [data-theme-year="2019"] {

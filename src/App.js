@@ -17,6 +17,7 @@ import Head from "./components/Head/Head";
 import Boxes from "./components/Boxes/Boxes";
 
 import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
+import NoResp from "./components/Responsive-default/NoResp";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -64,6 +65,7 @@ const App = () => {
             <Intro />
             <Boxes />
             <Stars />
+            <NoResp />
           </div>
           <Macbook2010 />
           <Guestcounter />
