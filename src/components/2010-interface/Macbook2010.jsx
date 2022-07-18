@@ -6,6 +6,7 @@ const Macbook2010 = () => {
     <div className="sceumorphic-elements">
       <div className="macbook"></div>
       <div className="polaroid"></div>
+      <div className="iphone"></div>
     </div>
   )
 }
