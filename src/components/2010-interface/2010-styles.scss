@@ -25,6 +25,17 @@
   left:0em;
 }
 
+.iphone {
+  display:none;
+  width: 343px;
+  height: 673px;
+  position:fixed;
+  z-index:20;
+  top:0.75em;
+  left:91px;
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658154324/History%20of%20webdesign/iphone2010_q3ispc.png);
+}
+
 @media screen and (max-width: 1100px) {
   .macbook {
     width: 756px;
@@ -39,15 +50,30 @@
 }
 
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 750px) {
   .polaroid {
     width: 192px;
     height: 176px;
+    left:27em;
     top:16.5em;
   }
 
   .macbook {
     width: 500px;
     height: 338px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .polaroid {
+    display:none;
+  }
+
+  .macbook {
+    display:none;
+  }
+
+  .iphone {
+    display:block;
   }
 }

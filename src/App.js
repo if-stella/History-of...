@@ -73,7 +73,7 @@ const App = () => {
         </div>
       </div>
       <form onChange={onChange}>
-          <div className="theme-background flex items-center space-between w-full h-[80px] fixed top-0 p-2 bg-[#0a192f]">
+          <div className="yearswitch-container">
             <YearSwitch
               backgroundColor="#fff"
               color="#000"
@@ -168,7 +168,7 @@ export default App;
 const YearSwitch = ({ backgroundColor, color, value, label }) => (
   <label
     className="year-input"
-    style={{ backgroundColor, color, border: `1px solid ${color}` }}
+    style={{ backgroundColor, color, fontFamily: `Space Grotesk` }}
     htmlFor={value}
   >
     <span>

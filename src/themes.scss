@@ -39,6 +39,14 @@
   --darktoggle:none;
   --respo-display:none;
   --foot-behave:none;
+  --main-margin-left:0px;
+  --yearswitch-gradient:linear-gradient(180deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
+
+  @media screen and (max-width: 750px) {
+    --main-margin-top:0px;
+    --main-margin-left:80px;
+    --yearswitch-gradient:linear-gradient(90deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
+  }
 }
 
 [data-theme-year="1990"] {
@@ -69,6 +77,12 @@
   --foot-pos-b: 1rem;
   --foot-txt-align:left;
   --foot-behave:block;
+
+  @media screen and (max-width: 750px) {
+    --foot-behave:block;
+    --foot-pos-l: 91px;
+    --p-small-align: left;
+  }
 
   @media screen and (max-width: 550px) {
     --intro-show:none;
@@ -143,7 +157,8 @@
   --nav-ul-back:#eeeded;
   --nav-ul-pad:5px 10px;
   --global-padding: 0px;
-  --main-margin-top:85px;
+  --main-margin-left:10px;
+  --main-margin-top:80px;
   --1992-margin:10px;
   --global-mt: 0rem;
   --intro-show:block;
@@ -180,6 +195,16 @@
   --inbar-gap:5px;
   --inbar-ali:center;
   --inbar-mb:0px;
+
+  @media screen and (max-width: 750px) {
+    --main-margin-top:10px;
+    --main-margin-left:75px;
+    --foot-pos-l:90px;
+    --foot-pos-b:10px;
+    --foot-pad:0px;
+    --foot-inset:none;
+    --foot-w:60%;
+  }
 
   @media screen and (max-width: 550px) {
     --intro-show:none;
@@ -261,12 +286,16 @@
     --boxes-flex-gap: 1em;
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 750px) {
     --guestCount-display:none;
     --boxes-flx-dir:column;
     --head-area-pad:1rem 2rem;
     --intro-pad:0rem 2rem;
     --boxes-pad:1em 2em;
+    --foot-w:fit-content;
+    --foot-behave:block;
+    --foot-pos-l: 107px;
+    --foot-pos-b: 1rem;
   }
 
   @media screen and (max-width: 550px) {
@@ -275,10 +304,9 @@
     --head-behaviour: none;
     --guestCount-display:none;
     --respo-pad:16px;
-    --foot-behave:block;
     --respo-display:flex;
-    --foot-pos-b: 1rem;
     --h1-size: 2rem;
+    --foot-pos-l: 91px;
     --h1-lheight: 2rem;
   }
 }
@@ -363,7 +391,6 @@
   --contxt-color:rgba(255, 255, 255, 0.9);
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
-  --boxes--flx-grow:2;
   --box-back:black;
   --boxes--flx-beh:flex;
   --boxes-flx-dir:column;
@@ -377,8 +404,13 @@
   --foot-pos-b: 1rem;
   --foot-behave:block;
   --cnt-pad:1em;
-  --cnt-w:311px;
+  --cnt-w:300px;
 
+  @media screen and (max-width: 750px) {
+    --h1-size: 3.5rem;
+    --h1-lheight: 3.5rem;
+    --h2-size: 2rem;
+  }
 
   @media screen and (max-width: 550px) {
     --boxes--flx-beh:none;
@@ -396,7 +428,7 @@
   --background: white;
   --background-image: linear-gradient(180deg, #FFFFFF 25.56%, #e5eeee 107.18%);
   --global-mt: 0rem;
-  --main-margin-top:90px;
+  --main-margin-top:80px;
   --default-display:none;
   --styled-display: block;
   --global-padding: 0rem;
@@ -505,16 +537,19 @@
   --hImgH: 160px;
   }
 
+  @media screen and (max-width: 750px) {
+    --main-margin-top:16px;
+    --foot-pos-l: 107px;
+  }
+
   @media screen and (max-width: 550px) {
     --boxes--flx-beh:none;
     --head-behaviour: none;
     --nav-show:none;
-    --foot-pos-l: 1rem;
     --respo-pad:1rem;
     --respo-display:flex;
     --h1-size: 2.5rem;
     --h1-lheight: 2.5rem;
-    --main-margin-top:80px;
     --respo-h1-pb:8px;
   }
 }
@@ -589,7 +624,7 @@
   --foot-w:100%;
   --foot-behave:flex;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 750px) {
     --iWrap-mar: 0rem 4rem;
     --tail-left-l:0.5em;
     --tail-right-r:0.5em;
@@ -598,9 +633,13 @@
     --boxes-pad:1em;
     --intro-pad:1em;
     --head-area-pad:0em 1em 0em 1em;
+    --wrap-overflow:hidden;
+    --foot-w:50%;
+    --foot-pos-l: 8rem;
   }
 
   @media screen and (max-width: 550px) {
+    --player-display:none;
     --intro-show:none;
     --boxes--flx-beh:none;
     --head-behaviour: none;
@@ -706,10 +745,11 @@
     --background-h:400px;
   }
 
-  @media screen and (max-width: 756px) {
+  @media screen and (max-width: 750px) {
     --iWrap-w:336px;
     --iWrap-h:204px;
     --main-margin-top:144px;
+    --main-margin-left:0px;
     --iWrap-pad:0.75rem;
     --h1-size:1.5em;
     --h1-lheight: 1.5rem;
@@ -725,13 +765,27 @@
     --boxes-flex-gap:0.5em;
     --background-h:300px;
   }
+
+  @media screen and (max-width: 550px) {
+    --background-h:100vh;
+    --main-margin-top:125px;
+    --main-margin-left:28px;
+    --iWrap-w:302px;
+    --iWrap-h:446px;
+    --h1-size:2em;
+    --h1-lheight: 2rem;
+    --h2-size:1.5em;
+    --h3-size:1em;
+    --p-size:0.9em;
+    --iWrap-pad:0.9rem;
+  }
 }
 
 
 [data-theme-year="2014"] {
   --styled-display: block;
   --default-display:none;
-  --background: #fff;
+  --background: #2C0EAC;
   --h1-color: #fff;
   --h2-color: #fff;
   --h3-color: #fff;
@@ -761,7 +815,6 @@
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
   --headlines-pad: 2rem 4rem 2rem 4rem;
-  --head-back: #2C0EAC;
   --headp-mt: 0.5em;
   --headp-w:75%;
   --headp-show:block;
@@ -774,11 +827,14 @@
   --cnt-ali-its:center;
   --cnt-txt-ali:center;
   --box-flx-ali: center;
+  --box-back:white;
   --cnt-pad: 2em;
   --conI-back:#FFCD40;
   --conII-back:#FF0B3B;
   --conIII-back:#2C0EAC;
+  --cnt-h:fit-content;
   --boxes-flex-gap: 2em;
+  --boxes-h:85%;
   --cbi-W: 100px;
   --cbi-H: 100px;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-I_fflmi1.png);

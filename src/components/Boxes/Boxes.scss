@@ -14,6 +14,7 @@
   border-image-source: var(--gradient-outl-img-src);
   position: var(--boxes-pos);
   z-index: var(--boxes-z);
+  height:var(--boxes-h);
 }
 
 .content-box {
@@ -36,6 +37,7 @@
   background:var(--cnt-back);
   z-index:var(--cnt-z);
   width:var(--cnt-w);
+  height:var(--cnt-h);
 
   p {
     color: var(--contxt-color);
