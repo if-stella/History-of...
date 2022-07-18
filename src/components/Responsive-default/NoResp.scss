@@ -1,0 +1,11 @@
+.responsive-default {
+  display: var(--respo-display);
+}
+
+.responsive-content {
+  padding:var(--respo-pad);
+
+  h1 {
+    padding-bottom:var(--respo-h1-pb);
+  }
+}

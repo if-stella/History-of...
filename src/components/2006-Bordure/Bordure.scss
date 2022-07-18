@@ -2,38 +2,38 @@
   display:var(--bordure-display);
   flex-direction:column;
   width:100%;
-  padding:0.5em 0em 2em 0em;
+  padding:var(--bordure-pad);
   position:relative;
   text-align: center;
 }
 
 .line-1 {
-  height:4px;
+  height:var(--bordure-l1-h);
   background-color:#FF5CC5;
 }
 
 .white-line {
-  height:1px;
+  height:var(--bordure-wl-h);
   background-color:#FFEEF2;
 }
 
 .line-2 {
-  height:16px;
+  height:var(--bordure-l2-h);
   background-image: linear-gradient(180deg, #FB5BC2 0%, #F20CA0 100%);
 }
 
 .line-3 {
-  height:32px;
+  height:var(--bordure-l3-h);
   background-image: linear-gradient(180deg, #FF45BD 0%, #FDDDF2 52.08%, #FF45BD 100%);
 }
 
 .line-4 {
-  height:16px;
+  height:var(--bordure-l2-h);
   background-image: linear-gradient(180deg, #F20CA0 0%, #CC0083 100%);
 }
 
 .line-5 {
-  height:4px;
+  height:var(--bordure-l1-h);
   background-color:#F20CA0;
 }
 
@@ -42,9 +42,9 @@
   position:absolute;
   background-repeat:no-repeat;
   background-size:cover;
-  width:80px;
-  height:80px;
-  top:6px;
+  width:var(--bordure-logo-w);
+  height:var(--bordure-logo-h);
+  top:var(--bordure-logo-top);
   left: 2em;
   border-radius:100%;
   box-shadow: 2px 4px 100px rgba(0, 0, 0, 0.75);
@@ -62,7 +62,9 @@
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657183318/History%20of%20webdesign/w-shadow-left_prh3sz.png);
   width:98.5px;
   height:82px;
-  left:2em;
+  left: var(--tail-left-l);
+  top:var(--tail-left-t);
+  transform:var(--tail-left-scale);
 }
 
 .tail-right {
@@ -70,5 +72,7 @@
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1657183318/History%20of%20webdesign/w-shadow-right_dgrut6.png);
   width:98.5px;
   height:82px;
-  right:2em;
+  right: var(--tail-right-r);
+  top:var(--tail-left-t);
+  transform:var(--tail-right-scale);
 }
