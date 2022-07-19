@@ -15,6 +15,7 @@ import Intro from "./components/Intro/Intro";
 import Grainbg from "./components/2017-Grain-bg/Grainbg";
 import Head from "./components/Head/Head";
 import Boxes from "./components/Boxes/Boxes";
+import Slider from '@mui/material/Slider';
 
 import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
 import NoResp from "./components/Responsive-default/NoResp";
@@ -24,14 +25,35 @@ const App = () => {
     year: "default",
   });
 
+  const marks = [
+    {value: 1990,label: '1990'},
+    {value: 1991,label: '91'},
+    {value: 1992,label: '92'},
+    {value: 1996,label: '96'},
+    {value: 1998,label: '98'},
+    {value: 2000,label: '2000'},
+    {value: 2001,label: '01'},
+    {value: 2006,label: '06'},
+    {value: 2010,label: '2010'},
+    {value: 2014,label: '14'},
+    {value: 2017,label: '17'},
+    {value: 2022,label: '2022'},
+  ];
+
   const { year, modus } = theme;
 
   const [checked, setChecked] = useState(false);
+  const [active, setActive] = useState(false);
 
   const handleChange = (event) => {
     setChecked(!checked);
     const { name, value } = event.target;
     setTheme((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const themeChange = (event) => {
+    const { value } = event.target;
+    setTheme((prevState) => ({ ...prevState, year: value }));
   };
 
   const onChange = (event) => {
@@ -45,120 +67,108 @@ const App = () => {
       data-theme-modus={modus}
       data-theme-year={year}
       className="background"
-    >
-      <div className="wrapper">
-        <div className="main-content">
-          <MusicPlayer />
-          <Interfacebar />
-          <Navbar />
-          <div className="default-content">
-            <h1>Hey there.</h1>
-            <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
-            <Loading />
+      >
+        <div className="wrapper">
+          <div className="main-content">
+            <MusicPlayer />
+            <Interfacebar />
+            <Navbar />
+            <div className="default-content">
+              <h1>Hey there.</h1>
+              <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
+              <Loading />
+            </div>
+            <Grainbg />
+            <Tails />
+            <div className="inner-wrap">
+              <Bordure />
+              <Head />
+              <Circles />
+              <Intro />
+              <Boxes />
+              <Stars />
+              <NoResp />
+            </div>
+            <Macbook2010 />
+            <Guestcounter />
+            <Footer />
           </div>
-          <Grainbg />
-          <Tails />
-          <div className="inner-wrap">
-            <Bordure />
-            <Head />
-            <Circles />
-            <Intro />
-            <Boxes />
-            <Stars />
-            <NoResp />
-          </div>
-          <Macbook2010 />
-          <Guestcounter />
-          <Footer />
         </div>
-      </div>
-      <form onChange={onChange}>
-          <div className="yearswitch-container">
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="1990"
-              label="90"
-              defaultChecked
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="1991"
-              label="91"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="1992"
-              label="92"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="1996"
-              label="96"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="1998"
-              label="98"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2000"
-              label="00"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2001"
-              label="01"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2006"
-              label="06"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2010"
-              label="10"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2014"
-              label="14"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2017"
-              label="17"
-            />
-            <YearSwitch
-              backgroundColor="#fff"
-              color="#000"
-              value="2019"
-              label="19"
-            />
-          </div>
-      </form>
-      <form onChange={handleChange}>
-      <DarkMode
-              backgroundColor={checked ? '#ffffffcb' : '#1d0202c3'}
-              color={checked ? '#1D0202' : '#fff'}
-              value= {checked ? 'light' : 'dark'}
-              label= {checked ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
-              defaultChecked
-            />
-      </form>
-    </main>
+        <div className="sliderbox">
+              <Slider
+              className="sliderInner"
+              aria-label="Custom marks"
+              defaultValue={1990}
+              onChange={themeChange}
+              min={1990}
+              step={1}
+              max={2022}
+              marks={marks}
+              sx={{color: 'gray'}}
+              />
+              </div>
+        <form onChange={onChange}>
+            <div className="yearswitch-container">
+              <YearSwitch
+                value="1990"
+                label="1990"
+              />
+              <YearSwitch
+                value="1991"
+                label="1991"
+              />
+              <YearSwitch
+                value="1992"
+                label="1992"
+              />
+              <YearSwitch
+                value="1996"
+                label="1996"
+              />
+              <YearSwitch
+                value="1998"
+                label="1998"
+              />
+              <YearSwitch
+                value="2000"
+                label="2000"
+              />
+              <YearSwitch
+                value="2001"
+                label="2001"
+              />
+              <YearSwitch
+                value="2006"
+                label="2006"
+              />
+              <YearSwitch
+                value="2010"
+                label="2010"
+              />
+              <YearSwitch
+                value="2014"
+                label="2014"
+              />
+              <YearSwitch
+                value="2017"
+                label="2017"
+              />
+              <YearSwitch
+                value="2019"
+                label="2019"
+              />
+            </div>
+        </form>
+        <form onChange={handleChange}>
+        <DarkMode
+                backgroundColor={checked ? '#ffffffcb' : '#1d0202c3'}
+                color={checked ? '#1D0202' : '#fff'}
+                value= {checked ? 'light' : 'dark'}
+                label= {checked ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
+                defaultChecked
+              />
+        </form>
+      </main>
     </div>
   );
 };

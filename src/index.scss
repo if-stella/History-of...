@@ -84,7 +84,6 @@ h4 {
   display: var(--styled-display);
 }
 
-
 .background {
   background: var(--background);
   background-repeat: var(--background-repeat);
@@ -120,4 +119,19 @@ h4 {
   position:var(--inner-wrap-pos);
   margin: var(--iWrap-mar);
   z-index: var(--iWrap-z);
+}
+
+.sliderbox {
+  background:linear-gradient(180deg, rgba(255, 255, 255, 0) -63.82%, #FFFFFF 100%);
+  backdrop-filter: blur(5px);
+  position:absolute !important;
+  bottom:0px !important;
+  z-index:100 !important;
+  width:100vw;
+  padding:0.6em 2em 0.25em 2em;
+  display:none !important;
+}
+
+.sliderInner {
+  color:lightgrey !important;
 }
