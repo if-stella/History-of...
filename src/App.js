@@ -27,16 +27,16 @@ const App = () => {
 
   const marks = [
     {value: 1990,label: '1990'},
-    {value: 1991,label: '91'},
-    {value: 1992,label: '92'},
-    {value: 1996,label: '96'},
-    {value: 1998,label: '98'},
+    {value: 1991,label: '1991'},
+    {value: 1992,label: '1992'},
+    {value: 1996,label: '1996'},
+    {value: 1998,label: '1998'},
     {value: 2000,label: '2000'},
-    {value: 2001,label: '01'},
-    {value: 2006,label: '06'},
+    {value: 2001,label: '2001'},
+    {value: 2006,label: '2006'},
     {value: 2010,label: '2010'},
-    {value: 2014,label: '14'},
-    {value: 2017,label: '17'},
+    {value: 2014,label: '2014'},
+    {value: 2017,label: '2017'},
     {value: 2022,label: '2022'},
   ];
 
@@ -96,6 +96,7 @@ const App = () => {
         </div>
         <div className="sliderbox">
               <Slider
+              size="small"
               className="sliderInner"
               aria-label="Custom marks"
               defaultValue={1990}
@@ -104,7 +105,10 @@ const App = () => {
               step={1}
               max={2022}
               marks={marks}
-              sx={{color: 'gray'}}
+              step={null}
+              sx={{
+                color: 'gray',
+                }}
               />
               </div>
         <form onChange={onChange}>
