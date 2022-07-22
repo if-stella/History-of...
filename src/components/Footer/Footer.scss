@@ -17,6 +17,7 @@
   overflow:var(--foot-overflow);
   backdrop-filter:var(--foot-back-filt);
   transform: var(--foot-transform);
+  z-index:var(--foot-z);
 }
 
 .footer-image {
