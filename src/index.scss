@@ -122,12 +122,13 @@ h4 {
 }
 
 .sliderbox {
-  background:linear-gradient(180deg, #d7d7d7e7 -6.98%, rgb(255, 255, 255) 100%);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
+  background:linear-gradient(180deg, #0e1013d4 -6.98%, rgba(70, 92, 121, 0) 100%);
   position:absolute !important;
   top:0px !important;
   z-index:100 !important;
   width:100vw;
+  height:72px;
   padding:0.5em 3em 0em 3em;
   //display:none !important;
 }

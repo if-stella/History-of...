@@ -16,6 +16,7 @@ import Grainbg from "./components/2017-Grain-bg/Grainbg";
 import Head from "./components/Head/Head";
 import Boxes from "./components/Boxes/Boxes";
 import Slider from '@mui/material/Slider';
+import { makeStyles } from "@mui/material/styles";
 
 import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
 import NoResp from "./components/Responsive-default/NoResp";
@@ -37,13 +38,13 @@ const App = () => {
     {value: 2010,label: '2010'},
     {value: 2014,label: '2014'},
     {value: 2017,label: '2017'},
+    {value: 2019,label: '2019'},
     {value: 2022,label: '2022'},
   ];
 
   const { year, modus } = theme;
 
   const [checked, setChecked] = useState(false);
-  const [active, setActive] = useState(false);
 
   const handleChange = (event) => {
     setChecked(!checked);
@@ -107,7 +108,18 @@ const App = () => {
               marks={marks}
               step={null}
               sx={{
-                color: 'gray',
+                color: 'white',
+                '& .MuiSlider-thumb': {
+                  color:"white",
+                },
+                '& .MuiSlider-thumb:active': {
+                  color:"lightblue",
+                },
+                '& .MuiSlider-markLabel': {
+                  color:"lightgrey",
+                  fontFamily:"Space Grotesk",
+                  fontSize:"14px",
+                },
                 }}
               />
               </div>
