@@ -4,7 +4,8 @@
   gap: var(--head-gap);
   align-items:var(--head-ali);
   padding: var(--head-area-pad);
-  justify-content: var(--head-jus)
+  justify-content: var(--head-jus);
+  height: var(--head-h);
 }
 
 .head-images {
@@ -75,6 +76,11 @@
   text-align: var(--head-align);
   z-index: var(--headlines-z);
   position:var(--headlines-pos);
+  height: var(--headlines-h);
+  display: var(--headlines-flex);
+  flex-direction: var(--headlines-flexdir);
+  justify-content: var(--headlines-jus);
+  align-self: flex-start;
 }
 
 .headp {
