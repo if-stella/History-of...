@@ -41,6 +41,7 @@
   --foot-behave:none;
   --main-margin-left:0px;
   --yearswitch-gradient:linear-gradient(180deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
+  --headlines-flex:none;
 
   @media screen and (max-width: 750px) {
     --yearswitch-gradient:linear-gradient(90deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
@@ -777,7 +778,6 @@
 [data-theme-year="2014"] {
   --styled-display: block;
   --default-display:none;
-  --background: #2C0EAC;
   --h1-color: #fff;
   --h2-color: #fff;
   --h3-color: #fff;
@@ -789,6 +789,9 @@
   --contxt-ff: 'Roboto', sans-serif;
   --global-padding: 0rem;
   --global-mt: 0rem;
+  --main-margin-top:0px;
+  --head-align:left;
+  --head-jus:center;
   --year: ' ' '2014';
   --fImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-logo_au9wmq.png);
   --fImgW: 84px;
@@ -806,10 +809,12 @@
   --foot-back:#444444;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
-  --headlines-pad: 2rem 4rem 2rem 4rem;
+  --headlines-pad: 5rem 4rem 4rem 4rem;
   --headp-mt: 0.5em;
+  --headlines-flex:block;
   --headp-w:75%;
   --headp-show:block;
+  --head-back:#2C0EAC;
   --p-margin:0;
   --intro-show:none;
   --boxes-flex-jus: space-between;
@@ -819,6 +824,7 @@
   --cnt-ali-its:center;
   --cnt-txt-ali:center;
   --box-flx-ali: center;
+  --wrap-h:auto;
   --box-back:white;
   --cnt-pad: 2em;
   --conI-back:#FFCD40;
@@ -838,6 +844,22 @@
   --p-small-size: 0.75rem;
   --foot-w:100%;
   --foot-pos-b: 0rem;
+  --foot-pos:absolute;
+
+  @media screen and (max-width: 550px) {
+    --foot-pos:relative;
+    --headlines-pad: 2rem;
+    --boxes-flx-dir:column;
+    --headp-w:100%;
+    --headlines-h:90vh;
+    --headlines-jus:center;
+    --headlines-flex:flex;
+    --headlines-flexdir:column;
+    --boxes-pad: 2rem;
+    --foot-flx-dir:column;
+    --foot-pad: 1.5rem;
+    --foot-gap:1em;
+  }
 }
 
 [data-theme-year="2017"] {
