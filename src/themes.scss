@@ -896,7 +896,7 @@
   --head-images-l:44em;
   --head-images-b:4em;
   --hImgSrc: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851209/History%20of%20webdesign/circle-group_mmzmck.png);
-  --hImg-blend:hard-light;
+  --head-images-blend:hard-light;
   --hImgW: 599px;
   --hImgH: 699px;
   --hImgFlexS:0;
@@ -904,14 +904,12 @@
   --hImg2Src:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-small-ball-1_anog56.png);
   --hImg2W: 144px;
   --hImg2H: 154px;
-  --hImg2-blend:hard-light;
   --hImg2-pos:absolute;
   --hImg2-t:2em;
   --hImg2-l:1em;
   --hImg3Src:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672531/History%20of%20webdesign/2017-small-ball-2_jugk1o.png);
   --hImg3W: 169px;
   --hImg3H: 163px;
-  --hImg3-blend:hard-light;
   --hImg3-pos:absolute;
   --hImg3-l:35em;
   --hImg3-t:35em;
@@ -924,6 +922,19 @@
   --foot-pos-b: 1rem;
   --darktoggle:flex;
   --foot-behave:block;
+
+  @media screen and (max-width: 550px) {
+  --h1-size:3.5rem;
+  --h1-lheight: 3.5rem;
+  --h2-size: 3.5rem;
+  --head-images-scale: scale(0.6);
+  --head-images-l:4em;
+  --head-images-b:10em;
+  --2017-intro-w:auto;
+  --2017-intro-pos-t:0rem;
+  --circle-scale: scale(0.75);
+  --wrap-h:150vh;
+  }
 }
 
 [data-theme-year="2019"] {
