@@ -14,6 +14,8 @@
   top: var(--head-images-t);
   right: var(--head-images-r);
   bottom: var(--head-images-b);
+  transform: var(--head-images-scale);
+  mix-blend-mode: var(--head-images-blend);
 }
 
 .head-image {
@@ -40,6 +42,7 @@
   mix-blend-mode: var(--hImg2-blend);
   position: var(--hImg2-pos);
   top: var(--hImg2-t);
+  right: var(--hImg2-r);
   left: var(--hImg2-l);
 }
 
@@ -53,6 +56,7 @@
   mix-blend-mode: var(--hImg3-blend);
   position: var(--hImg3-pos);
   top: var(--hImg3-t);
+  right: var(--hImg3-r);
   left: var(--hImg3-l);
 }
 

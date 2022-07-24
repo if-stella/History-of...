@@ -1,6 +1,8 @@
 .circle {
   position: relative;
   display: var(--circle-show);
+  transform: var(--circle-scale);
+  mix-blend-mode: var(--head-images-blend);
 
   text {
     font-family: var(--extra-font);
@@ -52,6 +54,9 @@
 #circle-1-cont {
   top:-9.25em; left:33.75em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-1_roimag.png);
+  @media screen and (max-width: 550px) {
+    top:14em; left:-5.25em;
+  }
 }
 
 #circle-1 svg { top:-16.5em; left:21em;
@@ -59,11 +64,17 @@
      -moz-animation-duration: 7s;
        -o-animation-duration: 7s;
           animation-duration: 7s;
+          @media screen and (max-width: 550px) {
+            top:4em; left:-13em;
+          }
 }
 
 #circle-2-cont {
   bottom:-25.75em; left:46.25em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-2_mfro0p.png);
+  @media screen and (max-width: 550px) {
+    top:18.5em; left:12em;
+  }
 }
 
 #circle-2 svg {
@@ -73,12 +84,18 @@
      -moz-animation-duration: 9s;
        -o-animation-duration: 9s;
           animation-duration: 9s;
+  @media screen and (max-width: 550px) {
+    top:8em; left:2em;
+  }
 }
 
 #circle-3-cont {
   top:0em;
   left:66.5em;
   background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656851279/History%20of%20webdesign/circle-ass-3_yuua92.png);
+  @media screen and (max-width: 550px) {
+    top:31em; left:-1.5em;
+  }
 }
 
 #circle-3 svg {
@@ -87,6 +104,9 @@
      -moz-animation-duration: 5s;
        -o-animation-duration: 5s;
           animation-duration: 5s;
+  @media screen and (max-width: 550px) {
+    top:19em; left:-10em;
+  }
 }
 
 @-webkit-keyframes rotate {
