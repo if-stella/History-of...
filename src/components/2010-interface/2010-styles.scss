@@ -27,13 +27,15 @@
 
 .iphone {
   display:none;
-  width: 343px;
-  height: 673px;
+  background-size:cover;
+  width: 280px;
+  height: 549.6px;
   position:fixed;
   z-index:20;
-  top:0.75em;
-  left:91px;
-  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658154324/History%20of%20webdesign/iphone2010_q3ispc.png);
+  top:4.5em;
+  left:50%;
+  transform: translateX(-50%);
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658685421/History%20of%20webdesign/Group_54_gdzzqv.png);
 }
 
 @media screen and (max-width: 1100px) {
