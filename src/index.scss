@@ -117,8 +117,11 @@ h4 {
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);
   position:var(--inner-wrap-pos);
+  left:var(--iWrap-l);
+  transform: var(--iWrap-trans);
   margin: var(--iWrap-mar);
   z-index: var(--iWrap-z);
+  overflow-y : auto;
 }
 
 .sliderbox {
@@ -130,4 +133,8 @@ h4 {
   width:100vw;
   height:72px;
   padding:0.5em 3em 0em 3em;
+
+  @media screen and (max-width: 550px) {
+  padding:0.25em 1em 0em 1em;
+  }
 }
