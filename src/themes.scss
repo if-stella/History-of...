@@ -41,7 +41,6 @@
   --foot-behave:none;
   --main-margin-left:0px;
   --yearswitch-gradient:linear-gradient(180deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
-  --headlines-flex:none;
 
   @media screen and (max-width: 750px) {
     --yearswitch-gradient:linear-gradient(90deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
@@ -809,9 +808,8 @@
   --foot-back:#444444;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
-  --headlines-pad: 5rem 4rem 4rem 4rem;
+  --headlines-pad: 6rem 4rem 4rem 4rem;
   --headp-mt: 0.5em;
-  --headlines-flex:block;
   --headp-w:75%;
   --headp-show:block;
   --head-back:#2C0EAC;
@@ -835,6 +833,7 @@
   --boxes-h:85%;
   --cbi-W: 100px;
   --cbi-H: 100px;
+  --cbi-cov:cover;
   --cbi-I: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-I_fflmi1.png);
   --cbi-II: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-II_stcfu9.png);
   --cbi-III: url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656172333/History%20of%20webdesign/2014-content-III_dimoao.png);
@@ -848,17 +847,16 @@
 
   @media screen and (max-width: 550px) {
     --foot-pos:relative;
-    --headlines-pad: 2rem;
+    --headlines-pad: 5rem 2rem 3rem 2rem;
     --boxes-flx-dir:column;
     --headp-w:100%;
-    --headlines-h:90vh;
     --headlines-jus:center;
-    --headlines-flex:flex;
-    --headlines-flexdir:column;
     --boxes-pad: 2rem;
     --foot-flx-dir:column;
     --foot-pad: 1.5rem;
     --foot-gap:1em;
+    --cbi-W: 64px;
+    --cbi-H: 64px;
   }
 }
 

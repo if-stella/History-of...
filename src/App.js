@@ -16,7 +16,6 @@ import Grainbg from "./components/2017-Grain-bg/Grainbg";
 import Head from "./components/Head/Head";
 import Boxes from "./components/Boxes/Boxes";
 import Slider from '@mui/material/Slider';
-import { makeStyles } from "@mui/material/styles";
 
 import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
 import NoResp from "./components/Responsive-default/NoResp";
@@ -103,7 +102,6 @@ const App = () => {
               defaultValue={1990}
               onChange={themeChange}
               min={1990}
-              step={1}
               max={2022}
               marks={marks}
               step={null}
@@ -120,6 +118,14 @@ const App = () => {
                   fontFamily:"Space Grotesk",
                   fontSize:"14px",
                 },
+                '@media screen and (max-width: 750px)': {
+                  '& .MuiSlider-markLabel': {
+                    fontSize:"12px",
+                }},
+                '@media screen and (max-width: 550px)': {
+                  '& .MuiSlider-markLabel': {
+                    fontSize:"9px",
+                }},
                 }}
               />
               </div>
