@@ -7,6 +7,7 @@ const Macbook2010 = () => {
       <div className="macbook"></div>
       <div className="polaroid"></div>
       <div className="iphone"></div>
+      <div className="ios-bar"></div>
     </div>
   )
 }

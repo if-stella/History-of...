@@ -32,10 +32,25 @@
   height: 549.6px;
   position:fixed;
   z-index:20;
-  top:4.5em;
+  top:4.75em;
   left:50%;
   transform: translateX(-50%);
-  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658685421/History%20of%20webdesign/Group_54_gdzzqv.png);
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658746927/History%20of%20webdesign/Group_54_rkx2d8.png);
+}
+
+.ios-bar {
+  display:none;
+  background-size:cover;
+  width: 239px;
+  height: 59.6px;
+  position:absolute;
+  z-index:30;
+  top:29.8em;
+  left:50%;
+  transform: translateX(-50%);
+  background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1658746927/History%20of%20webdesign/Group_55_atygdm.png);
+  filter: drop-shadow(0px -5px 20px rgba(0, 0, 0, 0.3));
+  border-bottom: 1px solid #686868;
 }
 
 @media screen and (max-width: 1100px) {
@@ -76,6 +91,10 @@
   }
 
   .iphone {
+    display:block;
+  }
+
+  .ios-bar {
     display:block;
   }
 }
