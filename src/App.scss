@@ -22,11 +22,11 @@ input {
 }
 
 .main-content {
-  margin:var(--1992-margin);
+  margin:var(--main-margin);
   margin-top:var(--main-margin-top);
   margin-left:var(--main-margin-left);
   padding: var(--global-padding);
-  border:var(--1992-border);
+  border:var(--main-border);
   height: var(--main-height);
   background: var(--main-bg);
   box-shadow: var(--main-border-sunk-out), var(--main-border-sunk-in);
@@ -94,7 +94,7 @@ input {
 
 .darktheme-2017 {
   font-family:var(--extra-font);
-  position:absolute;
+  position:fixed;
   right:0px;
   top: 100px;
   height: 3em;
@@ -106,6 +106,7 @@ input {
   display: var(--darktoggle);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  z-index:10;
 
   input {
     margin-right: 12px;

@@ -112,7 +112,9 @@ h4 {
   flex-direction:var(--inner-wrap-flex-dir);
   padding: var(--iWrap-pad);
   flex-grow:var(--iWrap-flex-grow);
-  border: var(--border);
+  border: var(--iWrap-border);
+  border-radius: var(--iWrap-bor-rad);
+  border-style: var(--iWrap-bor-style);
   border-image-slice: var(--gradient-outl-slice);
   border-width: var(--gradient-outl-border-w);
   border-image-source: var(--gradient-outl-img-src);

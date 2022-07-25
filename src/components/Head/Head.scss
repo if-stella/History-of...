@@ -16,6 +16,7 @@
   bottom: var(--head-images-b);
   transform: var(--head-images-scale);
   mix-blend-mode: var(--head-images-blend);
+  z-index:var(--head-images-z);
 }
 
 .head-image {
