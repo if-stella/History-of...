@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Press+Start+2P&family=VT323&family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;600&family=Playfair&family=Rakkas&family=Syne:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=MuseoModerno:wght@400;600&family=Press+Start+2P&family=VT323&family=Orbitron:wght@400;700&family=Playfair&family=Rakkas&family=Syne:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&family=Water+Brush&family=Space+Grotesk:wght@400;600&display=swap');
+//Bug: MuseoModerno was/is working without being implemented?
 
 :root {
   --background: #021a2f;
@@ -365,8 +366,11 @@
   --nav-ul-txt-shad: -2px -2px 4px rgba(193, 255, 255, 0.5), 2px 2px 4px rgba(0, 38, 61, 0.5);
   --boxes-border:2px solid;
   --iWrap-border:2px solid;
+  --nav-ul-bor:2px solid;
+  --nav-ul-style:solid;
+  --iWrap-bor-style:solid;
   --gradient-outl-slice:1;
-  --gradient-outl-border-w:2px;
+  --gradient-outl-border-w:1px;
   --gradient-outl-img-src: linear-gradient(146.22deg, #FFFFFF -3.57%, rgba(255, 255, 255, 0) 56.96%, #FFFFFF 106.07%);
   --iWrap-back:black;
   --iWrap-img:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656579373/History%20of%20webdesign/a8A3mw_rwzexu.jpg);
@@ -489,8 +493,8 @@
   --conII-back:#FFF;
   --conIII-back:#FFF;
   --wrap-overflow:auto;
-  --cnt-bor: 2px solid lightgrey;
-  //boxes border does not work?
+  --cnt-bor: 2px solid rgb(235, 235, 235);
+  --cnt-bor-style:solid;
   --cnt-bor-rad: 5px;
   --cbi-W: 92px;
   --cbi-H: 92px;
@@ -709,6 +713,8 @@
   --cnt-txt-ali:center;
   --cntbox-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
   --cnt-bor-rad:10px;
+  --cnt-bor: 2px solid #f2c4eb;
+  --cnt-bor-style:solid;
   --conI-back: linear-gradient(75deg, #161153 0%, #9f31c3 50%, #f2c4eb 108.64%);
   --conII-back: linear-gradient(75deg, #161153 0%, #9f31c3 50%, #f2c4eb 108.64%);
   --conIII-back: linear-gradient(75deg, #161153 0%, #9f31c3 50%, #f2c4eb 108.64%);
@@ -778,9 +784,12 @@
     --boxes-flx-dir:column;
     --foot-pos-r:-6.75em;
     --foot-pos-t:22em;
-    --iWrap-border:4px solid rgb(110, 110, 110);
+    --iWrap-border:2px solid rgb(110, 110, 110);
     --iWrap-bor-rad:4px;
     --iWrap-bor-style:inset;
+    --gradient-outl-slice:1;
+    --gradient-outl-border-w:2px;
+    --iWrap-overflow-y:auto;
   }
 }
 
@@ -958,16 +967,18 @@
   --background: #ffffff;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672532/History%20of%20webdesign/2019-hd-bg_myneq3.jpg);
   --background-img-cov:cover;
-  --common-font: 'Space Grotesk', sans-serif;
-  --extra-font: 'Space Grotesk', sans-serif;
-  --contxt-ff: 'Space Grotesk', sans-serif;
+  --common-font: 'MuseoModerno', cursive;
+  --contxt-ff:  'MuseoModerno', cursive;
+  --extra-font: 'MuseoModerno', cursive;
   --h1-size:5rem;
+  --h1-weight:600;
   --h1-lheight: 5rem;
   --h1-color: #3B4F7D;
   --h2-size: 3rem;
   --h2-color: #3b4f7d9b;
   --h3-size:1.5rem;
   --h3-weight:bold;
+  --h3-weight:600;
   --h3-color: #3B4F7D;
   --p-size:1.1em;
   --p-color: #3b4f7d9b;
@@ -1015,6 +1026,7 @@
   --cnt-pad:2em;
   --cnt-txt-ali:center;
   --cnt-bor:2px solid transparent;
+  --cnt-bor-style:solid;
   --cnt-bor-rad:30px;
   --cbi-W: 125px;
   --cbi-H: 125px;

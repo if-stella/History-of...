@@ -34,5 +34,8 @@
       border-top-left-radius: var(--nav-borrad-t-l);
       border-top-right-radius: var(--nav-borrad-t-r);
       text-shadow:var(--nav-ul-txt-shad);
+      border-image-slice: var(--gradient-outl-slice);
+      border-width: var(--gradient-outl-border-w);
+      border-image-source: var(--gradient-outl-img-src);
     }
   }
