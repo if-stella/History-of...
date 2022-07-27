@@ -19,6 +19,7 @@ import Slider from '@mui/material/Slider';
 
 import {BsFillMoonStarsFill,BsFillSunFill} from 'react-icons/bs';
 import NoResp from "./components/Responsive-default/NoResp";
+import Varfontslider from "./components/Varfontslider/Varfontslider";
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -38,6 +39,7 @@ const App = () => {
     {value: 2014,label: '2014'},
     {value: 2017,label: '2017'},
     {value: 2019,label: '2019'},
+    {value: 2021,label: '2021'},
     {value: 2022,label: '2022'},
   ];
 
@@ -83,6 +85,7 @@ const App = () => {
             <div className="inner-wrap">
               <Bordure />
               <Head />
+              <Varfontslider />
               <Circles />
               <Intro />
               <Boxes />

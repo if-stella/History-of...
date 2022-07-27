@@ -41,6 +41,7 @@
   --respo-display:none;
   --foot-behave:none;
   --main-margin-left:0px;
+  --varFont-display:none;
   --yearswitch-gradient:linear-gradient(180deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
 
   @media screen and (max-width: 750px) {
@@ -1080,6 +1081,52 @@
     --hImgW: 120px;
     --hImgH: 120px;
     --fImg-pos:absolute;
+  }
+}
+
+[data-theme-year="2021"] {
+  --default-display:none;
+  --year: ' ' '2021';
+  --background: #8CADA2;
+  --common-font: 'Syne', sans-serif;
+  --contxt-ff:  'Syne', sans-serif;
+  --extra-font: 'Syne', sans-serif;
+  --varFont-display:block;
+  --fontSliderBox-display:none;
+  --h1-color: #131310;
+  --h2-size: 3rem;
+  --h2-color: #EDF6F3;
+  --h2-lheight:3rem;
+  --h3-size:1.5rem;
+  --h3-weight:600;
+  --h3-color: #131310;
+  --p-small-size:0.75rem;
+  --ps-color: #668178;
+  --contxt-color:#668178;
+  --intro-show:block;
+  --intro-pad:0px 0px 2em 0px;
+  --boxes--flx-beh:flex;
+  --boxes-flx-dir: row;
+  --boxes-flex-gap:1em;
+  --cnt-behaviour:flex;
+  --cnt-flx-dir:column;
+  --cnt-pad: 1.5em;
+  --cnt-bor-rad:15px;
+  --conI-back:#EDF6F3;
+  --conII-back:#EDF6F3;
+  --conIII-back:#EDF6F3;
+  --foot-behave:block;
+  --foot-pos-l: 50%;
+  --foot-pos-b: 1em;
+  --foot-transform:translateX(-50%);
+  --foot-w:fit-content;
+
+  @media screen and (max-width: 550px) {
+    --boxes-flx-dir:column;
+    --h1-size:3.5rem;
+    --h1-lheight: 3.5rem;
+    --h2-size:2.5rem;
+    --h2-lheight:2.5rem;
   }
 }
 
