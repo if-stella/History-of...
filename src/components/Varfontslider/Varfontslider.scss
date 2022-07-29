@@ -2,6 +2,39 @@
   display: var(--varFont-display);
 }
 
+.switchyfont {
+
+  h1 {
+    font-weight: var(--var-font-weight);
+    font-variation-settings: "wght" var(--var-font-weight);
+  }
+
+  h2 {
+    font-weight: var(--var-font-weight);
+    font-variation-settings: "wght" var(--var-font-weight);
+  }
+}
+
 .fontSliderBox {
   display: var(--fontSliderBox-display);
+}
+
+[data-font-weight="400"] {
+  --var-font-weight:400;
+}
+
+[data-font-weight="500"] {
+  --var-font-weight:500;
+}
+
+[data-font-weight="600"] {
+  --var-font-weight:600;
+}
+
+[data-font-weight="700"] {
+  --var-font-weight:700;
+}
+
+[data-font-weight="800"] {
+  --var-font-weight:800;
 }
