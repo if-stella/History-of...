@@ -1,18 +1,15 @@
 .varFont {
   display: var(--varFont-display);
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
 .switchyfont {
-
-  h1 {
     font-weight: var(--var-font-weight);
     font-variation-settings: "wght" var(--var-font-weight);
-  }
-
-  h2 {
-    font-weight: var(--var-font-weight);
-    font-variation-settings: "wght" var(--var-font-weight);
-  }
+    width:100%;
 }
 
 .fontSliderBox {
