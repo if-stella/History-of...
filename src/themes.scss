@@ -2,7 +2,7 @@
 //Bug: MuseoModerno was/is working without being implemented?
 
 :root {
-  --background: #021a2f;
+  --background: #021a2f !important;
   --wrap-flex-dir:column;
   --wrap-h:100vh;
   --h1-color: white;
@@ -1088,13 +1088,16 @@
   --default-display:none;
   --year: ' ' '2021';
   --background: #8CADA2 !important;
+  --global-padding: 0rem;
   --common-font: 'Syne', sans-serif;
   --contxt-ff:  'Syne', sans-serif;
   --extra-font: 'Syne', sans-serif;
   --varFont-display:flex;
   --fontSliderBox-display:block;
   --h1-color: #131310 !important;
-  --h2-size: 3rem;
+  --h1-size:4rem;
+  --h1-lheight:4rem;
+  --h2-size: 3.5rem;
   --h2-color: #EDF6F3 !important;
   --h2-lheight:3rem;
   --h3-size:1.5rem;
@@ -1104,29 +1107,35 @@
   --ps-color: #668178 !important;
   --contxt-color:#668178;
   --intro-show:block;
-  --intro-pad:0px 0px 2em 0px;
+  --intro-pad:0em 5em 2em 5em;
   --boxes--flx-beh:flex;
   --boxes-flx-dir: row;
   --boxes-flex-gap:1em;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cnt-pad: 1.5em;
+  --boxes-pad:0em 5em;
   --cnt-bor-rad:15px;
   --conI-back:#EDF6F3;
   --conII-back:#EDF6F3;
   --conIII-back:#EDF6F3;
   --foot-behave:block;
   --foot-pos-l: 50%;
+  --foot-pos:absolute;
   --foot-pos-b: 1em;
   --foot-transform:translateX(-50%);
   --foot-w:fit-content;
 
   @media screen and (max-width: 550px) {
     --boxes-flx-dir:column;
-    --h1-size:3.5rem;
-    --h1-lheight: 3.5rem;
-    --h2-size:2.5rem;
-    --h2-lheight:2.5rem;
+    --foot-pos:relative;
+    --h1-size:2.5rem;
+    --h1-lheight: 2.5rem;
+    --h2-size:1.75rem;
+    --h2-lheight:1.75rem;
+    --wrap-h:auto;
+    --intro-pad:0em 2em;
+    --boxes-pad:2em;
   }
 }
 

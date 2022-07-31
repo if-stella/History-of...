@@ -37,30 +37,31 @@ const Varfontslider = () => {
         max={800}
         onChange={changeFW}
         sx={{
-          width:"400px",
+          width:"311px",
           color: '#668178',
           '& .MuiSlider-thumb': {
             color:"#668178",
+            webkitBoxShadow: "none !important",
+            boxShadow: "none !important",
           },
           '& .MuiSlider-thumb:active': {
             color:"#8CADA2",
+            webkitBoxShadow: "none !important",
+            boxShadow: "none !important",
           },
           "& .MuiSlider-thumb:hover" : {
-            webkitBoxShadow: "0.5px 0.5px 10px #394E47 !important",
-            boxShadow: "0.5px 0.5px 10px #394E47 !important",
+            webkitBoxShadow: "none !important",
+            boxShadow: "none !important",
           },
           "& .Mui-focusVisible" : {
-            webkitBoxShadow: "0.5px 1px 20px #394E47 !important",
-            boxShadow: "0.5px 1px 20px #394E47 !important",
+            webkitBoxShadow: "none !important",
+            boxShadow: "none !important",
           },
           '& .MuiSlider-markLabel': {
             color:"#668178",
             fontFamily:"Syne",
+            fontSize:"12px",
           },
-          '@media screen and (max-width: 750px)': {
-            '& .MuiSlider-markLabel': {
-              fontSize:"12px",
-          }},
           '@media screen and (max-width: 550px)': {
             '& .MuiSlider-markLabel': {
               fontSize:"9px",
