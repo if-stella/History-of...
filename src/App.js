@@ -77,7 +77,7 @@ const App = () => {
             <Navbar />
             <div className="default-content">
               <h1>Hey there.</h1>
-              <p>I'm the default text. I only get shown at the beginning. And I describe why it is like this.</p>
+              <p>It's the year 2022. Wonder, what this digital portfolio would have looked like, since the beginning of the internet? Use the slider to find out!</p>
               <Loading />
             </div>
             <Grainbg />
@@ -100,7 +100,6 @@ const App = () => {
         <div className="sliderbox">
               <Slider
               size="small"
-              className="sliderInner"
               aria-label="Custom marks"
               defaultValue={1990}
               onChange={themeChange}
@@ -128,6 +127,7 @@ const App = () => {
                 '@media screen and (max-width: 550px)': {
                   '& .MuiSlider-markLabel': {
                     fontSize:"9px",
+                    transform: "rotate(45deg)",
                 }},
                 }}
               />
