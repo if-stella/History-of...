@@ -5,6 +5,7 @@
   --background: #021a2f !important;
   --wrap-flex-dir:column;
   --wrap-h:100vh;
+  --main-margin-top:64px;
   --h1-color: white;
   --p-color: #ffffffec;
   --p-size:1rem;
@@ -18,7 +19,7 @@
   --h1-lheight: 4.5rem;
   --h2-lnum:lining-nums;
   --p-margin: 0 auto;
-  --main-margin-top:72px;
+  --wrap-flex-jus:center;
   --styled-display: none;
   --foot-li-show:none;
   --foot-pos:absolute;
@@ -40,7 +41,6 @@
   --darktoggle:none;
   --respo-display:none;
   --foot-behave:none;
-  --main-margin-left:0px;
   --varFont-display:none;
   --yearswitch-gradient:linear-gradient(180deg, #0511225e -6.98%, rgba(5, 17, 34, 0) 100%);
 
@@ -60,6 +60,7 @@
   --ps-color: #3DFF1E !important;
   --contxt-color: #3DFF1E;
   --default-display:none;
+  --wrap-flex-jus:space-between;
   --background: #000;
   --p-small-align: center;
   --common-font: 'Press Start 2P', cursive;
@@ -80,7 +81,6 @@
 
   @media screen and (max-width: 750px) {
     --foot-behave:block;
-    --foot-pos-l: 91px;
     --p-small-align: left;
   }
 
@@ -90,7 +90,6 @@
     --styled-display: none;
     --respo-h1-pb:12px;
     --respo-display:flex;
-    --foot-pos-l: 16px;
   }
 }
 
@@ -117,8 +116,9 @@
   --cnt-gap: 0px;
   --cnt-flx-dir: column;
   --cnt-second-ml: 24px;
-  --global-padding: 2rem;
+  --global-padding: 1.5rem;
   --global-mt: 0.25rem;
+  --wrap-flex-jus:space-between;
   --styled-display: block;
   --foot-pos-b: 2rem;
   --foot-behave:block;
@@ -137,6 +137,7 @@
 
 [data-theme-year="1992"] {
   --default-display:none;
+  --main-margin-top:72px;
   --background: #CCC !important;
   --main-bg: #E5E5E5;
   --h1-color: #000 !important;
@@ -162,6 +163,7 @@
   --main-margin-left:10px;
   --main-margin:10px;
   --global-mt: 0rem;
+  --wrap-flex-jus:space-between;
   --intro-show:block;
   --contxt-color: #000;
   --common-font: 'VT323', monospace;
@@ -219,7 +221,6 @@
 [data-theme-year="1996"] {
   --stars-show:block;
   --default-display:none;
-  --global-padding:0rem;
   --styled-display: block;
   --background: #000;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656271968/History%20of%20webdesign/1996-bg-tile_s4erz5.png);
@@ -246,7 +247,7 @@
   --head-behaviour:flex;
   --head-align: center;
   --head-jus:center;
-  --head-area-pad:2rem 8rem;
+  --head-area-pad:1rem 8rem;
   --intro-show:block;
   --intro-pad:0rem 8rem;
   --intro-t-ali:center;
@@ -256,6 +257,7 @@
   --boxes-flx-dir: row;
   --boxes-pos:relative;
   --boxes-z:20;
+  --wrap-flex-jus:space-between;
   --cnt-behaviour:flex;
   --cnt-flx-dir:column;
   --cbi-W: 40px;
@@ -318,7 +320,7 @@
   --hImgH: 508px;
   --hImg-rep: no-repeat;
   --hImg-cov: cover;
-  --global-padding: 0.5rem;
+  --wrap-flex-jus:space-between;
 
   @media screen and (max-width: 550px) {
     --hImgW: 359px;
@@ -329,7 +331,7 @@
 [data-theme-year="2000"] {
   --default-display:none;
   --styled-display: block;
-  --global-padding: 1em;
+  --main-margin-top:56px;
   --year: ' ' '2000';
   --h1-size:4.5rem;
   --h1-weight:bold;
@@ -347,6 +349,7 @@
   --p-small-size:0.5rem;
   --background-image:radial-gradient(47.33% 93.59% at 52.67% 50%, #FFFFFF 0%, #5A5A5A 85.71%, #404040 100%);
   --background: darkgrey;
+  --wrap-flex-jus:space-between;
   --common-font: 'Orbitron', sans-serif;
   --extra-font: 'Orbitron', sans-serif;
   --contxt-ff: 'Orbitron', sans-serif;
@@ -422,7 +425,6 @@
     --h1-size: 2.5rem;
     --h1-lheight: 2.5rem;
     --respo-h1-pb:12px;
-    --main-margin-top:56px;
     --foot-pos-l: 2rem;
   }
 }
@@ -431,9 +433,11 @@
   --background: white;
   --background-image: linear-gradient(180deg, #FFFFFF 25.56%, #e5eeee 107.18%);
   --global-mt: 0rem;
+  --main-margin-top:72px;
   --default-display:none;
   --styled-display: block;
   --global-padding: 0rem;
+  --wrap-flex-jus:space-between;
   --year: ' ' '2001';
   --common-font: Helvetica Neue, Arial, sans-serif;
   --extra-font: 'Playfair Display', serif;
@@ -556,6 +560,7 @@
 
 [data-theme-year="2006"] {
   --default-display:none;
+  --main-margin-top:72px;
   --styled-display: block;
   --background: #fff;
   --main-height:100%;
@@ -672,6 +677,7 @@
   --global-padding: 0em;
   --year: ' ' '2010';
   --main-margin-top:200px;
+  --wrap-flex-jus:space-between;
   --common-font: 'Open Sans', sans-serif;
   --extra-font: 'Open Sans', sans-serif;
   --contxt-ff:'Open Sans', sans-serif;
@@ -771,7 +777,6 @@
     --iWrap-trans: translateX(-50%);
     --background-h:100vh;
     --main-margin-top:170px;
-    --main-margin-left:0px;
     --iWrap-w:245px;
     --iWrap-h:367px;
     --h1-size:1.5em;
@@ -886,6 +891,7 @@
   --styled-display: block;
   --intro-show:none;
   --wrap-overflow:hidden;
+  --wrap-flex-jus:space-between;
   --blur-show:block;
   --inner-wrap-pos:relative;
   --global-padding: 2rem;
@@ -964,6 +970,7 @@
   --default-display:none;
   --styled-display: block;
   --wrap-overflow:hidden;
+  --wrap-flex-jus:space-between;
   --year: ' ' '2019';
   --background: #ffffff !important;
   --background-image:url(https://res.cloudinary.com/dr24t0rw2/image/upload/v1656672532/History%20of%20webdesign/2019-hd-bg_myneq3.jpg);
@@ -1088,7 +1095,9 @@
   --default-display:none;
   --year: ' ' '2021';
   --background: #8CADA2 !important;
+  --main-margin-top:80px;
   --global-padding: 0rem;
+  --wrap-flex-jus:space-between;
   --common-font: 'Syne', sans-serif;
   --contxt-ff:  'Syne', sans-serif;
   --extra-font: 'Syne', sans-serif;
@@ -1137,6 +1146,11 @@
     --intro-pad:0em 2em;
     --boxes-pad:2em;
   }
+}
+
+[data-theme-year="2022"] {
+  --main-margin-top:0px;
+  --global-padding: 4rem;
 }
 
 [data-theme-modus="dark"]

@@ -13,7 +13,7 @@ input {
   height:var(--wrap-h);
   display:flex;
   flex-direction:var(--wrap-flex-dir);
-  justify-content:space-between;
+  justify-content:var(--wrap-flex-jus);
   overflow:var(--wrap-overflow);
 }
 

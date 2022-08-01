@@ -75,9 +75,13 @@ h4 {
   display: var(--default-display);
   flex-direction:column;
   justify-content:center;
-  align-items:center;
-  height:80vh;
-  gap:0.5rem;
+  height:100%;
+  gap:2rem;
+  text-align:center;
+
+  p {
+    max-width: 600px;
+  }
 }
 
 .styled-content {
@@ -137,6 +141,6 @@ h4 {
   padding:0.5em 3em 0em 3em;
 
   @media screen and (max-width: 550px) {
-  padding:0.25em 1em 0em 1em;
+  padding:0.25em 1.75em 0em 1.25em;
   }
 }
